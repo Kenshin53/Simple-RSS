@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "MasterViewController.h"
+#import "AuthViewController.h"
 
 
 @implementation DetailViewController
@@ -66,12 +67,14 @@
 #pragma mark -
 #pragma mark View lifecycle
 
-/*
+
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    [super viewDidLoad];
+//	UIBarButtonItem *loginButton = [[ UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(dosomething)];
+
+	[super viewDidLoad];
 }
- */
+
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
@@ -119,6 +122,24 @@
     
     [detailItem release];
     [super dealloc];
+}
+
+#pragma mark -
+#pragma mark Other Function
+
+- (IBAction) Login {
+//	UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Hell yeah" message:@"Yeah, Hell yeah." delegate:self cancelButtonTitle:@"Nah" otherButtonTitles:nil] autorelease];
+	
+//	[alert show];
+	//AuthViewController *loginVC  = [[AuthViewController alloc] initWithNibName:@"AuthViewController" bundle:nil];
+//	[loginVC setModalPresentationStyle:UIModalPresentationFormSheet];
+//	[loginVC setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
+//	[self presentModalViewController:loginVC animated:YES];
+//	TestVC *test = [[TestVC alloc] initWithNibName:@"TestVC" bundle:nil];
+//	[test setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
+//	[test setModalPresentationStyle:UIModalPresentationFormSheet];
+//	[self presentModalViewController:test animated:YES];
+//	[test release];
 }
 
 @end

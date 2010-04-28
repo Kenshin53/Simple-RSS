@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "AuthViewController.h"
 
 @class MasterViewController;
 @class DetailViewController;
 
-@interface Simple_RSSAppDelegate : NSObject <UIApplicationDelegate> {
+@interface Simple_RSSAppDelegate : NSObject <UIApplicationDelegate, AuthenticationProtocol> {
     
     UIWindow *window;
     
@@ -28,4 +28,5 @@
 @property (nonatomic,retain) IBOutlet MasterViewController *masterViewController;
 @property (nonatomic,retain) IBOutlet DetailViewController *detailViewController;
 
+- (void)authenticate;
 @end

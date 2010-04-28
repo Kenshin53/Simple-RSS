@@ -21,4 +21,5 @@
 
 @property (nonatomic, retain) id detailItem;
 
+- (IBAction) Login;
 @end
