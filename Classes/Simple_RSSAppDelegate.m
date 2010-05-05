@@ -12,11 +12,11 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 #import "AuthViewController.h"
-
+#import "FolderViewController.h"
 
 @implementation Simple_RSSAppDelegate
 
-@synthesize window, splitViewController, masterViewController, detailViewController;
+@synthesize window, splitViewController, folderViewController, detailViewController;
 
 
 #pragma mark -
@@ -26,11 +26,11 @@
     
     // Override point for customization after app launch    
     
-    masterViewController = [[MasterViewController alloc] initWithStyle:UITableViewStylePlain];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+	folderViewController= [[FolderViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:folderViewController];
     
     detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailView" bundle:nil];
-    masterViewController.detailViewController = detailViewController;
+    folderViewController.detailViewController = detailViewController;
     
     splitViewController = [[UISplitViewController alloc] init];
     splitViewController.viewControllers = [NSArray arrayWithObjects:navigationController, detailViewController, nil];
@@ -53,7 +53,7 @@
 	//Test code
 	
 	NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
-	[settings setBool:NO forKey:@"authenticated"];
+	//[settings setBool:NO forKey:@"authenticated"];
 	//End test code
 	
 	

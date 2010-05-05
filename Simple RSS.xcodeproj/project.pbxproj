@@ -16,14 +16,20 @@
 		2804203C108E9BAB000629CD /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2804203B108E9BAB000629CD /* DetailView.xib */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		F03FB6E611902AB100B97815 /* FeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F03FB6E511902AB100B97815 /* FeedParser.m */; };
 		F049F44C117D70E100B94F8E /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F049F44A117D70E100B94F8E /* AuthViewController.m */; };
 		F049F44D117D70E100B94F8E /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F049F44B117D70E100B94F8E /* AuthViewController.xib */; };
-		F04FAE601186A0BC001E7A1B /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F04FAE591186A0BC001E7A1B /* NSObject+SBJSON.m */; };
-		F04FAE611186A0BC001E7A1B /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F04FAE5B1186A0BC001E7A1B /* NSString+SBJSON.m */; };
-		F04FAE621186A0BC001E7A1B /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F04FAE5D1186A0BC001E7A1B /* SBJSON.m */; };
 		F04FAE631186A0BC001E7A1B /* GoogleReaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F04FAE5F1186A0BC001E7A1B /* GoogleReaderHelper.m */; };
 		F04FAEC911876116001E7A1B /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = F04FAEC811876116001E7A1B /* Login.png */; };
 		F04FAED7118762A6001E7A1B /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = F04FAED6118762A6001E7A1B /* Button.png */; };
+		F05E3242119017550059DE7A /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F05E3237119017550059DE7A /* NSObject+SBJSON.m */; };
+		F05E3243119017550059DE7A /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F05E3239119017550059DE7A /* NSString+SBJSON.m */; };
+		F05E3244119017550059DE7A /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F05E323B119017550059DE7A /* SBJSON.m */; };
+		F05E3245119017550059DE7A /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F05E323D119017550059DE7A /* SBJsonBase.m */; };
+		F05E3246119017550059DE7A /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F05E323F119017550059DE7A /* SBJsonParser.m */; };
+		F05E3247119017550059DE7A /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F05E3241119017550059DE7A /* SBJsonWriter.m */; };
+		F05E326411901B400059DE7A /* FolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F05E326211901B400059DE7A /* FolderViewController.m */; };
+		F05E326511901B400059DE7A /* FolderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F05E326311901B400059DE7A /* FolderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,20 +48,31 @@
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Simple_RSS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Simple_RSS-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		F03FB6E411902AB100B97815 /* FeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedParser.h; sourceTree = "<group>"; };
+		F03FB6E511902AB100B97815 /* FeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedParser.m; sourceTree = "<group>"; wrapsLines = 1; };
 		F049F449117D70E100B94F8E /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthViewController.h; path = ../AuthViewController.h; sourceTree = "<group>"; };
 		F049F44A117D70E100B94F8E /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthViewController.m; path = ../AuthViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
 		F049F44B117D70E100B94F8E /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AuthViewController.xib; path = ../AuthViewController.xib; sourceTree = "<group>"; };
-		F04FAE571186A0BC001E7A1B /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
-		F04FAE581186A0BC001E7A1B /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
-		F04FAE591186A0BC001E7A1B /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
-		F04FAE5A1186A0BC001E7A1B /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
-		F04FAE5B1186A0BC001E7A1B /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
-		F04FAE5C1186A0BC001E7A1B /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
-		F04FAE5D1186A0BC001E7A1B /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
 		F04FAE5E1186A0BC001E7A1B /* GoogleReaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleReaderHelper.h; sourceTree = "<group>"; };
 		F04FAE5F1186A0BC001E7A1B /* GoogleReaderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleReaderHelper.m; sourceTree = "<group>"; };
 		F04FAEC811876116001E7A1B /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
 		F04FAED6118762A6001E7A1B /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		F05E3235119017550059DE7A /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		F05E3236119017550059DE7A /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		F05E3237119017550059DE7A /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		F05E3238119017550059DE7A /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		F05E3239119017550059DE7A /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		F05E323A119017550059DE7A /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		F05E323B119017550059DE7A /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		F05E323C119017550059DE7A /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		F05E323D119017550059DE7A /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		F05E323E119017550059DE7A /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		F05E323F119017550059DE7A /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		F05E3240119017550059DE7A /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		F05E3241119017550059DE7A /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		F05E326111901B400059DE7A /* FolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderViewController.h; sourceTree = "<group>"; };
+		F05E326211901B400059DE7A /* FolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderViewController.m; sourceTree = "<group>"; };
+		F05E326311901B400059DE7A /* FolderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +92,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F03FB6E311902A9500B97815 /* Parser Classes */,
 				1D3623240D0F684500981E51 /* Simple_RSSAppDelegate.h */,
 				1D3623250D0F684500981E51 /* Simple_RSSAppDelegate.m */,
 				28042007108E984D000629CD /* MasterViewController.h */,
@@ -84,6 +102,9 @@
 				F049F449117D70E100B94F8E /* AuthViewController.h */,
 				F049F44A117D70E100B94F8E /* AuthViewController.m */,
 				F049F44B117D70E100B94F8E /* AuthViewController.xib */,
+				F05E326111901B400059DE7A /* FolderViewController.h */,
+				F05E326211901B400059DE7A /* FolderViewController.m */,
+				F05E326311901B400059DE7A /* FolderViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -99,6 +120,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				F0C58366119016BF006FD21C /* New Group */,
 				F04FAED11187611E001E7A1B /* Images */,
 				F04FAE551186A0BC001E7A1B /* HelperClasses */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -139,28 +161,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F03FB6E311902A9500B97815 /* Parser Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F03FB6E411902AB100B97815 /* FeedParser.h */,
+				F03FB6E511902AB100B97815 /* FeedParser.m */,
+			);
+			name = "Parser Classes";
+			sourceTree = "<group>";
+		};
 		F04FAE551186A0BC001E7A1B /* HelperClasses */ = {
 			isa = PBXGroup;
 			children = (
-				F04FAE561186A0BC001E7A1B /* JSON */,
+				F05E3234119017550059DE7A /* JSON */,
 				F04FAE5E1186A0BC001E7A1B /* GoogleReaderHelper.h */,
 				F04FAE5F1186A0BC001E7A1B /* GoogleReaderHelper.m */,
 			);
 			name = HelperClasses;
-			sourceTree = "<group>";
-		};
-		F04FAE561186A0BC001E7A1B /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				F04FAE571186A0BC001E7A1B /* JSON.h */,
-				F04FAE581186A0BC001E7A1B /* NSObject+SBJSON.h */,
-				F04FAE591186A0BC001E7A1B /* NSObject+SBJSON.m */,
-				F04FAE5A1186A0BC001E7A1B /* NSString+SBJSON.h */,
-				F04FAE5B1186A0BC001E7A1B /* NSString+SBJSON.m */,
-				F04FAE5C1186A0BC001E7A1B /* SBJSON.h */,
-				F04FAE5D1186A0BC001E7A1B /* SBJSON.m */,
-			);
-			path = JSON;
 			sourceTree = "<group>";
 		};
 		F04FAED11187611E001E7A1B /* Images */ = {
@@ -170,6 +187,34 @@
 				F04FAEC811876116001E7A1B /* Login.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		F05E3234119017550059DE7A /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F05E3235119017550059DE7A /* JSON.h */,
+				F05E3236119017550059DE7A /* NSObject+SBJSON.h */,
+				F05E3237119017550059DE7A /* NSObject+SBJSON.m */,
+				F05E3238119017550059DE7A /* NSString+SBJSON.h */,
+				F05E3239119017550059DE7A /* NSString+SBJSON.m */,
+				F05E323A119017550059DE7A /* SBJSON.h */,
+				F05E323B119017550059DE7A /* SBJSON.m */,
+				F05E323C119017550059DE7A /* SBJsonBase.h */,
+				F05E323D119017550059DE7A /* SBJsonBase.m */,
+				F05E323E119017550059DE7A /* SBJsonParser.h */,
+				F05E323F119017550059DE7A /* SBJsonParser.m */,
+				F05E3240119017550059DE7A /* SBJsonWriter.h */,
+				F05E3241119017550059DE7A /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			path = Classes/JSON;
+			sourceTree = "<group>";
+		};
+		F0C58366119016BF006FD21C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +271,7 @@
 				F049F44D117D70E100B94F8E /* AuthViewController.xib in Resources */,
 				F04FAEC911876116001E7A1B /* Login.png in Resources */,
 				F04FAED7118762A6001E7A1B /* Button.png in Resources */,
+				F05E326511901B400059DE7A /* FolderViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,10 +287,15 @@
 				2804200B108E984D000629CD /* MasterViewController.m in Sources */,
 				2804200C108E984D000629CD /* DetailViewController.m in Sources */,
 				F049F44C117D70E100B94F8E /* AuthViewController.m in Sources */,
-				F04FAE601186A0BC001E7A1B /* NSObject+SBJSON.m in Sources */,
-				F04FAE611186A0BC001E7A1B /* NSString+SBJSON.m in Sources */,
-				F04FAE621186A0BC001E7A1B /* SBJSON.m in Sources */,
 				F04FAE631186A0BC001E7A1B /* GoogleReaderHelper.m in Sources */,
+				F05E3242119017550059DE7A /* NSObject+SBJSON.m in Sources */,
+				F05E3243119017550059DE7A /* NSString+SBJSON.m in Sources */,
+				F05E3244119017550059DE7A /* SBJSON.m in Sources */,
+				F05E3245119017550059DE7A /* SBJsonBase.m in Sources */,
+				F05E3246119017550059DE7A /* SBJsonParser.m in Sources */,
+				F05E3247119017550059DE7A /* SBJsonWriter.m in Sources */,
+				F05E326411901B400059DE7A /* FolderViewController.m in Sources */,
+				F03FB6E611902AB100B97815 /* FeedParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 
 @class MasterViewController;
 @class DetailViewController;
+@class FolderViewController;
 
 @interface Simple_RSSAppDelegate : NSObject <UIApplicationDelegate, AuthenticationProtocol> {
     
@@ -18,14 +19,14 @@
     
     UISplitViewController *splitViewController;
     
-    MasterViewController *masterViewController;
+    FolderViewController *folderViewController;
     DetailViewController *detailViewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
 @property (nonatomic,retain) IBOutlet UISplitViewController *splitViewController;
-@property (nonatomic,retain) IBOutlet MasterViewController *masterViewController;
+@property (nonatomic,retain) IBOutlet FolderViewController *folderViewController;
 @property (nonatomic,retain) IBOutlet DetailViewController *detailViewController;
 
 - (void)authenticate;
