@@ -107,7 +107,7 @@
 - (void) startSyncing {
 	//UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Check" message:@"Checking " delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] autorelease];
 	//[alert show];
-	feedParser = [[FeedParser alloc] init] ;
+		feedParser = [[FeedParser alloc] init] ;
 	feedParser.delegate = self; 
 	[feedParser start];
 }

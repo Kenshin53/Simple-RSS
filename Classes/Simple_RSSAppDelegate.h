@@ -13,6 +13,9 @@
 @class DetailViewController;
 @class FolderViewController;
 
+
+
+
 @interface Simple_RSSAppDelegate : NSObject <UIApplicationDelegate, AuthenticationProtocol> {
     
     UIWindow *window;
@@ -30,4 +33,5 @@
 @property (nonatomic,retain) IBOutlet DetailViewController *detailViewController;
 
 - (void)authenticate;
++ (NSNumber *)hexString2Number:(NSString *)hex;
 @end

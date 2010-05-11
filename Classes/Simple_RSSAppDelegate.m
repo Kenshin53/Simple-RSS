@@ -14,18 +14,45 @@
 #import "AuthViewController.h"
 #import "FolderViewController.h"
 
+
+
 @implementation Simple_RSSAppDelegate
 
 @synthesize window, splitViewController, folderViewController, detailViewController;
 
+- (void)dealloc {
+    [splitViewController release];
+    [window release];
+    [super dealloc];
+}
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
-    // Override point for customization after app launch    
-    
+
+//	char szNumbers[] = "2001 fb073e82d9943339 -1101110100110100100000 0xfb073e82d9943339";
+//	char * pEnd;
+//	long long int li1, li2, li3, li4;
+//	li1 = strtol (szNumbers,&pEnd,10);
+//	li2 = strtol (pEnd,&pEnd,16);
+//	li3 = strtol (pEnd,&pEnd,2);
+//	li4 = strtol (pEnd,NULL,0);
+//	printf ("The decimal equivalents are: %ld, %ld, %ld and %qd.\n", li1, li2, li3, li4);
+//	//return 0;
+//	unsigned long long num =1;
+//	
+//	for (int i=1; i<=64; i++) {
+//		num = num * 2;
+//		
+//	}
+//	NSLog(@"2^64 = %qu", num-1);
+
+	//[num release];
+	NSLog(@"Decimal number of 2387af3e8483a97a is %qd", [[Simple_RSSAppDelegate hexString2Number:@"2387af3e8483a97a"] longLongValue]);
+	//[Simple_RSSAppDelegate hexString2Number:@"123afd123"];
+	
 	folderViewController= [[FolderViewController alloc] initWithStyle:UITableViewStylePlain];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:folderViewController];
     
@@ -91,10 +118,29 @@
 #pragma mark -
 #pragma mark Memory management
 
-- (void)dealloc {
-    [splitViewController release];
-    [window release];
-    [super dealloc];
+//The purpose of this methods is to return the Value of the ID which is encoded in Hex 
+//The Value is in fact is an signed long long (64-bit integer)
+//This method is to support the syncing process in which 
++ (NSNumber *) hexString2Number: (NSString *)hex {
+	long long result =0;
+	
+	int digitValue = 0;
+	for (int i=0; i < [hex length]; i++) {
+
+		char currentCharacter = [hex characterAtIndex:i];
+		if (currentCharacter >= '0' && currentCharacter <='9' ) {
+			digitValue = currentCharacter- '0';
+			
+		} else if ( currentCharacter >= 'a' &&  currentCharacter <= 'f') {
+			digitValue = currentCharacter - 'a' +10;
+		} else 	if (currentCharacter >= 'A' && currentCharacter <= 'F') {
+			digitValue = currentCharacter - 'A' + 10;
+		} else {
+			return [NSNumber numberWithLongLong:-1];
+		}
+		result = result * 16 + digitValue;
+	}
+	return [NSNumber numberWithLongLong:result];
 }
 
 

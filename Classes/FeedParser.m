@@ -30,7 +30,7 @@
 	//NSString *atomURL = [NSString stringWithString:url];
 	downloadAndParsePool = [[NSAutoreleasePool alloc] init];
 	
-	NSURL *url = [[NSURL alloc] initWithString:@"http://www.google.com/reader/api/0/stream/contents/?xt=user/-/state/com.google/read&n=50"];
+	NSURL *url = [[NSURL alloc] initWithString:@"http://www.google.com/reader/api/0/subscription/list?allcomments=true&output=json&ck=1255643091105&client=scroll"];
 
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	NSString *SID = [defaults objectForKey:@"googleSID"];
@@ -136,13 +136,27 @@
 
 - (void) downloadEnded {
 	NSAssert2([NSThread isMainThread], @"%s at line %d called on secondary thread", __FUNCTION__, __LINE__);
-	//NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-   // NSLog(@"Downloaded %d byte", [jsonString length]* 2);
-    //NSDictionary *results = [jsonString JSONValue];
-	//[parsedFeeds removeAllObjects];
-	//parsedFeeds = [results objectForKey:@"items"];
-   
-//	[results release];
+	NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    NSLog(@"Downloaded %d byte", [jsonString length]* 2);
+    NSDictionary *results = [jsonString JSONValue];
+	[parsedFeeds removeAllObjects];
+	
+	NSArray *tempArray = [[NSArray alloc] initWithArray:[results objectForKey:@"subscriptions"]];
+
+	for (NSDictionary *aFeed in tempArray) {
+		//NSLog(@"Printing Feed attributes");
+//		
+//		NSLog(@"Feed ID: %@", [aFeed objectForKey:@"id"]);
+//		NSLog(@"Title: %@", [aFeed objectForKey:@"title"] );
+//		NSLog(@"originalURL: ");
+//		NSLog(@"Unread Count: ");
+//		NSLog(@"Last Update");
+		
+		
+	}
+	
+	[tempArray release];
+	//	[results release];
 	//[jsonString release];
 	
 	
