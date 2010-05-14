@@ -13,7 +13,14 @@
 #import "DetailViewController.h"
 #import "AuthViewController.h"
 #import "FolderViewController.h"
+#import "Experiment.h"
+#import "MySingleton.h"
 
+//The 
+@interface Simple_RSSAppDelegate ()
+- (void) copySQLiteDBToDocumentDirectory;
+
+@end
 
 
 @implementation Simple_RSSAppDelegate
@@ -31,27 +38,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
+	
 
-//	char szNumbers[] = "2001 fb073e82d9943339 -1101110100110100100000 0xfb073e82d9943339";
-//	char * pEnd;
-//	long long int li1, li2, li3, li4;
-//	li1 = strtol (szNumbers,&pEnd,10);
-//	li2 = strtol (pEnd,&pEnd,16);
-//	li3 = strtol (pEnd,&pEnd,2);
-//	li4 = strtol (pEnd,NULL,0);
-//	printf ("The decimal equivalents are: %ld, %ld, %ld and %qd.\n", li1, li2, li3, li4);
-//	//return 0;
-//	unsigned long long num =1;
-//	
-//	for (int i=1; i<=64; i++) {
-//		num = num * 2;
-//		
-//	}
-//	NSLog(@"2^64 = %qu", num-1);
-
-	//[num release];
-	NSLog(@"Decimal number of 2387af3e8483a97a is %qd", [[Simple_RSSAppDelegate hexString2Number:@"2387af3e8483a97a"] longLongValue]);
-	//[Simple_RSSAppDelegate hexString2Number:@"123afd123"];
+	//Code for copying file from the Bundle to Document directory
+	
+	[self copySQLiteDBToDocumentDirectory];
+	
+	
+	
+	[self testCode];
+	
 	
 	folderViewController= [[FolderViewController alloc] initWithStyle:UITableViewStylePlain];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:folderViewController];
@@ -91,6 +87,9 @@
 		NSLog(@"Authenticated!");
 		NSLog(@"Google SID: %@",[settings objectForKey:@"googleSID"]);
 		NSLog(@"Token ID: %@",[settings objectForKey:@"tokenID"]);
+		[[MySingleton sharedInstance] setGoogleSID:[settings objectForKey:@"googleSID"]];
+		//[[MySingleton sharedInstance] setTokenID:[settings objectForKey:@"tokenID"]];
+		
 	} else{
 							   
 		AuthViewController *loginVC = [[AuthViewController alloc] initWithNibName:@"AuthViewController" bundle:nil];
@@ -112,6 +111,8 @@
 - (void)AuthenticationSucceeded:(BOOL)succeeded {
 	if (succeeded) {
 		[splitViewController dismissModalViewControllerAnimated:YES];
+		NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
+		[[MySingleton sharedInstance] setGoogleSID:[settings objectForKey:@"googleSID"]];
 	}
 }
 
@@ -142,7 +143,33 @@
 	}
 	return [NSNumber numberWithLongLong:result];
 }
+#pragma mark -
+#pragma mark Supporting Codes
 
+- (void) copySQLiteDBToDocumentDirectory {
+	NSString *filePath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"SimpleRSS.sqlite"];
+	NSFileManager *fileManager = [[NSFileManager alloc] init];
+	if (![fileManager fileExistsAtPath:filePath]) {
+		NSError *error = nil;
+		[fileManager copyItemAtPath:[[NSBundle mainBundle] pathForResource:@"SimpleRSS" ofType:@"sqlite"] toPath:filePath error:&error];
+		if (error != NULL) {
+			NSLog(@"Error in copying file: err %@", [error description]);
+		} else {
+			NSLog(@"Copied");
+		}
+		
+	} else {
+		NSLog(@"Already existed");
+	}
+	[fileManager release];
+}
+
+#pragma mark -
+#pragma mark Test Codes
+
+- (void) testCode {
+	[Experiment TestDatabase];
+}
 
 @end
 

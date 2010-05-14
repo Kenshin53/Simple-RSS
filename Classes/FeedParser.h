@@ -28,6 +28,7 @@
 	NSAutoreleasePool *downloadAndParsePool;
 }
 
+
 @property (nonatomic, assign) id <FeedParserDelegate> delegate;
 @property (nonatomic, retain) NSMutableArray *parsedFeeds;
 @property BOOL done;

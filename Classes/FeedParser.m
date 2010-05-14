@@ -9,6 +9,10 @@
 #import "FeedParser.h"
 #import "JSON.h"
 #import "GoogleReaderHelper.h"
+#import "EGODatabase.h"
+#import "Feed.h"
+#import "EGODB.h"
+#import "MySingleton.h"
 
 @implementation FeedParser
 @synthesize delegate, parsedFeeds, downloadAndParsePool, rssConnection, done ;
@@ -21,7 +25,7 @@
 }
 
 - (void) start {
-	self.parsedFeeds = [NSMutableArray array ];
+	self.parsedFeeds = [[NSMutableArray alloc ] initWithCapacity:0];
 	[NSThread  detachNewThreadSelector:@selector(downloadAndParse) toTarget:self withObject:nil];
 	
 }
@@ -30,11 +34,17 @@
 	//NSString *atomURL = [NSString stringWithString:url];
 	downloadAndParsePool = [[NSAutoreleasePool alloc] init];
 	
+	
+
+	
+
+	
 	NSURL *url = [[NSURL alloc] initWithString:@"http://www.google.com/reader/api/0/subscription/list?allcomments=true&output=json&ck=1255643091105&client=scroll"];
 
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	NSString *SID = [defaults objectForKey:@"googleSID"];
-	
+//	Code for getting TokenID	
+	[[MySingleton sharedInstance] setTokenID:[GoogleReaderHelper getTokenID:SID]];
 // Testing of getting all the Unread Item in one request
 
 	
@@ -55,27 +65,6 @@
         } while (!done);
     }
 	
-/*
-	NSData *returnData = [NSURLConnection sendSynchronousRequest: getXMLRequest returningResponse: nil error: nil];
-	NSString *jsonString = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
-	NSLog(@"Number of character: %d", [jsonString length]);
-	//NSLog(@"Json string: %@", jsonString);
-	// Create a dictionary from the JSON string
-	NSDictionary *results = [jsonString JSONValue];
-	for (id key in results) {
-		
-       // NSLog(@"key: %@, value: %@", key, [results objectForKey:key]);
-		
-    }
-	parsedFeeds = [results objectForKey:@"items"];
-	if (self.delegate != nil && [self.delegate respondsToSelector:@selector(parserDidEndParsingData:)]) {
-		[self.delegate parserDidEndParsingData:self];
-	}
-	NSLog(@"Number of Feeds: %d",[parsedFeeds count]);
-	
-	//NSLog(@" Dictionary Result %@", results);
- 	//[jsonString release];
-*/
 	
 	
 	
@@ -142,22 +131,33 @@
 	[parsedFeeds removeAllObjects];
 	
 	NSArray *tempArray = [[NSArray alloc] initWithArray:[results objectForKey:@"subscriptions"]];
-
+	
+	EGODB *db = [[EGODB alloc] init];
+	
+	
 	for (NSDictionary *aFeed in tempArray) {
 		//NSLog(@"Printing Feed attributes");
-//		
-//		NSLog(@"Feed ID: %@", [aFeed objectForKey:@"id"]);
-//		NSLog(@"Title: %@", [aFeed objectForKey:@"title"] );
-//		NSLog(@"originalURL: ");
-//		NSLog(@"Unread Count: ");
-//		NSLog(@"Last Update");
+		Feed *tmpFeed = [[Feed alloc] initWithDictionary:aFeed];
+		[parsedFeeds addObject:tmpFeed];
+#pragma mark IMPORTANT		
+//might need to check if the feed is already existed
+		[db addFeed:tmpFeed];
+		NSLog(@"Feed ID: %@   Title: %@", [tmpFeed feedID], [tmpFeed title]);
+		[tmpFeed release];
 		
 		
 	}
+	[db release];
+	NSLog(@"Number of feeds: %d", [parsedFeeds count]);
+	
+	if (self.delegate != nil && [self.delegate respondsToSelector:@selector(parserDidEndParsingData:)]) {
+		[self.delegate parserDidEndParsingData:self];
+	}
+	
 	
 	[tempArray release];
 	//	[results release];
-	//[jsonString release];
+	[jsonString release];
 	
 	
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;

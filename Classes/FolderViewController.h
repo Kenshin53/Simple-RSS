@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "FeedParser.h"
 #import "DetailViewController.h"
+#import "ArticleParser.h"
 
-@interface FolderViewController : UITableViewController <FeedParserDelegate>{
+@interface FolderViewController : UITableViewController <FeedParserDelegate, ArticleParserDelegate>{
 	NSMutableArray *folders;
 	NSMutableArray *feeds;
 	FeedParser *feedParser;

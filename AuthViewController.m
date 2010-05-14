@@ -8,7 +8,7 @@
 
 #import "AuthViewController.h"
 #import "GoogleReaderHelper.h"
-
+#import "MySingleton.h"
 @interface AuthViewController ()
 
 - (void) dismissKeyboard;
@@ -66,6 +66,7 @@
 		}else {
 			tokenID = [[NSString alloc] initWithString:[GoogleReaderHelper getTokenID:googleSID]];	
 			
+						
 			[settings setObject:googleSID forKey:@"googleSID"];
 			[settings setObject:tokenID forKey:@"tokenID"];
 			[settings setBool:YES forKey:@"authenticated"];

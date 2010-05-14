@@ -34,4 +34,8 @@
 
 - (void)authenticate;
 + (NSNumber *)hexString2Number:(NSString *)hex;
+
+
+
+- (void) testCode;
 @end

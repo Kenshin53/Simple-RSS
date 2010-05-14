@@ -7,8 +7,10 @@
 //
 
 #import "FolderViewController.h"
-
-
+#import "MySingleton.h"
+#import "ArticleParser.h"
+#import "UserDefinedConst.h"
+#import "EGODB.h"
 @implementation FolderViewController
 
 @synthesize feeds, folders, feedParser;
@@ -17,23 +19,12 @@
 
 
 
-/*
-- (id)initWithStyle:(UITableViewStyle)style {
-    // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-    if (self = [super initWithStyle:style]) {
-    }
-    return self;
-}
-*/
-
-
-
-
 
 - (void)dealloc {
 	[feeds release];
 	[folders release];
 	[feedParser release];
+	
 	self.feedParser = nil;
 	[detailViewController release];
     [super dealloc];
@@ -62,30 +53,13 @@
 	self.navigationItem.rightBarButtonItem = refreshButton;
 	self.title = @"Folder View";
 	
-}
+	EGODB *db = [[EGODB alloc] init];
+	feeds = [[NSMutableArray alloc] initWithArray:[db getFeeds]];
+	[db release];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finishedParsingArticles:) name:kNotificationFinishedParsingArticles object:nil];
 
 
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
 }
-*/
-/*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-*/
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-}
-*/
-
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
@@ -107,7 +81,10 @@
 - (void) startSyncing {
 	//UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Check" message:@"Checking " delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] autorelease];
 	//[alert show];
-		feedParser = [[FeedParser alloc] init] ;
+	
+	NSLog(@"%s Google ID: %@", __FUNCTION__, [[MySingleton sharedInstance] googleSID]);
+	
+	feedParser = [[FeedParser alloc] init] ;
 	feedParser.delegate = self; 
 	[feedParser start];
 }
@@ -139,7 +116,8 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
 	
-	cell.textLabel.text = [NSString stringWithFormat:@"Row %d",indexPath.row];
+	cell.textLabel.text = [[feeds objectAtIndex:indexPath.row] title];
+	
     // Set up the cell...
 //	cell.textLabel.text = [[feeds objectAtIndex:[indexPath.row]] objectForKey:@"count"];
     return cell;
@@ -155,55 +133,40 @@
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark -
 #pragma mark <FeedParserDelegate> Methods
 
 - (void) parserDidEndParsingData:( FeedParser *)parser {
-	[feeds removeAllObjects];
-	[feeds arrayByAddingObjectsFromArray:feedParser.parsedFeeds];
-	[self.tableView reloadData];
+	if ([parser class] == [FeedParser class]) {
+		if ([feeds count] != [parser.parsedFeeds count]) {
+			[feeds removeAllObjects];
+			NSLog(@"Numbers of feeds loaded: %d",[parser.parsedFeeds count]);
+			feeds = parser.parsedFeeds;
+			[self.tableView reloadData];
+		}
+		
+		
+		ArticleParser *articleParser = [[ArticleParser alloc] init];
+		articleParser.delegate = self;
+		[articleParser start];
+	} else if ([parser class] == [ArticleParser class]) {
+		NSLog(@"Ended parsing ID list");
+	} 
+
+	
+	
+	
+									
+	
 	NSLog(@"Finished Parsing");
 }
+#pragma mark -
+#pragma mark Notification implementation
 
+- (void) finishedParsingArticles:(NSNotification *) notification {
+	NSLog(@"Running in %s at Line %d",__FUNCTION__, __LINE__ );
+}
 
 @end
 
