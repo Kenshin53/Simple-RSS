@@ -1,0 +1,1564 @@
+TSimple RSS
+v7
+r0
+t296214179.649033
+cCheck dependencies
+cProcessInfoPlistFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Info.plist" Simple_RSS-Info.plist
+cCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib"
+cCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DetailView.xib"
+cCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.xib"
+cCpResource "build/Release-iphonesimulator/Simple RSS.app/Login.png" Login.png
+cCpResource "build/Release-iphonesimulator/Simple RSS.app/Button.png" Button.png
+cCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.xib"
+cCpResource "build/Release-iphonesimulator/Simple RSS.app/SimpleRSS.sqlite" SimpleRSS.sqlite
+cCpResource "build/Release-iphonesimulator/Simple RSS.app/README.markdown" Classes/README.markdown
+cCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.xib"
+cProcessPCH /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch.pth Simple_RSS_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/main.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Simple_RSSAppDelegate.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Simple_RSSAppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/DetailViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/AuthViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/GoogleReaderHelper.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NSObject+SBJSON.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSObject+SBJSON.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NSString+SBJSON.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSString+SBJSON.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJSON.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJSON.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonBase.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonBase.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonParser.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonParser.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonWriter.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonWriter.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/FolderViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/FeedParser.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FeedParser.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Feed.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Feed.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabase.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabase.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseRequest.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRequest.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseResult.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseResult.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseRow.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRow.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Experiment.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODB.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/EGODB.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/MySingleton.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../MySingleton.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/RSSParser.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ArticleParser.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ArticleParser.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/DateHelper.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DateHelper.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/UserDefinedConst.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIAuthenticationDialog.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIAuthenticationDialog.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIInputStream.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIInputStream.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIFormDataRequest.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIFormDataRequest.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIHTTPRequest.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequest.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASINetworkQueue.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINetworkQueue.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASINSStringAdditions.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINSStringAdditions.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Reachability.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Reachability.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NewsItem.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NewsViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Simple RSS" normal i386
+cGenerateDSYMFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app.dSYM" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Simple RSS"
+cTouch "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk
+c000000004BF133110000000000000110
+t1274098449
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000004B9F1D6800000000001255B0
+t1268718952
+s1201584
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetwork.h
+c000000004B9F1D3B00000000000004CF
+t1268718907
+s1231
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h
+c000000004B9F1CC30000000000000A99
+t1268718787
+s2713
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BA03AB3000000000026F020
+t1268791987
+s2551840
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B9F1DE40000000000289C20
+t1268719076
+s2661408
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B9F1DD60000000000001355
+t1268719062
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/MobileCoreServices.framework/Headers/MobileCoreServices.h
+c000000004B9F255600000000000000EB
+t1268720982
+s235
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000004B9F2556000000000005AF90
+t1268720982
+s372624
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/SystemConfiguration.framework/Headers/SystemConfiguration.h
+c000000004B9F1CFF0000000000001A78
+t1268718847
+s6776
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000004B9F1D0B0000000000055570
+t1268718859
+s349552
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004BA6CAEC000000000000098F
+t1269222124
+s2447
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004BA6CB31000000000214E400
+t1269222193
+s34923520
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/Availability.h
+c000000004B9F1E7D0000000000001A1A
+t1268719229
+s6682
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/arpa/inet.h
+c00000000464386D70000000000001533
+t1178830551
+s5427
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/ifaddrs.h
+c00000000464386E00000000000000782
+t1178830560
+s1922
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/netdb.h
+c00000000464386E20000000000002F2B
+t1178830562
+s12075
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/netinet/in.h
+c00000000476344B700000000000052AA
+t1197687991
+s21162
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/netinet6/in6.h
+c00000000476344BA0000000000004970
+t1197687994
+s18800
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/sqlite3.h
+c000000004B9F1A8B000000000004187F
+t1268718219
+s268415
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/stdio.h
+c000000004748A1330000000000003D1D
+t1195942195
+s15645
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/sys/socket.h
+c00000000476344C000000000000055F1
+t1197688000
+s22001
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/zlib.h
+c000000004748ECC900000000000102A5
+t1195961545
+s66213
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/lib/libsqlite3.0.dylib
+c000000004B9F1ABC00000000000E1D70
+t1268718268
+s925040
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/lib/libz.1.1.3.dylib
+c00000000476CCCD10000000000006EE8
+t1198312657
+s28392
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/AuthViewController.h
+c000000004BD7FDE900000000000002E5
+t1272446441
+s741
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Button.png
+c000000004BD72B1A0000000000001209
+t1272392474
+s4617
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.m
+c000000004BEAD9F50000000000000C8A
+t1273682421
+s3210
+i"AuthViewController.h"
+i"GoogleReaderHelper.h"
+i"MySingleton.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.xib
+c000000004BD7F0E10000000000006368
+t1272443105
+s25448
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../MySingleton.m
+c000000004BF58C0300000000000004BB
+t1274383363
+s1211
+i"MySingleton.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIAuthenticationDialog.h
+c000000004BECD04C0000000000000388
+t1273811020
+s904
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIAuthenticationDialog.m
+c000000004BECD04C0000000000002124
+t1273811020
+s8484
+i"ASIAuthenticationDialog.h"
+i"ASIHTTPRequest.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIFormDataRequest.h
+c000000004BECD04C0000000000000A6D
+t1273811020
+s2669
+i<Foundation/Foundation.h>
+i"ASIHTTPRequest.h"
+i"ASIHTTPRequestConfig.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIFormDataRequest.m
+c000000004BECD04C0000000000002B8E
+t1273811020
+s11150
+i"ASIFormDataRequest.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequest.h
+c000000004BECD04C0000000000008755
+t1273811020
+s34645
+i<Foundation/Foundation.h>
+i<CFNetwork/CFNetwork.h>
+i<stdio.h>
+i"ASIHTTPRequestConfig.h"
+i"ASIHTTPRequestDelegate.h"
+i"ASIProgressDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequest.m
+c000000004BECD10A000000000002269E
+t1273811210
+s140958
+i"ASIHTTPRequest.h"
+i<zlib.h>
+i"Reachability.h"
+i"ASIAuthenticationDialog.h"
+i<MobileCoreServices/MobileCoreServices.h>
+i<SystemConfiguration/SystemConfiguration.h>
+i"ASIInputStream.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequestConfig.h
+c000000004BECDF390000000000000833
+t1273814841
+s2099
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequestDelegate.h
+c000000004BECD04C0000000000000599
+t1273811020
+s1433
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIInputStream.h
+c000000004BECD04C00000000000003C9
+t1273811020
+s969
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIInputStream.m
+c000000004BECD04C0000000000000BF0
+t1273811020
+s3056
+i"ASIInputStream.h"
+i"ASIHTTPRequest.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINSStringAdditions.h
+c000000004BECD04C0000000000000173
+t1273811020
+s371
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINSStringAdditions.m
+c000000004BECD04C000000000000030B
+t1273811020
+s779
+i"ASINSStringAdditions.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINetworkQueue.h
+c000000004BECD04C0000000000001182
+t1273811020
+s4482
+i<Foundation/Foundation.h>
+i"ASIHTTPRequestDelegate.h"
+i"ASIProgressDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINetworkQueue.m
+c000000004BECD04C0000000000002993
+t1273811020
+s10643
+i"ASINetworkQueue.h"
+i"ASIHTTPRequest.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIProgressDelegate.h
+c000000004BECD04C0000000000000678
+t1273811020
+s1656
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ArticleParser.h
+c000000004BEC21E60000000000000476
+t1273766374
+s1142
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ArticleParser.m
+c000000004BF58CE90000000000001ACC
+t1274383593
+s6860
+i"ArticleParser.h"
+i"EGODB.h"
+i"JSON.h"
+i"DateHelper.h"
+i"UserDefinedConst.h"
+i"EGODB.h"
+i"MySingleton.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.h
+c000000004BF7A6DD00000000000002BF
+t1274521309
+s703
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m
+c000000004BF79E6B0000000000000CF1
+t1274519147
+s3313
+i"DetailViewController.h"
+i"MasterViewController.h"
+i"AuthViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabase.h
+c000000004BE8CF1B0000000000000AD1
+t1273548571
+s2769
+i<Foundation/Foundation.h>
+i"EGODatabaseRequest.h"
+i"EGODatabaseResult.h"
+i"EGODatabaseRow.h"
+i<sqlite3.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabase.m
+c000000004BF5F5E80000000000002B4F
+t1274410472
+s11087
+i"EGODatabase.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRequest.h
+c000000004BE8CF1B000000000000096B
+t1273548571
+s2411
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRequest.m
+c000000004BE8CF1B0000000000000E01
+t1273548571
+s3585
+i"EGODatabaseRequest.h"
+i"EGODatabase.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseResult.h
+c000000004BE8CF1B0000000000000715
+t1273548571
+s1813
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseResult.m
+c000000004BE8CF1B000000000000082F
+t1273548571
+s2095
+i"EGODatabaseResult.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRow.h
+c000000004BE8CF1B0000000000000801
+t1273548571
+s2049
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRow.m
+c000000004BE8CF1B0000000000000E6D
+t1273548571
+s3693
+i"EGODatabaseRow.h"
+i"EGODatabaseResult.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Feed.h
+c000000004BE4EB590000000000000272
+t1273293657
+s626
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Feed.m
+c000000004BEA1696000000000000022C
+t1273632406
+s556
+i"Feed.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FeedParser.h
+c000000004BEA363C00000000000003C0
+t1273640508
+s960
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FeedParser.m
+c000000004BECDF39000000000000136C
+t1273814841
+s4972
+i"FeedParser.h"
+i"JSON.h"
+i"GoogleReaderHelper.h"
+i"EGODatabase.h"
+i"Feed.h"
+i"EGODB.h"
+i"MySingleton.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.h
+c000000004BED17B700000000000003AB
+t1273829303
+s939
+i<UIKit/UIKit.h>
+i"FeedParser.h"
+i"ArticleParser.h"
+i"ASIHTTPRequest.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m
+c000000004BF79F6B0000000000002269
+t1274519403
+s8809
+i"FolderViewController.h"
+i"MySingleton.h"
+i"ArticleParser.h"
+i"UserDefinedConst.h"
+i"EGODB.h"
+i"ASIHTTPRequest.h"
+i"ASINetworkQueue.h"
+i"DetailViewController.h"
+i"DateHelper.h"
+i"GoogleReaderHelper.h"
+i"JSON.h"
+i"RSSParser.h"
+i"NewsViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.xib
+c000000004BDFE3C00000000000001725
+t1272964032
+s5925
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/JSON.h
+c000000004B93BE5E00000000000008F9
+t1267973726
+s2297
+i"SBJSON.h"
+i"NSObject+SBJSON.h"
+i"NSString+SBJSON.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSObject+SBJSON.h
+c000000004B93BE5E0000000000000A01
+t1267973726
+s2561
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSObject+SBJSON.m
+c000000004B93BE5E000000000000089E
+t1267973726
+s2206
+i"NSObject+SBJSON.h"
+i"SBJsonWriter.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSString+SBJSON.h
+c000000004B93BE5E0000000000000916
+t1267973726
+s2326
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSString+SBJSON.m
+c000000004B93BE5E000000000000087D
+t1267973726
+s2173
+i"NSString+SBJSON.h"
+i"SBJsonParser.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJSON.h
+c000000004B93BE5E0000000000000AED
+t1267973726
+s2797
+i<Foundation/Foundation.h>
+i"SBJsonParser.h"
+i"SBJsonWriter.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJSON.m
+c000000004B93BE5E0000000000001ABC
+t1267973726
+s6844
+i"SBJSON.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonBase.h
+c000000004B93BE5E0000000000000B82
+t1267973726
+s2946
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonBase.m
+c000000004B93BE5E0000000000000AC1
+t1267973726
+s2753
+i"SBJsonBase.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonParser.h
+c000000004B93BE5E0000000000000C0B
+t1267973726
+s3083
+i<Foundation/Foundation.h>
+i"SBJsonBase.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonParser.m
+c000000004B93C6A300000000000036D0
+t1267975843
+s14032
+i"SBJsonParser.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonWriter.h
+c000000004B93BE5E0000000000001140
+t1267973726
+s4416
+i<Foundation/Foundation.h>
+i"SBJsonBase.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonWriter.m
+c000000004B93BE5E0000000000001F26
+t1267973726
+s7974
+i"SBJsonWriter.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/MasterViewController.h
+c000000004BCD321F000000000000019F
+t1271738911
+s415
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.h
+c000000004BF4B0C20000000000000350
+t1274327234
+s848
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.m
+c000000004BF737AA000000000000069A
+t1274492842
+s1690
+i"NewsItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.h
+c000000004BF749DF000000000000020E
+t1274497503
+s526
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m
+c000000004BF79F12000000000000124E
+t1274519314
+s4686
+i"NewsViewController.h"
+i"EGODB.h"
+i"NewsItem.h"
+i"DetailViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.xib
+c000000004BF748A6000000000000171F
+t1274497190
+s5919
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/README.markdown
+c000000004BE8CF1B0000000000000C1F
+t1273548571
+s3103
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.h
+c000000004BF4A6BC00000000000001D1
+t1274324668
+s465
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m
+c000000004BF73F380000000000001556
+t1274494776
+s5462
+i"RSSParser.h"
+i"EGODB.h"
+i"UserDefinedConst.h"
+i"JSON.h"
+i"ASIFormDataRequest.h"
+i"ASINetworkQueue.h"
+i"MySingleton.h"
+i"NewsItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Reachability.h
+c000000004BE7DCB80000000000000F19
+t1273486520
+s3865
+i<Foundation/Foundation.h>
+i<SystemConfiguration/SystemConfiguration.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Reachability.m
+c000000004BE7DCB800000000000023A7
+t1273486520
+s9127
+i<sys/socket.h>
+i<netinet/in.h>
+i<netinet6/in6.h>
+i<arpa/inet.h>
+i<ifaddrs.h>
+i<netdb.h>
+i<CoreFoundation/CoreFoundation.h>
+i"Reachability.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Simple_RSSAppDelegate.h
+c000000004BF411DA00000000000003AF
+t1274286554
+s943
+i<UIKit/UIKit.h>
+i"AuthViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Simple_RSSAppDelegate.m
+c000000004BF4100E00000000000011CB
+t1274286094
+s4555
+i"Simple_RSSAppDelegate.h"
+i"MasterViewController.h"
+i"DetailViewController.h"
+i"AuthViewController.h"
+i"FolderViewController.h"
+i"Experiment.h"
+i"MySingleton.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DB.h
+c000000004BECC7B2000000000000016D
+t1273808818
+s365
+i<Foundation/Foundation.h>
+i"Feed.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DateHelper.h
+c000000004BED03850000000000000124
+t1273824133
+s292
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DateHelper.m
+c000000004BEB874900000000000001C3
+t1273726793
+s451
+i"DateHelper.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DetailView.xib
+c000000004BF7A71B000000000000579E
+t1274521371
+s22430
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/EGODB.h
+c000000004BF756DA000000000000028F
+t1274500826
+s655
+i<Foundation/Foundation.h>
+i"EGODatabase.h"
+i"Feed.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/EGODB.m
+c000000004BF7757100000000000011B8
+t1274508657
+s4536
+i"EGODB.h"
+i"Feed.h"
+i"DateHelper.h"
+i"NewsItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.h
+c000000004BE8D42F0000000000000100
+t1273549871
+s256
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m
+c000000004BF5E9E100000000000009C2
+t1274407393
+s2498
+i"Experiment.h"
+i"EGODatabase.h"
+i"DB.h"
+i"EGODB.h"
+i"DateHelper.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.h
+c000000004BE0F8A700000000000003F1
+t1273034919
+s1009
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m
+c000000004BE0FBC8000000000000127E
+t1273035720
+s4734
+i"GoogleReaderHelper.h"
+i"JSON.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Login.png
+c000000004BD729570000000000033B26
+t1272392023
+s211750
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib
+c000000004BCD321F0000000000004AC7
+t1271738911
+s19143
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MySingleton.h
+c000000004BF58C1600000000000001E8
+t1274383382
+s488
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MySingleton.m
+c000000004BF58C0300000000000004BB
+t1274383363
+s1211
+i"MySingleton.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSS.sqlite
+c000000004BF4D0CC0000000000002000
+t1274335436
+s8192
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Simple_RSS_Prefix.pch
+c000000004BE00FED00000000000003EF
+t1272975341
+s1007
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h
+c000000004BF776F800000000000001FB
+t1274509048
+s507
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.m
+c000000004BF42085000000000000038E
+t1274290309
+s910
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app
+t1274521379
+s476
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app.dSYM
+t1274521310
+s102
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/AuthViewController.nib
+t1274428328
+s2397
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Button.png
+t1274428327
+s4617
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/DetailView.nib
+t1274521379
+s1219
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/FolderViewController.nib
+t1274428328
+s984
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Info.plist
+t1274428326
+s603
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Login.png
+t1274428328
+s211750
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/MainWindow.nib
+t1274428327
+s957
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/NewsViewController.nib
+t1274497297
+s984
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/PkgInfo
+t1274428326
+s8
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/README.markdown
+t1274428328
+s3103
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Simple RSS
+t1274521310
+s362060
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/SimpleRSS.sqlite
+t1274428328
+s8192
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIAuthenticationDialog.o
+t1274428330
+s37984
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIFormDataRequest.o
+t1274428330
+s26000
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIHTTPRequest.o
+t1274428332
+s235544
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIInputStream.o
+t1274428330
+s13268
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASINSStringAdditions.o
+t1274428330
+s4640
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASINetworkQueue.o
+t1274428330
+s32452
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ArticleParser.o
+t1274509081
+s21120
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/AuthViewController.o
+t1274428329
+s12260
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/DateHelper.o
+t1274428330
+s3180
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/DetailViewController.o
+t1274521309
+s11320
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODB.o
+t1274508658
+s14652
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabase.o
+t1274428330
+s23488
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseRequest.o
+t1274428330
+s10052
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseResult.o
+t1274428330
+s8396
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseRow.o
+t1274428330
+s11172
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Experiment.o
+t1274500826
+s2756
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Feed.o
+t1274428330
+s6296
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/FeedParser.o
+t1274500826
+s17400
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/FolderViewController.o
+t1274521310
+s34292
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/GoogleReaderHelper.o
+t1274428329
+s11852
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/MySingleton.o
+t1274497298
+s8744
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NSObject+SBJSON.o
+t1274428329
+s4392
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NSString+SBJSON.o
+t1274428329
+s4172
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NewsItem.o
+t1274497298
+s10200
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NewsViewController.o
+t1274521310
+s19844
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/RSSParser.o
+t1274509081
+s14456
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Reachability.o
+t1274428331
+s13728
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJSON.o
+t1274428329
+s11540
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonBase.o
+t1274428329
+s6972
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonParser.o
+t1274428329
+s20548
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonWriter.o
+t1274428329
+s16148
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Simple RSS.LinkFileList
+c000000004BF749110000000000001443
+t1274497297
+s5187
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Simple_RSSAppDelegate.o
+t1274521309
+s15888
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/UserDefinedConst.o
+t1274428330
+s1640
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/main.o
+t1274428329
+s2320
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/main.m
+c000000004BE5011D0000000000000177
+t1273299229
+s375
+i<UIKit/UIKit.h>
+
+N/var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch.pth
+t1274428329
+s1825324
+
+NSimple_RSS-Info.plist
+c000000004BCD321F000000000000038D
+t1271738911
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies296214179#296214179#0(0"0(0#1#0"4300911832#0"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIAuthenticationDialog.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIAuthenticationDialog.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121130.515922
+e296121130.688913
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIAuthenticationDialog.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIAuthenticationDialog.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@93"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIAuthenticationDialog.m296121130#296121130#0(0"0(0#0#85"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIAuthenticationDialog.m4300911832#2199"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIAuthenticationDialog.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIAuthenticationDialog.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIFormDataRequest.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIFormDataRequest.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121130.609302
+e296121130.762041
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIFormDataRequest.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIFormDataRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@88"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIFormDataRequest.m296121130#296121130#0(0"0(0#0#80"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIFormDataRequest.m4300911832#2189"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIFormDataRequest.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIFormDataRequest.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIHTTPRequest.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequest.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121130.689019
+e296121132.231318
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIHTTPRequest.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@84"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequest.m296121130#296121132#0(0"0(0#0#76"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequest.m4300911832#2181"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequest.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIHTTPRequest.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIInputStream.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIInputStream.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121130.535363
+e296121130.609196
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIInputStream.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIInputStream.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@84"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIInputStream.m296121130#296121130#0(0"0(0#0#76"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIInputStream.m4300911832#2181"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIInputStream.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASIInputStream.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASINSStringAdditions.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINSStringAdditions.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121130.928121
+e296121130.960017
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASINSStringAdditions.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINSStringAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@90"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINSStringAdditions.m296121130#296121130#0(0"0(0#0#82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINSStringAdditions.m4300911832#2193"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINSStringAdditions.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASINSStringAdditions.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASINetworkQueue.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINetworkQueue.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121130.762189
+e296121130.928006
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASINetworkQueue.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINetworkQueue.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@85"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINetworkQueue.m296121130#296121130#0(0"0(0#0#77"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINetworkQueue.m4300911832#2183"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINetworkQueue.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ASINetworkQueue.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ArticleParser.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ArticleParser.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296201881.833137
+e296201881.924863
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ArticleParser.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ArticleParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ArticleParser.m:104:2: warning: #warning be careful with the done variable [-W#warnings]
+o #warning be careful with the done variable
+o  ^
+o1 diagnostic generated.
+lSLF07#2@83"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ArticleParser.m296201881#296201881#0(197"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ArticleParser.m:104:2: warning: #warning be careful with the done variable [-W#warnings] #warning be careful with the done variable  ^1(22@56"#warning be careful with the done variable [-W#warnings]296201881#0#149#0(6@75"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ArticleParser.m296076393#104#2#0#0#10"#warning *0(0#0#75"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ArticleParser.m4300911832#2179"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ArticleParser.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/ArticleParser.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/AuthViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121129.491743
+e296121129.559675
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/AuthViewController.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@91"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.m296121129#296121129#0(0"0(0#0#83"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.m4300911832#2192"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/AuthViewController.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/DateHelper.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DateHelper.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121130.470867
+e296121130.515809
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/DateHelper.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DateHelper.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@72"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DateHelper.m296121130#296121130#0(0"0(0#0#64"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DateHelper.m4300911832#2165"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DateHelper.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/DateHelper.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/DetailViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296214108.876691
+e296214109.893551
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/DetailViewController.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@90"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m296214108#296214109#0(0"0(0#0#82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m4300911832#2193"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/DetailViewController.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODB.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/EGODB.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296201457.892422
+e296201458.438001
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODB.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/EGODB.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@67"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/EGODB.m296201457#296201458#0(0"0(0#0#59"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/EGODB.m4300911832#2155"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/EGODB.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODB.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabase.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabase.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121130.006732
+e296121130.305053
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabase.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabase.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@81"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabase.m296121130#296121130#0(0"0(0#0#73"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabase.m4300911832#2175"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabase.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabase.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseRequest.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRequest.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121130.037813
+e296121130.101413
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseRequest.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@88"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRequest.m296121130#296121130#0(0"0(0#0#80"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRequest.m4300911832#2189"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRequest.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseRequest.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseResult.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseResult.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121130.101539
+e296121130.175791
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseResult.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseResult.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@87"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseResult.m296121130#296121130#0(0"0(0#0#79"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseResult.m4300911832#2187"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseResult.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseResult.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseRow.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRow.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121130.175905
+e296121130.231893
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseRow.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRow.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@84"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRow.m296121130#296121130#0(0"0(0#0#76"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRow.m4300911832#2181"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRow.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/EGODatabaseRow.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Experiment.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296193626.512736
+e296193626.546056
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Experiment.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@72"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m296193626#296193626#0(0"0(0#0#64"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m4300911832#2165"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Experiment.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Feed.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Feed.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121129.987793
+e296121130.037698
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Feed.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Feed.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@74"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Feed.m296121129#296121130#0(0"0(0#0#66"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Feed.m4300911832#2161"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Feed.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Feed.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/FeedParser.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FeedParser.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296193626.391912
+e296193626.512141
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/FeedParser.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FeedParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@80"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FeedParser.m296193626#296193626#0(0"0(0#0#72"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FeedParser.m4300911832#2173"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FeedParser.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/FeedParser.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/FolderViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296214109.895985
+e296214110.283445
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/FolderViewController.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@90"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m296214109#296214110#0(0"0(0#0#82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m4300911832#2193"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/FolderViewController.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/GoogleReaderHelper.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121129.513776
+e296121129.577660
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/GoogleReaderHelper.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@80"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m296121129#296121129#0(0"0(0#0#72"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m4300911832#2181"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/GoogleReaderHelper.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/MySingleton.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../MySingleton.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296190097.806719
+e296190098.753154
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/MySingleton.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../MySingleton.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@84"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../MySingleton.m296190097#296190098#0(0"0(0#0#76"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../MySingleton.m4300911832#2178"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../MySingleton.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/MySingleton.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/MySingleton.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MySingleton.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121130.305161
+e296121130.371292
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/MySingleton.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MySingleton.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@73"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MySingleton.m296121130#296121130#0(0"0(0#0#65"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MySingleton.m4300911832#2167"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MySingleton.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/MySingleton.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NSObject+SBJSON.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSObject+SBJSON.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121129.559789
+e296121129.620661
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NSObject+SBJSON.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSObject+SBJSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@90"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSObject+SBJSON.m296121129#296121129#0(0"0(0#0#82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSObject+SBJSON.m4300911832#2188"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSObject+SBJSON.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NSObject+SBJSON.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NSString+SBJSON.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSString+SBJSON.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121129.577927
+e296121129.622066
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NSString+SBJSON.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSString+SBJSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@90"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSString+SBJSON.m296121129#296121129#0(0"0(0#0#82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSString+SBJSON.m4300911832#2188"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSString+SBJSON.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NSString+SBJSON.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NewsItem.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296190098.754212
+e296190098.822884
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NewsItem.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@78"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.m296190098#296190098#0(0"0(0#0#70"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.m4300911832#2169"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NewsItem.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NewsViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296214109.899351
+e296214110.250283
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NewsViewController.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@88"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m296214109#296214110#0(0"0(0#0#80"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m4300911832#2189"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/NewsViewController.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/RSSParser.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296201881.623866
+e296201881.832825
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/RSSParser.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@79"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m296201881#296201881#0(0"0(0#0#71"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m4300911832#2171"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/RSSParser.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Reachability.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Reachability.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121130.960125
+e296121131.054845
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Reachability.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Reachability.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@82"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Reachability.m296121130#296121131#0(0"0(0#0#74"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Reachability.m4300911832#2177"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Reachability.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Reachability.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJSON.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJSON.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121129.620777
+e296121129.692229
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJSON.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@81"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJSON.m296121129#296121129#0(0"0(0#0#73"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJSON.m4300911832#2170"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJSON.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJSON.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonBase.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonBase.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121129.622160
+e296121129.673721
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonBase.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonBase.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@85"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonBase.m296121129#296121129#0(0"0(0#0#77"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonBase.m4300911832#2178"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonBase.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonBase.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonParser.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonParser.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121129.673833
+e296121129.886233
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonParser.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@87"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonParser.m296121129#296121129#0(0"0(0#0#79"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonParser.m4300911832#2182"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonParser.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonParser.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonWriter.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonWriter.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121129.692339
+e296121129.814195
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonWriter.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonWriter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@87"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonWriter.m296121129#296121129#0(0"0(0#0#79"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonWriter.m4300911832#2182"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonWriter.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/SBJsonWriter.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Simple_RSSAppDelegate.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Simple_RSSAppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296214108.828435
+e296214109.897257
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Simple_RSSAppDelegate.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Simple_RSSAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@91"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Simple_RSSAppDelegate.m296214108#296214109#0(0"0(0#0#83"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Simple_RSSAppDelegate.m8386658438904696832#2195"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Simple_RSSAppDelegate.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Simple_RSSAppDelegate.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/UserDefinedConst.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121130.510631
+e296121130.535228
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/UserDefinedConst.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@78"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.m296121130#296121130#0(0"0(0#0#70"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.m4300911832#2177"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/UserDefinedConst.o"0#
+
+CCompileC "build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/main.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121129.292877
+e296121129.461603
+r1
+xCompileC
+xbuild/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/main.o
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@66"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/main.m296121129#296121129#0(0"0(0#0#58"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/main.m4300911832#2153"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/main.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.xib"
+s296121127.914078
+e296121128.558587
+r1
+xCompileXIB
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.xib
+lSLF07#2@44"CompileXIB Classes/../AuthViewController.xib296121127#296121128#0(0"0(0#0#85"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.xib4300911832#557"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/AuthViewController.nib" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.xib"0#
+
+CCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.xib"
+s296121127.956195
+e296121128.300092
+r1
+xCompileXIB
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.xib
+lSLF07#2@43"CompileXIB Classes/FolderViewController.xib296121127#296121128#0(0"0(0#0#84"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.xib4300911832#558"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/FolderViewController.nib" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.xib"0#
+
+CCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.xib"
+s296190097.516005
+e296190097.804503
+r1
+xCompileXIB
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.xib
+lSLF07#2@41"CompileXIB Classes/NewsViewController.xib296190097#296190097#0(0"0(0#0#82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.xib4300911832#554"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/NewsViewController.nib" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.xib"0#
+
+CCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DetailView.xib"
+s296214179.289197
+e296214179.642347
+r1
+xCompileXIB
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DetailView.xib
+lSLF07#2@25"CompileXIB DetailView.xib296214179#296214179#0(0"0(0#0#66"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DetailView.xib4300911832#530"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/DetailView.nib" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DetailView.xib"0#
+
+CCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib"
+s296121126.637308
+e296121127.913943
+r1
+xCompileXIB
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib296121126#296121127#0(0"0(0#0#66"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib4300911832#530"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/MainWindow.nib" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib"0#
+
+CCpResource "build/Release-iphonesimulator/Simple RSS.app/Button.png" Button.png
+s296121127.954509
+e296121127.995027
+r1
+xCpResource
+xbuild/Release-iphonesimulator/Simple RSS.app/Button.png
+xButton.png
+lSLF07#2@15"Copy Button.png296121127#296121127#0(0"0(0#0#62"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Button.png4300911832#525"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Button.png" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app"0#
+
+CCpResource "build/Release-iphonesimulator/Simple RSS.app/Login.png" Login.png
+s296121127.953531
+e296121128.008874
+r1
+xCpResource
+xbuild/Release-iphonesimulator/Simple RSS.app/Login.png
+xLogin.png
+lSLF07#2@14"Copy Login.png296121127#296121128#0(0"0(0#0#61"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Login.png4300911832#524"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Login.png" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app"0#
+
+CCpResource "build/Release-iphonesimulator/Simple RSS.app/README.markdown" Classes/README.markdown
+s296121128.301254
+e296121128.306551
+r1
+xCpResource
+xbuild/Release-iphonesimulator/Simple RSS.app/README.markdown
+xClasses/README.markdown
+lSLF07#2@28"Copy Classes/README.markdown296121128#296121128#0(0"0(0#0#75"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/README.markdown4300911832#538"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/README.markdown" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app"0#
+
+CCpResource "build/Release-iphonesimulator/Simple RSS.app/SimpleRSS.sqlite" SimpleRSS.sqlite
+s296121128.300296
+e296121128.328498
+r1
+xCpResource
+xbuild/Release-iphonesimulator/Simple RSS.app/SimpleRSS.sqlite
+xSimpleRSS.sqlite
+lSLF07#2@21"Copy SimpleRSS.sqlite296121128#296121128#0(0"0(0#0#68"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSS.sqlite4300911832#531"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSS.sqlite" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app"0#
+
+CGenerateDSYMFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app.dSYM" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Simple RSS"
+s296214110.768082
+e296214110.971719
+r1
+xGenerateDSYMFile
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app.dSYM
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Simple RSS
+lSLF07#2@126"GenerateDSYMFile "build/Release-iphonesimulator/Simple RSS.app.dSYM" "build/Release-iphonesimulator/Simple RSS.app/Simple RSS"296214110#296214110#0(0"0(0#0#107"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Simple RSS4300911832#441"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Simple RSS" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app.dSYM"0#
+
+CLd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Simple RSS" normal i386
+s296214110.283542
+e296214110.767810
+r1
+xLd
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Simple RSS
+xnormal
+xi386
+lSLF07#2@112"Link /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Simple RSS296214110#296214110#0(0"0(0#0#0"4300911832#1062"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk "-L/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" -filelist "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Objects-normal/i386/Simple RSS.LinkFileList" -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -framework CFNetwork -framework SystemConfiguration -framework MobileCoreServices -lz.1.1.3 -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Simple RSS"0#
+
+CProcessInfoPlistFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Info.plist" Simple_RSS-Info.plist
+s296121126.608460
+e296121126.637213
+r1
+xProcessInfoPlistFile
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Info.plist
+xSimple_RSS-Info.plist
+lSLF07#2@29"Process Simple_RSS-Info.plist296121126#296121126#0(0"0(0#0#73"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Simple_RSS-Info.plist4300911832#537"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Simple_RSS-Info.plist -genpkginfo "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app/Info.plist"0#
+
+CProcessPCH /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch.pth Simple_RSS_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s296121128.558737
+e296121129.292740
+r1
+xProcessPCH
+x/var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch.pth
+xSimple_RSS_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@32"Precompile Simple_RSS_Prefix.pch296121128#296121129#0(0"0(0#0#73"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Simple_RSS_Prefix.pch4300911832#2025"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/include" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources/i386" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphonesimulator/Simple RSS.build/DerivedSources" -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Simple_RSS_Prefix.pch" -o /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-fsxrsdxsjsiwbedhnpoajtrmoifj/Simple_RSS_Prefix.pch.pth0#
+
+CTouch "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app"
+s296214179.646024
+e296214179.648988
+r1
+xTouch
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app
+lSLF07#2@102"Touch /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app296214179#296214179#0(0"0(0#0#0"4300911832#313"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphonesimulator/Simple RSS.app"0#
+
