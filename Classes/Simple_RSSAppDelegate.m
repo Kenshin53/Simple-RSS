@@ -122,27 +122,6 @@
 //The purpose of this methods is to return the Value of the ID which is encoded in Hex 
 //The Value is in fact is an signed long long (64-bit integer)
 //This method is to support the syncing process in which 
-+ (NSNumber *) hexString2Number: (NSString *)hex {
-	long long result =0;
-	
-	int digitValue = 0;
-	for (int i=0; i < [hex length]; i++) {
-
-		char currentCharacter = [hex characterAtIndex:i];
-		if (currentCharacter >= '0' && currentCharacter <='9' ) {
-			digitValue = currentCharacter- '0';
-			
-		} else if ( currentCharacter >= 'a' &&  currentCharacter <= 'f') {
-			digitValue = currentCharacter - 'a' +10;
-		} else 	if (currentCharacter >= 'A' && currentCharacter <= 'F') {
-			digitValue = currentCharacter - 'A' + 10;
-		} else {
-			return [NSNumber numberWithLongLong:-1];
-		}
-		result = result * 16 + digitValue;
-	}
-	return [NSNumber numberWithLongLong:result];
-}
 #pragma mark -
 #pragma mark Supporting Codes
 

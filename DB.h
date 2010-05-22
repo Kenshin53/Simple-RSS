@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FMDatabase.h"
+
 #import "Feed.h"
 
 @interface DB : NSObject {
-	FMDatabase *db;
+//	FMDatabase *db;
 }
 
 - (void) addFeed:(Feed *) aFeed;

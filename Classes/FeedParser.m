@@ -26,6 +26,7 @@
 
 - (void) start {
 	self.parsedFeeds = [[NSMutableArray alloc ] initWithCapacity:0];
+	
 	[NSThread  detachNewThreadSelector:@selector(downloadAndParse) toTarget:self withObject:nil];
 	
 }

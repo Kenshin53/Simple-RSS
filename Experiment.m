@@ -58,8 +58,27 @@
 //	}
 //	[newDB release];
 
-	NSLog(@"Today is: %d", [DateHelper getTimeStampFromNDaysAgo:0]);
-	NSLog(@"Yesterday is: %d", [DateHelper getTimeStampFromNDaysAgo:1]);	
+//	NSLog(@"Today is: %d", [DateHelper getTimeStampFromNDaysAgo:0]);
+//	NSLog(@"Yesterday is: %d", [DateHelper getTimeStampFromNDaysAgo:1]);	
+
+//	EGODB *db = [[EGODB alloc] init];
+//	if ([db deleteFeedWithFeedID:@"feed/http://iphone.keyvisuals.com/feed/"]) {
+//		NSLog(@"Deleted ");
+//	}else {
+//		NSLog(@"Failed to delete");
+//	}
+//
+	
+//	NSString *tesString = @"tag:google.com,2005:reader/item/d963a00fe280dd12";
+//	NSString *searchString = @"/";
+//	
+//	NSRange position = [ tesString rangeOfString:searchString options:NSBackwardsSearch];
+//	
+//	NSString *rs = [tesString substringFromIndex:position.location +1 ];
+//	
+//	NSLog(@"Test String: %@ \n Results: %@",tesString, rs);
+//
+	
 }
 
 @end

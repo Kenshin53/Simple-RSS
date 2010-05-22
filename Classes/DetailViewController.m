@@ -13,7 +13,7 @@
 
 @implementation DetailViewController
 
-@synthesize navigationBar, popoverController, detailItem;
+@synthesize navigationBar, popoverController, detailItem, webview;
 
 #pragma mark -
 #pragma mark Managing the popover controller
@@ -119,7 +119,7 @@
 - (void)dealloc {
     [popoverController release];
     [navigationBar release];
-    
+    [webview release];
     [detailItem release];
     [super dealloc];
 }
@@ -127,19 +127,5 @@
 #pragma mark -
 #pragma mark Other Function
 
-- (IBAction) Login {
-//	UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Hell yeah" message:@"Yeah, Hell yeah." delegate:self cancelButtonTitle:@"Nah" otherButtonTitles:nil] autorelease];
-	
-//	[alert show];
-	//AuthViewController *loginVC  = [[AuthViewController alloc] initWithNibName:@"AuthViewController" bundle:nil];
-//	[loginVC setModalPresentationStyle:UIModalPresentationFormSheet];
-//	[loginVC setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-//	[self presentModalViewController:loginVC animated:YES];
-//	TestVC *test = [[TestVC alloc] initWithNibName:@"TestVC" bundle:nil];
-//	[test setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-//	[test setModalPresentationStyle:UIModalPresentationFormSheet];
-//	[self presentModalViewController:test animated:YES];
-//	[test release];
-}
 
 @end

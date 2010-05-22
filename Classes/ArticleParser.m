@@ -57,32 +57,34 @@
 		[getXMLRequest setHTTPMethod: @"GET" ];
 		[url release];
 	} else {
-		NSURL *url = [[NSURL alloc] initWithString:kURLgetArticleContent];		
+		NSURL *url = [[NSURL alloc] initWithString:kURLGetArticleContent];		
 		getXMLRequest = [[NSMutableURLRequest alloc ] initWithURL: url ]; 
 		[getXMLRequest setValue:[NSString stringWithString:cookie] forHTTPHeaderField:@"Cookie"];
 		[getXMLRequest setHTTPMethod: @"POST" ];
+		NSString *postString = [[NSString alloc] initWithString:@"T=8QsSK0Glg1xKkRjjjdy8TA&i=-6013231960744277528&i=7377911055855070692&i=5213498259692358569&it=0&it=0&it=0"];
 		
-		NSString *postString = [[NSString alloc] init];
+		NSString *postString2 = [[NSString alloc] init];
 		NSString *tokenId = [[MySingleton sharedInstance] tokenID];
 		NSLog(@"Token ID: %@",tokenId);
 		
-		//NSString *postString = [[NSString alloc] initWithString:@"T=xAEujjE546nzzQ6lxU7V2w&i=1139251541222054863&it=0"];
-		postString = [postString stringByAppendingFormat:@"T=%@",tokenId];
+		
+		postString2 = [postString2 stringByAppendingFormat:@"T=%@",tokenId];
 		
 		for (int i =0; i <3; i++) {
-			postString = [postString stringByAppendingFormat:@"&i=%@",[unreadItemIDs objectAtIndex:i]];
+			postString2 = [postString2 stringByAppendingFormat:@"&i=%@",[unreadItemIDs objectAtIndex:i]];
 			
 		}
 		
 		for (int i =0; i<3; i++) {
-			postString= [postString stringByAppendingString:@"&it=0"];
+			postString2= [postString2 stringByAppendingString:@"&it=0"];
 		}
 		
-		NSLog(@"POST message: \n %@", postString);
+		NSLog(@"POST message: \n %@", postString2);
 		NSString *msgLength = [NSString stringWithFormat:@"%d", [postString length]];
 		[getXMLRequest addValue: msgLength forHTTPHeaderField:@"Content-Length"];
 		[getXMLRequest setHTTPBody:[postString dataUsingEncoding:NSUTF8StringEncoding]];
 		[postString release];
+		[postString2 release];
 		[url release];
 	}
 
@@ -184,7 +186,7 @@
 		NSLog(@"Number of unread item since yesterday: %d", [self.unreadItemIDs count]);
 		[tempArray release];	
 		EGODB *db = [[EGODB alloc] init];
-		ItemIDsFromDatabase = [db getArticleIDSinceReferedDate:1];
+		ItemIDsFromDatabase = (NSArray *)[db getArticleIDSinceTimeStamp:1];
 		[db release];
 		doneListingUnread = YES;
 		done = NO;

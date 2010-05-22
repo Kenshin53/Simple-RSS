@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "FeedParser.h"
-#import "DetailViewController.h"
 #import "ArticleParser.h"
-
-@interface FolderViewController : UITableViewController <FeedParserDelegate, ArticleParserDelegate>{
+#import "ASIHTTPRequest.h"
+@class ArticleParser, DetailViewController, FeedParser, ASINetworkQueue;
+@interface FolderViewController : UITableViewController <FeedParserDelegate, ArticleParserDelegate, ASIHTTPRequestDelegate>{
+	
+	ASINetworkQueue *networkQueue;
+	
 	NSMutableArray *folders;
 	NSMutableArray *feeds;
 	FeedParser *feedParser;
@@ -24,4 +27,6 @@
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
 
 - (void) startSyncing; //Start syncing with Google Reader service 
+
+
 @end

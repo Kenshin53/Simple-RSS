@@ -33,7 +33,7 @@
 @property (nonatomic,retain) IBOutlet DetailViewController *detailViewController;
 
 - (void)authenticate;
-+ (NSNumber *)hexString2Number:(NSString *)hex;
+
 
 
 

@@ -13,11 +13,14 @@
 	NSString *tokenID;
 	BOOL doneParsingFeed;
 	NSString *googleSID;
+	NSInteger timeStamp; 
 	
 }
 
 @property (retain) NSString *tokenID;
 @property BOOL doneParsingFeed;
 @property (retain) NSString *googleSID;
+@property NSInteger timeStamp;
+
 +( id )sharedInstance;
 @end

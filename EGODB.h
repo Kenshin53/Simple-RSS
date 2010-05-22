@@ -9,13 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "EGODatabase.h"
 #import "Feed.h"
+@class NewsItem;
 @interface EGODB : NSObject {
 
 	EGODatabase *db;
 }
 - (BOOL) addFeed:(Feed *) aFeed;
 - (NSArray *) getFeeds ;
-- (NSArray *) getArticleIDSinceReferedDate: (NSInteger) days;	
+- (NSMutableSet *) getArticleIDSinceTimeStamp: (NSInteger) days;	
+- (NSMutableSet *) getFeedID;
+- (BOOL) deleteFeedWithFeedID:(NSString *)feedID;
+- (BOOL) addNewsItem: (NewsItem *) aNewsItem;
+- (NSArray *) getNewsItemsWithFeedID: (NSString *) feedID;
 
-
++ (NSNumber *) hexString2Number: (NSString *)hex;
 @end

@@ -8,7 +8,7 @@
 #import "MySingleton.h"
 
 @implementation MySingleton
-@synthesize tokenID, doneParsingFeed, googleSID;
+@synthesize tokenID, doneParsingFeed, googleSID, timeStamp;
 static MySingleton * sharedInstance = nil;
 
 

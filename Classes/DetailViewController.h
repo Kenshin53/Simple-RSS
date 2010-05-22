@@ -8,18 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController <UIPopoverControllerDelegate, UISplitViewControllerDelegate> {
+@interface DetailViewController : UIViewController <UIPopoverControllerDelegate, UISplitViewControllerDelegate, UIWebViewDelegate> {
     
     UIPopoverController *popoverController;
     UINavigationBar *navigationBar;
-    
+    UIWebView *webview;
     id detailItem;
 }
 
 @property (nonatomic, retain) UIPopoverController *popoverController;
 @property (nonatomic, retain) IBOutlet UINavigationBar *navigationBar;
-
+@property (nonatomic, retain) IBOutlet UIWebView *webview;
 @property (nonatomic, retain) id detailItem;
 
-- (IBAction) Login;
+
 @end
