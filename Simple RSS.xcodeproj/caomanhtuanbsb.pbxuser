@@ -30,8 +30,8 @@
 	2804200A108E984D000629CD /* DetailViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1724, 1980}}";
-			sepNavSelRange = "{3307, 0}";
-			sepNavVisRange = "{2615, 663}";
+			sepNavSelRange = "{2730, 0}";
+			sepNavVisRange = "{2529, 731}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -50,7 +50,6 @@
 			FC3014EF11A5B4750051A7B6 /* RSSParser.m:181 */,
 			FC3015A311A6346E0051A7B6 /* EGODB.m:92 */,
 			FC3015A511A634850051A7B6 /* RSSParser.m:116 */,
-			FC3016C311A7D78B0051A7B6 /* NewsViewController.m:159 */,
 		);
 		codeSenseManager = FCCF7BCC11A1916200F0BCE8 /* Code sense */;
 		executables = (
@@ -325,6 +324,11 @@
 			FC3016DD11A7DE820051A7B6 /* PBXTextBookmark */ = FC3016DD11A7DE820051A7B6 /* PBXTextBookmark */;
 			FC3016DE11A7DE820051A7B6 /* PBXTextBookmark */ = FC3016DE11A7DE820051A7B6 /* PBXTextBookmark */;
 			FC3016DF11A7DE820051A7B6 /* PBXTextBookmark */ = FC3016DF11A7DE820051A7B6 /* PBXTextBookmark */;
+			FC3016E411A846A70051A7B6 /* PBXTextBookmark */ = FC3016E411A846A70051A7B6 /* PBXTextBookmark */;
+			FC3016E511A846A70051A7B6 /* PBXTextBookmark */ = FC3016E511A846A70051A7B6 /* PBXTextBookmark */;
+			FC3016E611A846A70051A7B6 /* PBXTextBookmark */ = FC3016E611A846A70051A7B6 /* PBXTextBookmark */;
+			FC3016E711A846A70051A7B6 /* PBXTextBookmark */ = FC3016E711A846A70051A7B6 /* PBXTextBookmark */;
+			FC3016E811A846A70051A7B6 /* PBXTextBookmark */ = FC3016E811A846A70051A7B6 /* PBXTextBookmark */;
 			FCE228EC11A3BF2A001F1B6B = FCE228EC11A3BF2A001F1B6B /* PBXTextBookmark */;
 			FCE2291C11A3DD2D001F1B6B = FCE2291C11A3DD2D001F1B6B /* PBXTextBookmark */;
 			FCE2293311A3E43F001F1B6B = FCE2293311A3E43F001F1B6B /* PBXTextBookmark */;
@@ -425,8 +429,8 @@
 	F049CFA411998D6700101980 /* EGODB.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1380, 2355}}";
-			sepNavSelRange = "{3346, 0}";
-			sepNavVisRange = "{2618, 1318}";
+			sepNavSelRange = "{2533, 0}";
+			sepNavVisRange = "{1904, 1272}";
 		};
 	};
 	F049D15F119B054200101980 /* MySingleton.h */ = {
@@ -452,9 +456,9 @@
 	};
 	F049D1D4119BA3CB00101980 /* RSSParser.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {720, 2925}}";
-			sepNavSelRange = "{5304, 4}";
-			sepNavVisRange = "{5386, 76}";
+			sepNavIntBoundsRect = "{{0, 0}, {1102, 2865}}";
+			sepNavSelRange = "{3896, 0}";
+			sepNavVisRange = "{2829, 1374}";
 			sepNavWindowFrame = "{{15, 315}, {750, 558}}";
 		};
 	};
@@ -756,7 +760,7 @@
 		ignoreCount = 0;
 		lineNumber = 181;
 		location = "Simple RSS";
-		modificationTime = 296214115.580175;
+		modificationTime = 296218278.594606;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -1661,11 +1665,11 @@
 		delayBeforeContinue = 0;
 		fileReference = FC30159B11A631CB0051A7B6 /* EGODB.m */;
 		functionName = "-getArticleIDSinceTimeStamp:";
-		hitCount = 0;
+		hitCount = 1;
 		ignoreCount = 0;
 		lineNumber = 92;
 		location = "Simple RSS";
-		modificationTime = 296214115.58098;
+		modificationTime = 296218297.862204;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -1679,11 +1683,11 @@
 		delayBeforeContinue = 0;
 		fileReference = F049D1D4119BA3CB00101980 /* RSSParser.m */;
 		functionName = "+processUnreadItemIDs:withNetworkQueue:";
-		hitCount = 0;
+		hitCount = 1;
 		ignoreCount = 0;
 		lineNumber = 116;
 		location = "Simple RSS";
-		modificationTime = 296214115.581715;
+		modificationTime = 296218300.619871;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -2170,9 +2174,9 @@
 	};
 	FC3015FC11A780260051A7B6 /* NewsViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1196, 2745}}";
-			sepNavSelRange = "{2613, 0}";
-			sepNavVisRange = "{1966, 1102}";
+			sepNavIntBoundsRect = "{{0, 0}, {1196, 2610}}";
+			sepNavSelRange = "{4254, 0}";
+			sepNavVisRange = "{3680, 996}";
 		};
 	};
 	FC30163611A78E6A0051A7B6 /* PBXTextBookmark */ = {
@@ -2828,24 +2832,6 @@
 		vrLen = 1008;
 		vrLoc = 1472;
 	};
-	FC3016C311A7D78B0051A7B6 /* NewsViewController.m:159 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = FC3015FC11A780260051A7B6 /* NewsViewController.m */;
-		functionName = "-tableView:didSelectRowAtIndexPath:";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 159;
-		location = "Simple RSS";
-		modificationTime = 296214115.583767;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
-	};
 	FC3016C511A7D78F0051A7B6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = FC3015FC11A780260051A7B6 /* NewsViewController.m */;
@@ -2922,6 +2908,53 @@
 		rType = 0;
 		vrLen = 1102;
 		vrLoc = 1966;
+	};
+	FC3016E411A846A70051A7B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
+		name = "DetailViewController.m: 100";
+		rLen = 0;
+		rLoc = 2730;
+		rType = 0;
+		vrLen = 731;
+		vrLoc = 2529;
+	};
+	FC3016E511A846A70051A7B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F049CFA411998D6700101980 /* EGODB.m */;
+		name = "EGODB.m: 92";
+		rLen = 0;
+		rLoc = 2533;
+		rType = 0;
+		vrLen = 1272;
+		vrLoc = 1904;
+	};
+	FC3016E611A846A70051A7B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F049D1D4119BA3CB00101980 /* RSSParser.m */;
+		name = "RSSParser.m: 131";
+		rLen = 0;
+		rLoc = 3896;
+		rType = 0;
+		vrLen = 1374;
+		vrLoc = 2829;
+	};
+	FC3016E711A846A70051A7B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC3015FC11A780260051A7B6 /* NewsViewController.m */;
+		rLen = 0;
+		rLoc = 159;
+		rType = 1;
+	};
+	FC3016E811A846A70051A7B6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC3015FC11A780260051A7B6 /* NewsViewController.m */;
+		name = "NewsViewController.m: 160";
+		rLen = 0;
+		rLoc = 4254;
+		rType = 0;
+		vrLen = 996;
+		vrLoc = 3680;
 	};
 	FCCF7BB611A1916000F0BCE8 /* Simple RSS */ = {
 		isa = PBXExecutable;
@@ -3101,7 +3134,7 @@
 		ignoreCount = 0;
 		lineNumber = 73;
 		location = "Simple RSS";
-		modificationTime = 296214115.577058;
+		modificationTime = 296218278.591832;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -3119,7 +3152,7 @@
 		ignoreCount = 0;
 		lineNumber = 244;
 		location = "Simple RSS";
-		modificationTime = 296214115.57848;
+		modificationTime = 296218278.59287;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -3231,7 +3264,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		location = libobjc.A.dylib;
-		modificationTime = 296214115.586727;
+		modificationTime = 296218278.598873;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 		symbolName = objc_exception_throw;
@@ -3250,7 +3283,7 @@
 		ignoreCount = 0;
 		lineNumber = 172;
 		location = "Simple RSS";
-		modificationTime = 296214115.57933;
+		modificationTime = 296218278.59374;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -3568,7 +3601,7 @@
 		ignoreCount = 0;
 		lineNumber = 82;
 		location = "Simple RSS";
-		modificationTime = 296214115.57579;
+		modificationTime = 296218278.590392;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
