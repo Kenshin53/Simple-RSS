@@ -10,9 +10,12 @@
 #import "EGODB.h"
 #import "NewsItem.h"
 #import "DetailViewController.h"
-
+#import "Group.h"
+#import "UserDefinedConst.h"
+#import "NewsCell.h"
+#import "MySingleton.h"
 @implementation NewsViewController
-@synthesize newsList, detailVC, parentFeed;
+@synthesize newsList, detailVC, parentFolder, tmpCell,sectionsList;
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -21,10 +24,14 @@
 - (void) dealloc {
 	[newsList release];
 	[detailVC release];
-	[parentFeed release];
+	[parentFolder release];
+	[sectionsList release]; 
 	[super dealloc];
 }
 
+- (CGSize)contentSizeForViewInPopoverView {
+    return CGSizeMake(320.0, 600.0);
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,15 +39,22 @@
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = NO;
 	EGODB *db = [[EGODB alloc] init];
-	
-	if (parentFeed != nil) {
-		newsList = [[NSArray alloc] initWithArray:[db getNewsItemsWithFeedID:[parentFeed feedID]]];
+
+	if (parentFolder != nil) {
+		newsList = [[NSMutableArray alloc] initWithArray:[db getNewsItemsWithGroupID:[parentFolder groupID]]];
 	}
 	[db release];
 	
+	
+
+	
+	self.tableView.rowHeight = 100;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(newsItemAdded:) name:kNotificationNewsItemAdded object:nil];
 }
+
+
 
 
 /*
@@ -77,78 +91,63 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
 	
-    return 1;
+	
+    return [[parentFolder feedsDict] count];
 
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+	// The header for the section is the region name -- get this from the region at the section index.
+	Feed *aFeed = [[parentFolder feedsDict] objectForKey:[[[parentFolder feedsDict] allKeys] objectAtIndex:section]];
+	
+	return [aFeed title];
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-	if (newsList != nil & [newsList count] >0) 
-		return [newsList count];
-	
-    return 0;
+	Feed *aFeed = [[parentFolder feedsDict] objectForKey:[[[parentFolder feedsDict] allKeys] objectAtIndex:section]];
+	NSPredicate *myPredicate = [NSPredicate predicateWithFormat:@"feedID == %@",[aFeed feedID]];
+	NSArray *filteredArray = [newsList filteredArrayUsingPredicate:myPredicate];
+	return [filteredArray count];
 }
 
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
-    
-    // Configure the cell...
 
-    if ([newsList count] >0) {
-		cell.textLabel.text = [[newsList objectAtIndex:indexPath.row] title];
-							   
+	
+	static NSString *CellIdentifier = @"NewsCell";
+	
+	NewsCell *cell = (NewsCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	
+	if (cell == nil) {
+		[[NSBundle mainBundle] loadNibNamed:@"NewsCell" owner:self options:nil];
+		cell = tmpCell;
+		self.tmpCell = nil;
 	}
-    return cell;
+
+
+	Feed *aFeed = [[parentFolder feedsDict] objectForKey:[[[parentFolder feedsDict] allKeys] objectAtIndex:indexPath.section]];
+	NSPredicate *myPredicate = [NSPredicate predicateWithFormat:@"feedID == %@",[aFeed feedID]];
+	NSArray *filteredArray = [newsList filteredArrayUsingPredicate:myPredicate];	
+	NewsItem *aNews = [filteredArray objectAtIndex:indexPath.row];
+	
+	cell.newsTitleLabel.text = [aNews title];
+	cell.feedTitleLabel.text = [[[parentFolder feedsDict] objectForKey:[aNews feedID]] title];
+	NSString *faviconPath = [[[MySingleton sharedInstance] faviconPaths] objectForKey:[aNews feedID]];
+	if (faviconPath != nil && ![faviconPath isEqualToString:@"None"]) {
+		NSLog(@"File Path %@-", faviconPath);
+		cell.favIconView.image = [UIImage imageWithContentsOfFile:faviconPath];
+	}else {
+		cell.favIconView.image = [UIImage imageNamed:@"Feed.png"];
+	}
+
+	return cell;
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 
 #pragma mark -
@@ -156,7 +155,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
-	[detailVC.webview loadHTMLString:[[newsList objectAtIndex:indexPath.row] summary] baseURL:nil];
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+	
+	NSString *htmlWrapper = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"SimpleRSSTest" ofType:@"html"]];
+	NSLog(@"HTML file loaded %d byte", [htmlWrapper length]);
+	NSString *formattedContent = [[NSString alloc] initWithFormat:htmlWrapper, 
+									[[newsList objectAtIndex:indexPath.row] link],
+									[[newsList objectAtIndex:indexPath.row] title],
+									[[newsList objectAtIndex:indexPath.row] summary]];
+	[detailVC.webview loadHTMLString:formattedContent baseURL:nil];
+	
+	[[NSURLCache sharedURLCache] removeAllCachedResponses];
+	NSLog(@"Formatted String: %d", [formattedContent length]);
+	[formattedContent release];
+	[htmlWrapper release];
 }
 
 
@@ -173,8 +185,31 @@
 - (void)viewDidUnload {
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
+#warning may have to remove observer
 }
 
+- (void) newsItemAdded:(NSNotification *) notification {
+	NewsItem *aNewsItem = [notification object];
+
+	NSMutableArray *paths = [[[NSMutableArray alloc] init] autorelease];
+	if ([[parentFolder feedsDict] objectForKey:[aNewsItem feedID]] != nil){
+		[newsList insertObject:aNewsItem atIndex:0];
+		int count = [[[[parentFolder feedsDict] objectForKey:[aNewsItem feedID]] unreadCount] intValue];
+		count++;
+		[[[parentFolder feedsDict] objectForKey:[aNewsItem feedID]] setUnreadCount:[NSNumber numberWithInt:count]];
+		
+		NSLog(@"adding new object to newslist");
+		NSIndexPath *path = [NSIndexPath indexPathForRow:0 inSection:0];
+		[paths addObject:path];
+	}
+	[self.tableView beginUpdates];
+	[self.tableView insertRowsAtIndexPaths:[NSArray arrayWithArray:paths] withRowAnimation:UITableViewRowAnimationNone];
+	[self.tableView endUpdates];
+
+	
+
+	
+}
 
 
 

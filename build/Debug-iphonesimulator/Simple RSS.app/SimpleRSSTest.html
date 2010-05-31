@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title> </title>
+
+	<link rel="stylesheet" type="text/css" href="SimpleRSS.css" /> 
+	<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+	<!--<meta name="viewport" content="initial-scale=1" /> -->
+	
+	 <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+	 <style type="text/css">
+	 p {
+	display:block;
+	margin: 1em 0px;
+}
+a:hover{
+	color:#666;
+	text-decoration:underline;
+}
+#content-wrapper{
+	background-color:#FFFFFF 	;
+	color: #262626;
+	font-family: "Time New Roman", serif;
+
+	margin: 25px 15px 25px 15px;  /*Margin of the page*/
+	width:758;
+}
+#header-wrapper {
+	margin-bottom: 15px ;
+
+
+	
+}
+#header-wrapper h1  {
+	font-size:3.0em;
+	text-align: center;
+	border-bottom:  #202020	;				
+	color:black;
+	
+	} 
+	#header-wrapper h1 a{
+		text-decoration: none;
+		color:#222;
+		}
+	#header-wrapper h1 a:visited{
+		color:#888;
+	}
+	hr{
+		border-style:double;
+	}
+	#main-content  {
+		color:#222;
+		font-size:1.2em;
+		font-weight: normal;
+		line-height: 1.8em;
+		padding-bottom:0.5em;
+}
+
+#main-content p.intro::first-letter {
+	float:left;
+	font-size:3.0em;
+	font-weight:bold;
+	line-height:92%;
+	margin: 0px 3px 0px 0px;
+} 
+#main-content p a {
+	color: ##BA1820;
+	text-decoration:underline;
+}
+
+	 </style> 
+	 <script type="text/javascript"> 
+	  $(document).ready(function(){
+		$("p:first").addClass("intro");
+		$("img").remove
+	 });
+	</script>
+	</head>
+	<body>
+		<div id="content-wrapper"> 
+			<div id = "header-wrapper">
+				<h2><a id="title" href="%@"> %@ </a></h1>
+			<!--	<span id="date"> 26th May 2010</span>
+				<span id="author">  John Grubber</span>
+				-->
+			</div> <!-- END OF header-wrapper-->
+			<hr>
+			<div id="main-content">
+			%@
+			</div> <!-- END OF main-content-->
+		</div> <!-- END OF content-wrapper -->
+
+	</body>
+</html>

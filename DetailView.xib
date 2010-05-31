@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="66"/>
+			<integer value="8"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -50,7 +50,6 @@
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBUIBarStyle">2</int>
 						<object class="NSArray" key="IBUIItems">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUINavigationItem" id="545001945">
@@ -67,7 +66,7 @@
 						<reference key="NSSuperview" ref="647120888"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MSAxIDEAA</bytes>
+							<bytes key="NSRGB">MCAwIDAAA</bytes>
 						</object>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIDataDetectorTypes">1</int>

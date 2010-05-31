@@ -11,7 +11,8 @@
 NSString * const kNotificationFinishedParsingArticles =@"FinishedParsingArticles";
 
 NSString * const kNotificationFeedListDidChanged =@"FeedListDidChanged";
-
+NSString * const kNotificationAddedNewFolder = @"AddedNewFolder";
+NSString * const kNotificationNewsItemAdded = @"NewsItemAdded";
 
 //URL constant
 NSString * const kURLgetUnreadItemIDsFormat = @"http://google.com/reader/api/0/stream/items/ids?n=5000&s=user/-/state/com.google/reading-list&ot=%d&xt=user/-/state/com.google/read&output=json";

@@ -8,11 +8,12 @@
 
 extern NSString * const kNotificationFinishedParsingArticles;
 extern NSString * const kNotificationFeedListDidChanged;
-
+extern NSString * const kNotificationAddedNewFolder;
+extern NSString * const kNotificationNewsItemAdded;
 extern NSString * const kURLSubscriptionFetchingFormat;
 extern NSString * const kURLgetUnreadItemIDsFormat;
 extern NSString * const kURLGetArticleContent;
 extern NSString * const kURLGetTagList;
 
 
-static int  keepUnreadPeriod =7;
+static int  keepUnreadPeriod = 7;

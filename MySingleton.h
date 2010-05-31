@@ -14,6 +14,7 @@
 	BOOL doneParsingFeed;
 	NSString *googleSID;
 	NSInteger timeStamp; 
+	NSMutableDictionary *faviconPaths;
 	
 }
 
@@ -21,6 +22,7 @@
 @property BOOL doneParsingFeed;
 @property (retain) NSString *googleSID;
 @property NSInteger timeStamp;
+@property (retain)	NSMutableDictionary *faviconPaths;
 
 +( id )sharedInstance;
 @end

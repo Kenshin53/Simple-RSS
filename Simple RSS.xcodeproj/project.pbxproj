@@ -57,6 +57,17 @@
 		F0D15AED119909A500D396DF /* Experiment.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D15AEC119909A500D396DF /* Experiment.m */; };
 		FC3015FE11A780260051A7B6 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3015FC11A780260051A7B6 /* NewsViewController.m */; };
 		FC3015FF11A780260051A7B6 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3015FD11A780260051A7B6 /* NewsViewController.xib */; };
+		FC795EDA11AB72BB004F50F9 /* SimpleRSS.css in Resources */ = {isa = PBXBuildFile; fileRef = FC795ED811AB72BA004F50F9 /* SimpleRSS.css */; };
+		FC795EDB11AB72BB004F50F9 /* SimpleRSSTest.html in Resources */ = {isa = PBXBuildFile; fileRef = FC795ED911AB72BB004F50F9 /* SimpleRSSTest.html */; };
+		FC8D6DDF11AD2390007F94AB /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8D6DDE11AD2390007F94AB /* Group.m */; };
+		FC8D709111AE7215007F94AB /* Football.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8D709011AE7215007F94AB /* Football.png */; };
+		FC8D711C11AE9BB6007F94AB /* FolderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8D711B11AE9BB6007F94AB /* FolderCell.m */; };
+		FC8D712111AE9C4C007F94AB /* FolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC8D712011AE9C4C007F94AB /* FolderCell.xib */; };
+		FC8D72B111AFD0F4007F94AB /* Folder.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8D72B011AFD0F4007F94AB /* Folder.png */; };
+		FC8D72C311AFD1AC007F94AB /* Folder1.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8D72C211AFD1AC007F94AB /* Folder1.png */; };
+		FC8D72DC11AFD5D0007F94AB /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8D72DB11AFD5D0007F94AB /* NewsCell.m */; };
+		FC8D72E411AFD8C0007F94AB /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC8D72E311AFD8C0007F94AB /* NewsCell.xib */; };
+		FC8D731D11AFDDEA007F94AB /* Feed.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8D731C11AFDDEA007F94AB /* Feed.png */; };
 		FCEFD6EC11A4E44C00FB001D /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFD6EB11A4E44C00FB001D /* NewsItem.m */; };
 /* End PBXBuildFile section */
 
@@ -78,20 +89,20 @@
 		F001839A119520CD003DD2E4 /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
 		F00183CB11953891003DD2E4 /* SimpleRSS.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleRSS.sqlite; sourceTree = "<group>"; };
 		F00183E3119539A6003DD2E4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		F03FB6E411902AB100B97815 /* FeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedParser.h; sourceTree = "<group>"; };
-		F03FB6E511902AB100B97815 /* FeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedParser.m; sourceTree = "<group>"; wrapsLines = 1; };
+		F03FB6E411902AB100B97815 /* FeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedParser.h; path = Classes/FeedParser.h; sourceTree = "<group>"; };
+		F03FB6E511902AB100B97815 /* FeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedParser.m; path = Classes/FeedParser.m; sourceTree = "<group>"; wrapsLines = 1; };
 		F049CFA311998D6700101980 /* EGODB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODB.h; sourceTree = "<group>"; };
-		F049CFA411998D6700101980 /* EGODB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODB.m; sourceTree = "<group>"; };
+		F049CFA411998D6700101980 /* EGODB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODB.m; sourceTree = "<group>"; wrapsLines = 1; };
 		F049D15F119B054200101980 /* MySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MySingleton.h; path = ../MySingleton.h; sourceTree = "<group>"; };
 		F049D160119B054200101980 /* MySingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MySingleton.m; path = ../MySingleton.m; sourceTree = "<group>"; };
 		F049D1D3119BA3CB00101980 /* RSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSParser.h; sourceTree = "<group>"; };
-		F049D1D4119BA3CB00101980 /* RSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSParser.m; sourceTree = "<group>"; };
-		F049D1E6119BA5E100101980 /* ArticleParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleParser.h; sourceTree = "<group>"; };
-		F049D1E7119BA5E100101980 /* ArticleParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleParser.m; sourceTree = "<group>"; wrapsLines = 1; };
+		F049D1D4119BA3CB00101980 /* RSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSParser.m; sourceTree = "<group>"; wrapsLines = 1; };
+		F049D1E6119BA5E100101980 /* ArticleParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticleParser.h; path = Classes/ArticleParser.h; sourceTree = "<group>"; };
+		F049D1E7119BA5E100101980 /* ArticleParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticleParser.m; path = Classes/ArticleParser.m; sourceTree = "<group>"; wrapsLines = 1; };
 		F049D258119BBDAD00101980 /* DateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateHelper.h; sourceTree = "<group>"; };
 		F049D259119BBDAD00101980 /* DateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHelper.m; sourceTree = "<group>"; };
-		F049D2DE119BEA3600101980 /* UserDefinedConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefinedConst.h; sourceTree = "<group>"; };
-		F049D2DF119BEA3600101980 /* UserDefinedConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefinedConst.m; sourceTree = "<group>"; wrapsLines = 1; };
+		F049D2DE119BEA3600101980 /* UserDefinedConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDefinedConst.h; path = ../UserDefinedConst.h; sourceTree = "<group>"; };
+		F049D2DF119BEA3600101980 /* UserDefinedConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDefinedConst.m; path = ../UserDefinedConst.m; sourceTree = "<group>"; wrapsLines = 1; };
 		F049F449117D70E100B94F8E /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthViewController.h; path = ../AuthViewController.h; sourceTree = "<group>"; };
 		F049F44A117D70E100B94F8E /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthViewController.m; path = ../AuthViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
 		F049F44B117D70E100B94F8E /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AuthViewController.xib; path = ../AuthViewController.xib; sourceTree = "<group>"; };
@@ -150,6 +161,20 @@
 		FC3015FB11A780260051A7B6 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		FC3015FC11A780260051A7B6 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		FC3015FD11A780260051A7B6 /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		FC795ED811AB72BA004F50F9 /* SimpleRSS.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = SimpleRSS.css; sourceTree = "<group>"; };
+		FC795ED911AB72BB004F50F9 /* SimpleRSSTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SimpleRSSTest.html; sourceTree = "<group>"; };
+		FC8D6DDD11AD2390007F94AB /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		FC8D6DDE11AD2390007F94AB /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		FC8D709011AE7215007F94AB /* Football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Football.png; sourceTree = "<group>"; };
+		FC8D711A11AE9BB6007F94AB /* FolderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FolderCell.h; path = ../FolderCell.h; sourceTree = "<group>"; };
+		FC8D711B11AE9BB6007F94AB /* FolderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FolderCell.m; path = ../FolderCell.m; sourceTree = "<group>"; };
+		FC8D712011AE9C4C007F94AB /* FolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolderCell.xib; sourceTree = "<group>"; };
+		FC8D72B011AFD0F4007F94AB /* Folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Folder.png; sourceTree = "<group>"; };
+		FC8D72C211AFD1AC007F94AB /* Folder1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Folder1.png; sourceTree = "<group>"; };
+		FC8D72DA11AFD5D0007F94AB /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		FC8D72DB11AFD5D0007F94AB /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		FC8D72E311AFD8C0007F94AB /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		FC8D731C11AFDDEA007F94AB /* Feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feed.png; sourceTree = "<group>"; };
 		FCEFD6EA11A4E44C00FB001D /* NewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsItem.h; sourceTree = "<group>"; };
 		FCEFD6EB11A4E44C00FB001D /* NewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +222,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				FC8D718911AED5F5007F94AB /* Trash */,
 				FC3015DF11A6CFDB0051A7B6 /* Models */,
 				FC3015E011A6D01E0051A7B6 /* View Controller */,
 				F03FB6E311902A9500B97815 /* Parser Classes */,
@@ -207,8 +233,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources-iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				F049D2DE119BEA3600101980 /* UserDefinedConst.h */,
-				F049D2DF119BEA3600101980 /* UserDefinedConst.m */,
 				F0A75597119D16160081498E /* CFNetwork.framework */,
 				F0A75599119D16210081498E /* SystemConfiguration.framework */,
 				F0A7559B119D162D0081498E /* MobileCoreServices.framework */,
@@ -229,8 +253,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources-iPad */ = {
 			isa = PBXGroup;
 			children = (
-				F04FAED11187611E001E7A1B /* Images */,
 				F00183CB11953891003DD2E4 /* SimpleRSS.sqlite */,
+				FC795ED811AB72BA004F50F9 /* SimpleRSS.css */,
+				FC795ED911AB72BB004F50F9 /* SimpleRSSTest.html */,
+				F04FAED11187611E001E7A1B /* Images */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				2804203B108E9BAB000629CD /* DetailView.xib */,
 				8D1107310486CEB800E47090 /* Simple_RSS-Info.plist */,
@@ -252,12 +278,10 @@
 		F03FB6E311902A9500B97815 /* Parser Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F03FB6E411902AB100B97815 /* FeedParser.h */,
-				F03FB6E511902AB100B97815 /* FeedParser.m */,
 				F049D1D3119BA3CB00101980 /* RSSParser.h */,
 				F049D1D4119BA3CB00101980 /* RSSParser.m */,
-				F049D1E6119BA5E100101980 /* ArticleParser.h */,
-				F049D1E7119BA5E100101980 /* ArticleParser.m */,
+				F049D2DE119BEA3600101980 /* UserDefinedConst.h */,
+				F049D2DF119BEA3600101980 /* UserDefinedConst.m */,
 			);
 			name = "Parser Classes";
 			path = Classes;
@@ -275,7 +299,11 @@
 		F04FAED11187611E001E7A1B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FC8D72C211AFD1AC007F94AB /* Folder1.png */,
+				FC8D709011AE7215007F94AB /* Football.png */,
 				F04FAED6118762A6001E7A1B /* Button.png */,
+				FC8D731C11AFDDEA007F94AB /* Feed.png */,
+				FC8D72B011AFD0F4007F94AB /* Folder.png */,
 				F04FAEC811876116001E7A1B /* Login.png */,
 			);
 			name = Images;
@@ -371,6 +399,8 @@
 				F001839A119520CD003DD2E4 /* Feed.m */,
 				FCEFD6EA11A4E44C00FB001D /* NewsItem.h */,
 				FCEFD6EB11A4E44C00FB001D /* NewsItem.m */,
+				FC8D6DDD11AD2390007F94AB /* Group.h */,
+				FC8D6DDE11AD2390007F94AB /* Group.m */,
 			);
 			name = Models;
 			path = Classes;
@@ -379,6 +409,7 @@
 		FC3015E011A6D01E0051A7B6 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FC8D705111AE6348007F94AB /* TableView Cell */,
 				28042009108E984D000629CD /* DetailViewController.h */,
 				2804200A108E984D000629CD /* DetailViewController.m */,
 				F049F449117D70E100B94F8E /* AuthViewController.h */,
@@ -393,6 +424,30 @@
 			);
 			name = "View Controller";
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		FC8D705111AE6348007F94AB /* TableView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FC8D711A11AE9BB6007F94AB /* FolderCell.h */,
+				FC8D711B11AE9BB6007F94AB /* FolderCell.m */,
+				FC8D712011AE9C4C007F94AB /* FolderCell.xib */,
+				FC8D72DA11AFD5D0007F94AB /* NewsCell.h */,
+				FC8D72DB11AFD5D0007F94AB /* NewsCell.m */,
+				FC8D72E311AFD8C0007F94AB /* NewsCell.xib */,
+			);
+			name = "TableView Cell";
+			sourceTree = "<group>";
+		};
+		FC8D718911AED5F5007F94AB /* Trash */ = {
+			isa = PBXGroup;
+			children = (
+				F049D1E6119BA5E100101980 /* ArticleParser.h */,
+				F049D1E7119BA5E100101980 /* ArticleParser.m */,
+				F03FB6E411902AB100B97815 /* FeedParser.h */,
+				F03FB6E511902AB100B97815 /* FeedParser.m */,
+			);
+			name = Trash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,6 +508,14 @@
 				F00183CC11953891003DD2E4 /* SimpleRSS.sqlite in Resources */,
 				F0D15AC0119906C200D396DF /* README.markdown in Resources */,
 				FC3015FF11A780260051A7B6 /* NewsViewController.xib in Resources */,
+				FC795EDA11AB72BB004F50F9 /* SimpleRSS.css in Resources */,
+				FC795EDB11AB72BB004F50F9 /* SimpleRSSTest.html in Resources */,
+				FC8D709111AE7215007F94AB /* Football.png in Resources */,
+				FC8D712111AE9C4C007F94AB /* FolderCell.xib in Resources */,
+				FC8D72B111AFD0F4007F94AB /* Folder.png in Resources */,
+				FC8D72C311AFD1AC007F94AB /* Folder1.png in Resources */,
+				FC8D72E411AFD8C0007F94AB /* NewsCell.xib in Resources */,
+				FC8D731D11AFDDEA007F94AB /* Feed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +560,9 @@
 				F0A755AD119D17260081498E /* Reachability.m in Sources */,
 				FCEFD6EC11A4E44C00FB001D /* NewsItem.m in Sources */,
 				FC3015FE11A780260051A7B6 /* NewsViewController.m in Sources */,
+				FC8D6DDF11AD2390007F94AB /* Group.m in Sources */,
+				FC8D711C11AE9BB6007F94AB /* FolderCell.m in Sources */,
+				FC8D72DC11AFD5D0007F94AB /* NewsCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

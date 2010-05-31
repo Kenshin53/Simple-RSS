@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@class ASINetworkQueue;
+@class ASINetworkQueue,ASIHTTPRequest;
 
 @interface RSSParser : NSObject {
 	
 }
 
 + (void) processSubscription:(NSString *)jsonString;
++ (void) processTagList: (NSString *) jsonString;
 + (void) processUnreadItemIDs: (NSString *) jsonString withNetworkQueue: (ASINetworkQueue *)queue;
 + (void) addNewsItemsToDatabase: (NSString *) jsonString;
++ (NSURL *) getFaviconURL:(NSString *)feedID;
++ (void) addFaviconRequests: (ASINetworkQueue *)queue;
++ (void) processDownloadedFavicon:(ASIHTTPRequest *)request ;
 @end

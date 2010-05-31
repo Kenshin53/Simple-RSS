@@ -12,6 +12,23 @@
 @implementation NewsItem
 
 @synthesize newsID, feedID, title, published, link, summary, author, unread, starred;
+-(void) dealloc {
+	[newsID release];
+	[feedID release];
+	[title release];
+	[published release];
+	[link release];
+	[summary release];
+	[author release];
+	
+	
+	[super dealloc];
+}
+
+-(NSComparisonResult) compareWithFeedID:(id)anotherNewsItem{
+	return [[self feedID] compare:[anotherNewsItem feedID]];
+	
+}
 
 -(id) initWithDicitonary:(NSDictionary *) aNewsItem {
 	
@@ -47,17 +64,5 @@
 	return self;
 }
 
--(void) dealloc {
-	[newsID release];
-	[feedID release];
-	[title release];
-	[published release];
-	[link release];
-	[summary release];
-	[author release];
-	
-	
-	[super dealloc];
-}
 
 @end

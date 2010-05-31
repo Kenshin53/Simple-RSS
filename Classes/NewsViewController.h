@@ -7,15 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-@class DetailViewController, Feed;
+@class DetailViewController, Feed, Group, NewsCell;
 
 @interface NewsViewController : UITableViewController {
-	Feed *parentFeed;
+	NewsCell *tmpCell;
+	Group *parentFolder;
+	
 	NSMutableArray *newsList;
 	DetailViewController *detailVC;
+	NSMutableArray *sectionsList;
+	NSArray *feedsList;
 }
 
+@property (nonatomic, assign) IBOutlet NewsCell *tmpCell;
+@property (nonatomic, retain) NSMutableArray *sectionsList;
 @property (nonatomic, retain) NSMutableArray *newsList;
 @property (nonatomic, retain) DetailViewController *detailVC;
-@property (nonatomic, retain) Feed *parentFeed;
+@property (nonatomic, retain) Group *parentFolder;
 @end

@@ -19,10 +19,11 @@
 #import "JSON.h"
 #import "RSSParser.h"
 #import "NewsViewController.h"
+#import "Group.h"
 
 @implementation FolderViewController
 
-@synthesize feeds, folders, feedParser;
+@synthesize feeds, folders, feedParser,tmpCell, myProgressView;
 
 @synthesize detailViewController;
 
@@ -36,6 +37,7 @@
 	[networkQueue release];
 	self.feedParser = nil;
 	[detailViewController release];
+	[myProgressView release];
     [super dealloc];
 }
 
@@ -53,16 +55,45 @@
 }
 
 
+- (void) getFaviconFilePaths {
+  NSString *filePath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"FaviconsPath.plist"];
+
+	NSFileManager *fileManager = [[NSFileManager alloc] init];
+	NSMutableDictionary *paths;
+	if ([fileManager fileExistsAtPath:filePath]) {
+		paths = [[NSMutableDictionary alloc] initWithContentsOfFile:filePath];
+	} else {
+		
+		paths = [[NSMutableDictionary alloc] init];
+	}
+	
+	[[MySingleton sharedInstance] setFaviconPaths:paths];
+
+
+	[fileManager release];
+
+	NSLog(@"Number of item: %d", [[[MySingleton sharedInstance] faviconPaths] count]);
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+	[self getFaviconFilePaths];
+
+	
+	
+	myProgressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleBar];
+	[myProgressView setProgress:0];
 	networkQueue = [[ASINetworkQueue alloc] init];
 	[networkQueue cancelAllOperations];
 	[networkQueue setRequestDidFinishSelector:@selector(imageFetchComplete:)];
-
-
+	[networkQueue setRequestDidFailSelector:@selector(requestDidFail:)];
+	[networkQueue setDownloadProgressDelegate:myProgressView];
+	[networkQueue setQueueDidFinishSelector:@selector(queueDidFinish:)];
+	
 	[networkQueue setMaxConcurrentOperationCount:1];
 	[networkQueue setDelegate:self];
+	
+	
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
 	UIBarButtonItem *refreshButton =[[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(startSyncing)] autorelease];
@@ -71,11 +102,16 @@
 	self.title = @"Folder View";
 	
 	EGODB *db = [[EGODB alloc] init];
-	feeds = [[NSMutableArray alloc] initWithArray:[db getFeeds]];
+	feeds = [[NSMutableArray alloc] initWithArray:[db getUnreadFeeds]];
+	folders = [[NSMutableArray alloc] initWithArray:[db getGroups]];
+	[self.tableView setRowHeight:60.0];
 	[db release];
+	
+	self.tableView.rowHeight = 45.0;
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finishedParsingArticles:) name:kNotificationFinishedParsingArticles object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(feedListDidChange:) name:kNotificationFeedListDidChanged object:nil];
-	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(folderListDidChange:) name:kNotificationAddedNewFolder object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(newsItemAdded:) name:kNotificationNewsItemAdded object:nil];
 
 }
 
@@ -155,13 +191,13 @@
 - (void)imageFetchComplete:(ASIHTTPRequest *)request
 {
 	NSLog(@"Request Type: ------------ %@ ------------",[[request userInfo] objectForKey:@"RequestType"]);
-
+	NSLog(@"Progress :%f", [myProgressView progress] );
 	if ([[[request userInfo] objectForKey:@"RequestType"] isEqualToString:@"Subscription"]) {
 		
 		NSLog(@"Calling function to process Subscription parsing....");
 		[RSSParser processSubscription:[request responseString] ];
 	}else 	if ([[[request userInfo] objectForKey:@"RequestType"] isEqualToString:@"TagList"]) {
-		
+		[RSSParser processTagList:[request responseString]];
 		NSLog(@"Calling function to process Tag List parsing....");
 	}else 	if ([[[request userInfo] objectForKey:@"RequestType"] isEqualToString:@"UnreadItemsID"]) {
 		[RSSParser processUnreadItemIDs:[request responseString] withNetworkQueue:networkQueue ];
@@ -170,6 +206,10 @@
 		
 		NSLog(@"Get Respond from POST request : %d byte", [[request responseString] length]);
 		[RSSParser addNewsItemsToDatabase: [request responseString]];
+	}else if ([[[request userInfo] objectForKey:@"RequestType"] isEqualToString:@"Favicon"]) {
+		
+		[RSSParser processDownloadedFavicon:request];		
+		//NSLog(@"Remaining request : %d", [[request queue] count]);
 	}else {
 	
 	
@@ -180,6 +220,30 @@
 	
 }
 
+- (void)requestDidFail:(ASIHTTPRequest *)request {
+	NSLog(@"Request did failed with URL : %@", [[request url] absoluteURL]);
+	NSLog(@"Failed with error: %@", [[request error] description]);
+	
+}
+
+- (void) queueDidFinish:(ASINetworkQueue *)queue {
+	NSLog(@"Queue did finished");
+	[RSSParser addFaviconRequests:queue];
+	[queue setQueueDidFinishSelector:@selector(faviconQueueDidFinish:)];
+}
+
+- (void)faviconQueueDidFinish: (ASINetworkQueue *)queue {
+	NSLog(@"Did finish downloading Favicon");
+	
+	NSString *filePath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"FaviconsPath.plist"];
+	
+	[[[MySingleton sharedInstance] faviconPaths] writeToFile:filePath atomically:YES];
+	
+	//Reset queueDidFinishSelector
+	[queue setQueueDidFinishSelector:@selector(queueDidFinish:)];
+	
+	
+}
 
 #pragma mark Table view methods
 
@@ -190,8 +254,8 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	if (feeds != nil) {
-		return [feeds count];
+	if (folders != nil) {
+		return [folders count];
 	}
     return 0;
 }
@@ -200,29 +264,27 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
+    static NSString *CellIdentifier = @"FolderCell";
+
+	FolderCell *cell = (FolderCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	
-	cell.textLabel.text = [[feeds objectAtIndex:indexPath.row] title];
-	
-    // Set up the cell...
-//	cell.textLabel.text = [[feeds objectAtIndex:[indexPath.row]] objectForKey:@"count"];
-    return cell;
+	if (cell == nil) {
+		[[NSBundle mainBundle] loadNibNamed:@"FolderCell" owner:self options:nil];
+		cell = tmpCell;
+		self.tmpCell = nil;
+	}
+	cell.titleLabel.text = [[folders objectAtIndex:indexPath.row] title];
+	cell.countLabel.text = [NSString stringWithFormat:@"%d",[[folders objectAtIndex:indexPath.row] unreadCount]];
+	cell.iconView.image = [UIImage imageNamed:@"Folder1.png"];
+	return cell;
+  
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-    // AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-    // [self.navigationController pushViewController:anotherViewController];
-    // [anotherViewController release];
-	  //detailViewController.detailItem = [NSString stringWithFormat:@"Row %d", indexPath.row];
-	NewsViewController *newsVC = [[NewsViewController alloc] initWithStyle:UITableViewStylePlain];
-	[newsVC setParentFeed:[feeds objectAtIndex:indexPath.row]];
+ 	NewsViewController *newsVC = [[NewsViewController alloc] initWithStyle:UITableViewStylePlain];
+	//[newsVC setParentFeed:[feeds objectAtIndex:indexPath.row]];
+	[newsVC setParentFolder:[folders objectAtIndex:indexPath.row]];
 	[self.navigationController pushViewController:newsVC 	 animated:YES];
 	newsVC.detailVC = detailViewController;
 	[newsVC release];
@@ -242,38 +304,36 @@
 
 - (void) feedListDidChange:(NSNotification *) notification {
 	NSLog(@"Feed List Did changed");
+	}
+
+- (void) folderListDidChange:(NSNotification *) notification {
+	
+	NSLog(@"Folder did change");
 	EGODB *db = [[EGODB alloc] init];
-	[feeds removeAllObjects];
-	[feeds addObjectsFromArray:[db getFeeds]];
+	[folders removeAllObjects];
+	[folders addObjectsFromArray:[db getGroups]];
+
 	[self.tableView reloadData];
 	[db release];
+	
+}
+
+- (void) newsItemAdded:(NSNotification *) notification {
+	NSString *feedID = [[notification object] feedID];
+	for (int i = 0; i < [folders count]; i++) {
+		if ([[[folders objectAtIndex:i] feedsDict] objectForKey:feedID]) {
+			int count= [[folders objectAtIndex:i] unreadCount]; 
+			[[folders objectAtIndex:i] setUnreadCount:count +1] ;
+			NSIndexPath *durPath = [NSIndexPath indexPathForRow:i inSection:0];
+			NSArray *paths = [NSArray arrayWithObject:durPath];
+			[self.tableView reloadRowsAtIndexPaths:paths withRowAnimation:UITableViewRowAnimationNone];
+			
+		}
+					
+	}
+
+	
 }
 
 @end
-
-//- (void) parserDidEndParsingData:( FeedParser *)parser {
-//	if ([parser class] == [FeedParser class]) {
-//		if ([feeds count] != [parser.parsedFeeds count]) {
-//			[feeds removeAllObjects];
-//			NSLog(@"Numbers of feeds loaded: %d",[parser.parsedFeeds count]);
-//			feeds = parser.parsedFeeds;
-//			[self.tableView reloadData];
-//		}
-//		
-//		
-//		ArticleParser *articleParser = [[ArticleParser alloc] init];
-//		articleParser.delegate = self;
-//		[articleParser start];
-//	} else if ([parser class] == [ArticleParser class]) {
-//		NSLog(@"Ended parsing ID list");
-//	} 
-//
-//	
-//	
-//	
-//									
-//	
-//	NSLog(@"Finished Parsing");
-//}
-
 

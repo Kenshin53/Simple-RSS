@@ -11,7 +11,9 @@
 #import "DB.h"
 #import "EGODB.h"
 #import "DateHelper.h"
-
+#import "Group.h"
+#import "RSSParser.h"
+#import "MySingleton.h"
 @implementation Experiment
 
 + (void) TestDatabase {
@@ -61,7 +63,7 @@
 //	NSLog(@"Today is: %d", [DateHelper getTimeStampFromNDaysAgo:0]);
 //	NSLog(@"Yesterday is: %d", [DateHelper getTimeStampFromNDaysAgo:1]);	
 
-//	EGODB *db = [[EGODB alloc] init];
+	
 //	if ([db deleteFeedWithFeedID:@"feed/http://iphone.keyvisuals.com/feed/"]) {
 //		NSLog(@"Deleted ");
 //	}else {
@@ -78,7 +80,25 @@
 //	
 //	NSLog(@"Test String: %@ \n Results: %@",tesString, rs);
 //
+/*
+	EGODB *db = [[EGODB alloc] init];	
+	Group *aGroup = [db getGroupWithGroupID:@"user/15632046837878276347/label/Apple" title:@"Apple"];
+	NSLog(@"Unread Count: %d",[aGroup unreadCount]);
+	NSLog(@"Number of Feeds: %d",[[aGroup feedsDict] count]);
+	for (NSString *aFeedID in [aGroup feedsDict]) {
+		NSLog(@"FeedID : %@ Title: %@",aFeedID , [[[aGroup feedsDict] objectForKey:aFeedID] title]);
+	}
+	[db release];
+*/
+//	NSURL *tmpurl = [RSSParser getFaviconURL:@"feed/http://cssvault.com/gallery.xml"];
+	[[MySingleton sharedInstance] setFaviconPaths:[[NSMutableDictionary alloc] init]];
+	[[[MySingleton sharedInstance] faviconPaths] setObject:@"NoPath" forKey:@"FeedID"];
 	
+	NSMutableDictionary *path = [[NSMutableDictionary alloc] init];
+	[path setObject:@"222" forKey:@"fa"];
+	NSLog(@"path count: %d", [path count]);
+	[path release];
+	NSLog(@"Number of faviconPaths: %d", [[[MySingleton sharedInstance] faviconPaths] count]);
 }
 
 @end
