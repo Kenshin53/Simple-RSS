@@ -14,6 +14,7 @@
 #import "UserDefinedConst.h"
 #import "NewsCell.h"
 #import "MySingleton.h"
+#import "MyHTMLStripper.h"
 @implementation NewsViewController
 @synthesize newsList, detailVC, parentFolder, tmpCell,sectionsList;
 
@@ -38,14 +39,14 @@
 
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = NO;
-	EGODB *db = [[EGODB alloc] init];
+/*	EGODB *db = [[EGODB alloc] init];
 
 	if (parentFolder != nil) {
 		newsList = [[NSMutableArray alloc] initWithArray:[db getNewsItemsWithGroupID:[parentFolder groupID]]];
 	}
 	[db release];
 	
-	
+*/	
 
 	
 	self.tableView.rowHeight = 100;
@@ -92,24 +93,25 @@
     // Return the number of sections.
 	
 	
-    return [[parentFolder feedsDict] count];
+    return [[parentFolder feedsList] count];
 
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
 	// The header for the section is the region name -- get this from the region at the section index.
-	Feed *aFeed = [[parentFolder feedsDict] objectForKey:[[[parentFolder feedsDict] allKeys] objectAtIndex:section]];
+
 	
-	return [aFeed title];
+	return [[[parentFolder feedsList] objectAtIndex:section] title];
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-	Feed *aFeed = [[parentFolder feedsDict] objectForKey:[[[parentFolder feedsDict] allKeys] objectAtIndex:section]];
+/*	Feed *aFeed = [[[[parentFolder feedsList] objectAtIndex:section] newsItems] count];
 	NSPredicate *myPredicate = [NSPredicate predicateWithFormat:@"feedID == %@",[aFeed feedID]];
 	NSArray *filteredArray = [newsList filteredArrayUsingPredicate:myPredicate];
-	return [filteredArray count];
+*/
+	return	[[[[parentFolder feedsList] objectAtIndex:section] newsItems] count];
 }
 
 
@@ -128,17 +130,41 @@
 		self.tmpCell = nil;
 	}
 
-
+/*
 	Feed *aFeed = [[parentFolder feedsDict] objectForKey:[[[parentFolder feedsDict] allKeys] objectAtIndex:indexPath.section]];
 	NSPredicate *myPredicate = [NSPredicate predicateWithFormat:@"feedID == %@",[aFeed feedID]];
 	NSArray *filteredArray = [newsList filteredArrayUsingPredicate:myPredicate];	
-	NewsItem *aNews = [filteredArray objectAtIndex:indexPath.row];
-	
+	NewsItem *aNews = [filteredArray objectAtIndex:indexPath.row]; 
+*/
+	NewsItem *aNews = [[[[parentFolder feedsList] objectAtIndex:indexPath.section] newsItems] objectAtIndex:indexPath.row];
+/*	TTMarkupStripper *markup = [[TTMarkupStripper alloc] init];
+	int index = [[aNews summary] length] > 200?200:[[aNews summary] length];
+	NSString *strippedContent = [markup parse:[aNews summary]];
+	[markup release];
+*/
+	MyHTMLStripper *stripper = [[MyHTMLStripper alloc] init];
+	//NSString *summaryContent = [[NSString alloc] initWithFormat:@"<x> %@</x>",[aNews summary] ];
+	NSString *strippedContent = [stripper parse:[aNews summary]];
+	[stripper release];
+//	[summaryContent release];
 	cell.newsTitleLabel.text = [aNews title];
 	cell.feedTitleLabel.text = [[[parentFolder feedsDict] objectForKey:[aNews feedID]] title];
+	cell.briefContentLabel.text = strippedContent;
+	
+/*	if (strippedContent != nil && [strippedContent length]> 0) {
+		index = [strippedContent length] > 100? 100:[strippedContent length];
+			cell.briefContentLabel.text = [strippedContent substringToIndex:index];
+	}else {
+		cell.briefContentLabel.text = [[aNews summary] substringToIndex:index];
+		NSLog(@"----------------HTML---------------");
+		NSLog(@"%@",[aNews summary]);
+		NSLog(@"-----------END OF HTML------------");
+	}
+*/
+
 	NSString *faviconPath = [[[MySingleton sharedInstance] faviconPaths] objectForKey:[aNews feedID]];
 	if (faviconPath != nil && ![faviconPath isEqualToString:@"None"]) {
-		NSLog(@"File Path %@-", faviconPath);
+		NSLog(@"File Path %@", faviconPath);
 		cell.favIconView.image = [UIImage imageWithContentsOfFile:faviconPath];
 	}else {
 		cell.favIconView.image = [UIImage imageNamed:@"Feed.png"];
@@ -156,17 +182,22 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+	NewsItem *aNews = [[[[parentFolder feedsList] objectAtIndex:indexPath.section] newsItems] objectAtIndex:indexPath.row];
+
 	
 	NSString *htmlWrapper = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"SimpleRSSTest" ofType:@"html"]];
-	NSLog(@"HTML file loaded %d byte", [htmlWrapper length]);
+
+	NSLog(@"Content: %@", [aNews summary]);
 	NSString *formattedContent = [[NSString alloc] initWithFormat:htmlWrapper, 
-									[[newsList objectAtIndex:indexPath.row] link],
-									[[newsList objectAtIndex:indexPath.row] title],
-									[[newsList objectAtIndex:indexPath.row] summary]];
+									[aNews link],
+									[aNews title],
+									[aNews summary]];
+	
+	
 	[detailVC.webview loadHTMLString:formattedContent baseURL:nil];
 	
 	[[NSURLCache sharedURLCache] removeAllCachedResponses];
-	NSLog(@"Formatted String: %d", [formattedContent length]);
+
 	[formattedContent release];
 	[htmlWrapper release];
 }

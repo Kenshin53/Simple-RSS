@@ -69,7 +69,7 @@
 	
 	[[MySingleton sharedInstance] setFaviconPaths:paths];
 
-
+	[paths release];
 	[fileManager release];
 
 	NSLog(@"Number of item: %d", [[[MySingleton sharedInstance] faviconPaths] count]);
@@ -282,12 +282,17 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
- 	NewsViewController *newsVC = [[NewsViewController alloc] initWithStyle:UITableViewStylePlain];
+ 	EGODB *db = [[EGODB alloc] init];
+	
+	NewsViewController *newsVC = [[NewsViewController alloc] initWithStyle:UITableViewStylePlain];
 	//[newsVC setParentFeed:[feeds objectAtIndex:indexPath.row]];
-	[newsVC setParentFolder:[folders objectAtIndex:indexPath.row]];
+	
+	[newsVC setParentFolder:[db getFullGroupWithGroupID:[[folders objectAtIndex:indexPath.row] groupID]]];
+	
 	[self.navigationController pushViewController:newsVC 	 animated:YES];
 	newsVC.detailVC = detailViewController;
 	[newsVC release];
+	[db release];
 }
 
 

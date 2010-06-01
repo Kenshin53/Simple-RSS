@@ -73,7 +73,7 @@
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 //	UIBarButtonItem *loginButton = [[ UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(dosomething)];
-
+	
 	[super viewDidLoad];
 }
 

@@ -11,7 +11,7 @@
 
 @implementation Feed
 
-@synthesize feedID,title,originalURL, unreadCount, lastUpdate;
+@synthesize feedID,title,originalURL, unreadCount, lastUpdate, newsItems;
 
 - (void) dealloc {
 	[feedID release];
@@ -19,6 +19,7 @@
 	[originalURL release];
 	[unreadCount release];
 	[lastUpdate release];
+	[newsItems release];
 	
 }
 

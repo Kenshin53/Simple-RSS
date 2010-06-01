@@ -10,7 +10,7 @@
 
 
 @implementation Group
-@synthesize groupID,title, feedsDict, unreadCount, starredCount;
+@synthesize groupID,title, feedsDict, unreadCount, starredCount,feedsList;
 
 -(id) initWithGroupID:(NSString *)Id{
 	[super init];

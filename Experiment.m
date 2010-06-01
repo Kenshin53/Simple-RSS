@@ -14,6 +14,10 @@
 #import "Group.h"
 #import "RSSParser.h"
 #import "MySingleton.h"
+
+#import "Three20/Three20.h"
+#import "TBXML.h"
+
 @implementation Experiment
 
 + (void) TestDatabase {
@@ -94,11 +98,28 @@
 	[[MySingleton sharedInstance] setFaviconPaths:[[NSMutableDictionary alloc] init]];
 	[[[MySingleton sharedInstance] faviconPaths] setObject:@"NoPath" forKey:@"FeedID"];
 	
-	NSMutableDictionary *path = [[NSMutableDictionary alloc] init];
-	[path setObject:@"222" forKey:@"fa"];
-	NSLog(@"path count: %d", [path count]);
-	[path release];
-	NSLog(@"Number of faviconPaths: %d", [[[MySingleton sharedInstance] faviconPaths] count]);
+/*	EGODB *db = [[EGODB alloc] init];	
+	Group *agroup = [db getFullGroupWithGroupID:@"user/15632046837878276347/label/Good Read"];
+	
+	for (Feed *aFeed in [agroup feedsList]) {
+		NSLog(@"Feed Title: %@",[aFeed title]);
+		for (NewsItem *aItem in [aFeed newsItems]) {
+			NSLog(@"	News Title: %@",[aItem title]);
+		}
+	}
+	
+	[db release];
+*/
+/*	TTMarkupStripper *markup = [[TTMarkupStripper alloc] init];
+	NSString *contentWithHTML = [NSString stringWithString:@"<img source='http://' >  </img> <p> THe main text <a></p>"];
+	NSLog(@"Orginal Text : %@",contentWithHTML);
+	NSLog(@"Parsed Text: %@", [markup parse:contentWithHTML]);
+
+	
+	[markup release];
+ */
+	
+	
 }
 
 @end

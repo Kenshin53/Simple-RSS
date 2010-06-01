@@ -18,11 +18,15 @@
 - (NSArray *) getFeeds ;
 - (NSArray *) getUnreadFeeds;
 - (NSArray *) getFeedsWithGroupID:(NSString *)groupID ;
+- (Group *) getFullGroupWithGroupID:(NSString *)groupID;
+
 - (NSMutableSet *) getArticleIDSinceTimeStamp: (NSInteger) days;	
 - (NSMutableSet *) getFeedID;
 - (BOOL) deleteFeedWithFeedID:(NSString *)feedID;
 - (BOOL) addNewsItem: (NewsItem *) aNewsItem;
 - (NSArray *) getNewsItemsWithFeedID: (NSString *) feedID;
+- (NSArray *) getUnreadNewsItemsWithFeedID: (NSString *) feedID;
+
 - (BOOL) addGroup:(NSString *)groupId withTitle:(NSString *)title;
 - (BOOL) addCategoryAndFeed:(NSString *) groupID feedID:(NSString *)feedID;
 

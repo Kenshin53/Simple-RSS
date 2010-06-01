@@ -15,6 +15,7 @@
 	NSString *originalURL;
 	NSNumber *unreadCount;
 	NSDate *lastUpdate;
+	NSMutableArray *newsItems;
 }
 
 @property (nonatomic, retain) NSString *feedID;
@@ -22,6 +23,6 @@
 @property (nonatomic, retain) NSString *originalURL;
 @property (nonatomic, retain) NSNumber *unreadCount;
 @property (nonatomic, retain) NSDate *lastUpdate;
-
+@property (nonatomic, retain) NSMutableArray *newsItems;
 - (id) initWithDictionary:(NSDictionary *)aFeed;
 @end

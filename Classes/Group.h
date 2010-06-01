@@ -15,6 +15,7 @@
 	NSDictionary *feedsDict;
 	NSInteger unreadCount;
 	NSInteger starredCount;
+	NSMutableArray *feedsList;
 }
 
 @property (nonatomic, retain) NSString *groupID;
@@ -22,6 +23,6 @@
 @property (nonatomic, retain) NSDictionary *feedsDict;
 @property (nonatomic) NSInteger unreadCount;
 @property (nonatomic) NSInteger starredCount;
-
+@property (nonatomic, retain) 	NSMutableArray *feedsList;
 -(id) initWithGroupID:(NSString *)Id;
 @end

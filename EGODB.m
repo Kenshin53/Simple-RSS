@@ -173,6 +173,32 @@
 	return result;
 }
 
+- (NSArray *) getUnreadNewsItemsWithFeedID: (NSString *) feedID{
+	NSString *query = [[NSString alloc] initWithFormat:@"SELECT * From NewsItem where feedID = '%@' AND unread = 1", feedID];
+	EGODatabaseResult *rs = [db executeQuery:query];
+	NSMutableArray *result = [[[NSMutableArray alloc] initWithCapacity:0] autorelease];
+	
+	NewsItem *aNews;
+	for (EGODatabaseRow *row in rs ) {
+	
+		aNews = [[NewsItem alloc] init];
+		[aNews setTitle:[row stringForColumn:@"title"]];
+		[aNews setSummary:[row stringForColumn:@"summary"]];
+		[aNews setPublished:[NSDate dateWithTimeIntervalSince1970:[row intForColumn:@"published"]]];
+		[aNews setFeedID:[row stringForColumn:@"FeedID"]];
+		[aNews setLink:[row stringForColumn:@"link"]];
+		
+		[result addObject:aNews];
+		
+		[aNews release];
+	}
+	
+	
+	[query release];
+	return result;
+}
+
+
 - (BOOL) addGroup:(NSString *)groupId withTitle:(NSString *)title{
 	NSString *checkExistenceQuery = [[NSString alloc] initWithFormat:@"SELECT * FROM Category WHERE groupID ='%@'",groupId];
 	EGODatabaseResult *checkResult = [db executeQuery:checkExistenceQuery];
@@ -279,6 +305,26 @@
 		
 	}
 	return result;
+}
+
+- (Group *) getFullGroupWithGroupID:(NSString *)groupID {
+	Group *aGroup = [[[Group alloc] init] autorelease];
+	[aGroup setGroupID:groupID];
+
+	NSString *query = [NSString stringWithFormat:@"SELECT Feed.FeedID as feedid, Feed.Title as title, feed.unreadcount as unreadcount FROM Feed, Category_Feed WHERE Feed.UnreadCount > 0 AND Feed.FeedID = Category_Feed.FeedID AND Category_Feed.GroupID ='%@'", groupID];
+	aGroup.feedsList = [[NSMutableArray alloc] init];
+	EGODatabaseResult *rs = [db executeQuery:query];
+	for (EGODatabaseRow *aRow in rs) {
+		Feed *aFeed = [[Feed alloc] init];
+		[aFeed setFeedID: [aRow stringForColumn:@"feedid"] ];
+		[aFeed setTitle:[aRow stringForColumn:@"title"]];
+		[aFeed setUnreadCount:[NSNumber numberWithInt:[aRow intForColumn:@"unreadcount"]]];
+		[aFeed setNewsItems:[NSMutableArray arrayWithArray:[self getUnreadNewsItemsWithFeedID:[aFeed feedID]]]];
+		[[aGroup feedsList] addObject:aFeed];
+		[aFeed release];
+	}
+	return aGroup;
+	
 }
 
 //With options
