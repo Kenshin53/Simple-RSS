@@ -15,6 +15,6 @@
 
 
 +(NSInteger) getTimeStampFromNDaysAgo: (NSInteger )days;
-
++(NSString *)dateDiff:(NSDate *)origDate;
 
 @end

@@ -14,6 +14,6 @@ extern NSString * const kURLSubscriptionFetchingFormat;
 extern NSString * const kURLgetUnreadItemIDsFormat;
 extern NSString * const kURLGetArticleContent;
 extern NSString * const kURLGetTagList;
-
+extern NSString * const kURLGetTokenID;
 
 static int  keepUnreadPeriod = 7;

@@ -8,7 +8,7 @@
 
 #import "FolderViewController.h"
 #import "MySingleton.h"
-#import "ArticleParser.h"
+
 #import "UserDefinedConst.h"
 #import "EGODB.h"
 #import "ASIHTTPRequest.h"
@@ -20,6 +20,8 @@
 #import "RSSParser.h"
 #import "NewsViewController.h"
 #import "Group.h"
+#import "FolderCompositeCell.h"
+
 
 @implementation FolderViewController
 
@@ -76,7 +78,18 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+
 	
+    
+    
+    
+	UIBarButtonItem *refreshButton =[[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(startSyncing)] autorelease];
+	
+
+	self.navigationItem.rightBarButtonItem = refreshButton;
+	self.title = @"Folder View";
+	self.tableView.backgroundColor = [UIColor whiteColor];
+	self.tableView.rowHeight = 45.0;	
 	[self getFaviconFilePaths];
 
 	
@@ -96,18 +109,14 @@
 	
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-	UIBarButtonItem *refreshButton =[[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(startSyncing)] autorelease];
-	
-	self.navigationItem.rightBarButtonItem = refreshButton;
-	self.title = @"Folder View";
-	
+		
 	EGODB *db = [[EGODB alloc] init];
 	feeds = [[NSMutableArray alloc] initWithArray:[db getUnreadFeeds]];
 	folders = [[NSMutableArray alloc] initWithArray:[db getGroups]];
-	[self.tableView setRowHeight:60.0];
+	
 	[db release];
 	
-	self.tableView.rowHeight = 45.0;
+
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finishedParsingArticles:) name:kNotificationFinishedParsingArticles object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(feedListDidChange:) name:kNotificationFeedListDidChanged object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(folderListDidChange:) name:kNotificationAddedNewFolder object:nil];
@@ -148,13 +157,31 @@
 	NSString *SID = [defaults objectForKey:@"googleSID"];
 	
 	//	Code for getting TokenID	
-	[[MySingleton sharedInstance] setTokenID:[GoogleReaderHelper getTokenID:SID]];
+	
 	// Testing of getting all the Unread Item in one request
-	NSString *cookie = [[NSString alloc] initWithFormat:@"SID=%@;Domain=.google.com;path=/;expires=1600000000",SID];
+
+	
+	NSDictionary *properties = [[NSDictionary alloc] initWithObjectsAndKeys:@"SID",NSHTTPCookieName, SID,NSHTTPCookieValue,@".google.com",NSHTTPCookieDomain, @"/",NSHTTPCookiePath,@"1600000000",NSHTTPCookieExpires, nil];
+	
+	NSHTTPCookie *cookie = [[NSHTTPCookie alloc] initWithProperties:properties];
+	if (cookie != nil ) {
+		NSLog(@"Created Cookies");
+	} else {
+		NSLog(@"Failed Creating cookies");
+	}
+	
+
+	
+	
+	
+//	NSString *cookie = [[NSString alloc] initWithFormat:@"SID=%@;Domain=.google.com;path=/;expires=1600000000",SID];
 //Request for getting list of subscription
 	
 	ASIHTTPRequest *request = [[[ASIHTTPRequest alloc] initWithURL:url] autorelease];
-	[request addRequestHeader:@"Cookie" value:cookie];
+//	[request addRequestHeader:@"Cookie" value:cookie];
+
+	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
+	
 	NSDictionary *info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"Subscription", @"RequestType",nil] autorelease];
 	[request setUserInfo:info];
 	[networkQueue addOperation:request];
@@ -164,16 +191,27 @@
 
 //Request for getting Tag List	
 	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLGetTagList]] autorelease];
-	[request addRequestHeader:@"Cookie" value:cookie];
+	//[request addRequestHeader:@"Cookie" value:cookie];
+		[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
 	info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"TagList", @"RequestType",nil] autorelease];
 	[request setUserInfo:info];
 	[networkQueue addOperation:request];
 	
 //Request for getting Unread Items Id 
+	
+	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLGetTokenID]] autorelease];
+	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
+	info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"TokenID", @"RequestType",nil] autorelease];
+	[request setUserInfo:info];
+	[networkQueue addOperation:request];	
+	
+	
 	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:
 													[NSString stringWithFormat:kURLgetUnreadItemIDsFormat, timestamp]]] autorelease];
 	NSLog(@"Get Unread URL: %@",[NSString stringWithFormat:kURLgetUnreadItemIDsFormat, timestamp]);
-	[request addRequestHeader:@"Cookie" value:cookie];
+	//[request addRequestHeader:@"Cookie" value:cookie];
+	
+	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
 	info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"UnreadItemsID", @"RequestType",nil] autorelease];
 	[request setUserInfo:info];
 	[networkQueue addOperation:request];	
@@ -216,6 +254,7 @@
 		NSLog(@"Calling something else...");
 	}
 	NSLog(@"Downloaded bytes: %d", [[request responseString] length]);
+	NSLog(@"%@",[request responseString]);
 		
 	
 }
@@ -266,7 +305,7 @@
     
     static NSString *CellIdentifier = @"FolderCell";
 
-	FolderCell *cell = (FolderCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+/*	FolderCell *cell = (FolderCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	
 	if (cell == nil) {
 		[[NSBundle mainBundle] loadNibNamed:@"FolderCell" owner:self options:nil];
@@ -276,6 +315,17 @@
 	cell.titleLabel.text = [[folders objectAtIndex:indexPath.row] title];
 	cell.countLabel.text = [NSString stringWithFormat:@"%d",[[folders objectAtIndex:indexPath.row] unreadCount]];
 	cell.iconView.image = [UIImage imageNamed:@"Folder1.png"];
+ */
+		FolderCompositeCell *cell = (FolderCompositeCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	if (cell == nil) {
+		cell = [[[FolderCompositeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+	}
+	
+	cell.titleLabel = [[folders objectAtIndex:indexPath.row] title];
+	cell.countLabel = [NSString stringWithFormat:@"%d",[[folders objectAtIndex:indexPath.row] unreadCount]];
+	cell.iconView = [UIImage imageNamed:@"Folder1.png"];
+	
+	
 	return cell;
   
 }

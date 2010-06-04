@@ -7,12 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FeedParser.h"
-#import "ArticleParser.h"
 #import "ASIHTTPRequest.h"
 #import "FolderCell.h"
 @class ArticleParser, DetailViewController, FeedParser, ASINetworkQueue;
-@interface FolderViewController : UITableViewController <FeedParserDelegate, ArticleParserDelegate, ASIHTTPRequestDelegate>{
+@interface FolderViewController : UITableViewController < ASIHTTPRequestDelegate>{
 	
 	FolderCell *tmpCell;
 	

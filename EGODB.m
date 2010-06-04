@@ -37,7 +37,7 @@
 
 - (BOOL) addFeed:(Feed *)aFeed {
 	NSArray *params = [NSArray arrayWithObjects:[aFeed feedID],[aFeed title],[NSNumber numberWithInt:0], nil];
-	[db executeUpdate:@"Insert INTO Feed (FeedID, Title, UnreadCount) VALUES (?, ?, ?)" parameters:params];
+	return [db executeUpdate:@"Insert INTO Feed (FeedID, Title, UnreadCount) VALUES (?, ?, ?)" parameters:params];
 }
 
 - (NSArray *) getFeeds {
@@ -161,6 +161,7 @@
 	NewsItem *aNews;
 	for (EGODatabaseRow *row in rs ) {
 		aNews = [[NewsItem alloc] init];
+		[aNews setNewsID:[row stringForColumn:@"newsID"]];
 		[aNews setTitle:[row stringForColumn:@"title"]];
 		[aNews setSummary:[row stringForColumn:@"summary"]];
 		[aNews setPublished:[NSDate dateWithTimeIntervalSince1970:[row intForColumn:@"published"]]];
@@ -182,12 +183,13 @@
 	for (EGODatabaseRow *row in rs ) {
 	
 		aNews = [[NewsItem alloc] init];
+		[aNews setNewsID:[row stringForColumn:@"NewsID"]];
 		[aNews setTitle:[row stringForColumn:@"title"]];
 		[aNews setSummary:[row stringForColumn:@"summary"]];
 		[aNews setPublished:[NSDate dateWithTimeIntervalSince1970:[row intForColumn:@"published"]]];
 		[aNews setFeedID:[row stringForColumn:@"FeedID"]];
 		[aNews setLink:[row stringForColumn:@"link"]];
-		
+		[aNews setUnread:[row boolForColumn:@"unread"]];
 		[result addObject:aNews];
 		
 		[aNews release];
@@ -350,6 +352,13 @@
 	
 	[getNewsItemQuery release];
 	return [NSArray arrayWithArray:result];
+}
+
+#pragma mark Update NewsItem
+- (BOOL) setNewsAsRead:(NSString *) newsID {
+	NSString *query = [NSString stringWithFormat:@"UPDATE NewsItem SET unread = 0 WHERE NewsID = '%@'", newsID];
+	return [db executeUpdate:query];
+	
 }
 
 + (NSNumber *) hexString2Number: (NSString *)hex {

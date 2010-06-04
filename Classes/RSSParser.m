@@ -125,18 +125,33 @@
 	int numberOfIDsInAPOST = 20;
 	int i = 0;
 	NSString *tokenID = [[MySingleton sharedInstance] tokenID];
-	NSMutableString *postMessage;
+	//NSMutableString *postMessage;
 	NSDictionary *info;
 	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	NSString *SID = [defaults objectForKey:@"googleSID"];
-	NSString *cookie = [[NSString alloc] initWithFormat:@"SID=%@;Domain=.google.com;path=/;expires=1600000000",SID];
+	
+	
+	NSDictionary *properties = [[NSDictionary alloc] initWithObjectsAndKeys:@"SID",NSHTTPCookieName, SID,NSHTTPCookieValue,@".google.com",NSHTTPCookieDomain, @"/",NSHTTPCookiePath,@"16000000",NSHTTPCookieExpires, nil];
+	
+	NSHTTPCookie *cookie = [[NSHTTPCookie alloc] initWithProperties:properties];
+	if (cookie != nil ) {
+		NSLog(@"Created Cookies");
+	} else {
+		NSLog(@"Failed Creating cookies");
+	}
+	
+	
+	tokenID = [[MySingleton sharedInstance] tokenID];
+	
+	
 
 	for (NSNumber *newsID in toInsertSet) {
 		if (i % numberOfIDsInAPOST == 0) {
 			request= [[ASIFormDataRequest alloc] initWithURL:url];
 			
-			[request addRequestHeader:@"Cookie" value:cookie];
+			//[request addRequestHeader:@"Cookie" value:cookie];
+			[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
 			info = [[NSDictionary alloc] initWithObjectsAndKeys:@"POSTUnreadIDs", @"RequestType",nil];
 			[request setUserInfo:info];
 			[info release];

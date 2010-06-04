@@ -15,6 +15,10 @@
 #import "NewsCell.h"
 #import "MySingleton.h"
 #import "MyHTMLStripper.h"
+#import "DateHelper.h"
+#import "NewsCompositeCell.h"
+#import "GoogleReaderSync.h"
+
 @implementation NewsViewController
 @synthesize newsList, detailVC, parentFolder, tmpCell,sectionsList;
 
@@ -122,7 +126,7 @@
 	
 	static NSString *CellIdentifier = @"NewsCell";
 	
-	NewsCell *cell = (NewsCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+/*	NewsCell *cell = (NewsCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	
 	if (cell == nil) {
 		[[NSBundle mainBundle] loadNibNamed:@"NewsCell" owner:self options:nil];
@@ -130,37 +134,18 @@
 		self.tmpCell = nil;
 	}
 
-/*
-	Feed *aFeed = [[parentFolder feedsDict] objectForKey:[[[parentFolder feedsDict] allKeys] objectAtIndex:indexPath.section]];
-	NSPredicate *myPredicate = [NSPredicate predicateWithFormat:@"feedID == %@",[aFeed feedID]];
-	NSArray *filteredArray = [newsList filteredArrayUsingPredicate:myPredicate];	
-	NewsItem *aNews = [filteredArray objectAtIndex:indexPath.row]; 
-*/
 	NewsItem *aNews = [[[[parentFolder feedsList] objectAtIndex:indexPath.section] newsItems] objectAtIndex:indexPath.row];
-/*	TTMarkupStripper *markup = [[TTMarkupStripper alloc] init];
-	int index = [[aNews summary] length] > 200?200:[[aNews summary] length];
-	NSString *strippedContent = [markup parse:[aNews summary]];
-	[markup release];
-*/
 	MyHTMLStripper *stripper = [[MyHTMLStripper alloc] init];
 	//NSString *summaryContent = [[NSString alloc] initWithFormat:@"<x> %@</x>",[aNews summary] ];
 	NSString *strippedContent = [stripper parse:[aNews summary]];
-	[stripper release];
-//	[summaryContent release];
-	cell.newsTitleLabel.text = [aNews title];
-	cell.feedTitleLabel.text = [[[parentFolder feedsDict] objectForKey:[aNews feedID]] title];
-	cell.briefContentLabel.text = strippedContent;
 	
-/*	if (strippedContent != nil && [strippedContent length]> 0) {
-		index = [strippedContent length] > 100? 100:[strippedContent length];
-			cell.briefContentLabel.text = [strippedContent substringToIndex:index];
-	}else {
-		cell.briefContentLabel.text = [[aNews summary] substringToIndex:index];
-		NSLog(@"----------------HTML---------------");
-		NSLog(@"%@",[aNews summary]);
-		NSLog(@"-----------END OF HTML------------");
-	}
-*/
+	[stripper release];
+
+	cell.newsTitleLabel.text = [aNews title];
+	cell.feedTitleLabel.text = [[[parentFolder feedsList] objectAtIndex:indexPath.section] title];
+	cell.briefContentLabel.text = strippedContent;
+	cell.timeLabel.text = [DateHelper dateDiff:[aNews published]];
+
 
 	NSString *faviconPath = [[[MySingleton sharedInstance] faviconPaths] objectForKey:[aNews feedID]];
 	if (faviconPath != nil && ![faviconPath isEqualToString:@"None"]) {
@@ -169,7 +154,35 @@
 	}else {
 		cell.favIconView.image = [UIImage imageNamed:@"Feed.png"];
 	}
-
+*/
+	NewsCompositeCell *cell = (NewsCompositeCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	
+	if (cell == nil) {
+		cell = [[[NewsCompositeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+	}
+	
+	NewsItem *aNews = [[[[parentFolder feedsList] objectAtIndex:indexPath.section] newsItems] objectAtIndex:indexPath.row];
+	MyHTMLStripper *stripper = [[MyHTMLStripper alloc] init];
+	//NSString *summaryContent = [[NSString alloc] initWithFormat:@"<x> %@</x>",[aNews summary] ];
+	NSString *strippedContent = [stripper parse:[aNews summary]];
+	
+	[stripper release];
+	cell.unreadState = [aNews unread];
+	cell.newsTitleLabel = [aNews title];
+	cell.feedTitleLabel = [[[parentFolder feedsList] objectAtIndex:indexPath.section] title];
+	cell.briefContentLabel = strippedContent;
+	cell.timeLabel = [DateHelper dateDiff:[aNews published]];
+	
+	
+	NSString *faviconPath = [[[MySingleton sharedInstance] faviconPaths] objectForKey:[aNews feedID]];
+	if (faviconPath != nil && ![faviconPath isEqualToString:@"None"]) {
+		NSLog(@"File Path %@", faviconPath);
+		cell.favIconView = [UIImage imageWithContentsOfFile:faviconPath];
+	}else {
+		cell.favIconView = [UIImage imageNamed:@"Feed.png"];
+	}
+	
+	
 	return cell;
 }
 
@@ -182,8 +195,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+	
+	//Set NewsItem at index as Read
+	[[[[[parentFolder feedsList] objectAtIndex:indexPath.section] newsItems] objectAtIndex:indexPath.row] setUnread:NO];
+	
 	NewsItem *aNews = [[[[parentFolder feedsList] objectAtIndex:indexPath.section] newsItems] objectAtIndex:indexPath.row];
-
+	[GoogleReaderSync setNewsAsRead:[aNews newsID]];
+	
+	[self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject: indexPath] withRowAnimation:UITableViewRowAnimationFade];
 	
 	NSString *htmlWrapper = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"SimpleRSSTest" ofType:@"html"]];
 
@@ -200,6 +219,7 @@
 
 	[formattedContent release];
 	[htmlWrapper release];
+	
 }
 
 

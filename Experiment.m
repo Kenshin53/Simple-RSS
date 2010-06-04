@@ -14,9 +14,11 @@
 #import "Group.h"
 #import "RSSParser.h"
 #import "MySingleton.h"
-
+#import "ASIHTTPRequest.h"
 #import "Three20/Three20.h"
 #import "TBXML.h"
+#import "GoogleReaderHelper.h"
+#import "UserDefinedConst.h"
 
 @implementation Experiment
 
@@ -95,8 +97,6 @@
 	[db release];
 */
 //	NSURL *tmpurl = [RSSParser getFaviconURL:@"feed/http://cssvault.com/gallery.xml"];
-	[[MySingleton sharedInstance] setFaviconPaths:[[NSMutableDictionary alloc] init]];
-	[[[MySingleton sharedInstance] faviconPaths] setObject:@"NoPath" forKey:@"FeedID"];
 	
 /*	EGODB *db = [[EGODB alloc] init];	
 	Group *agroup = [db getFullGroupWithGroupID:@"user/15632046837878276347/label/Good Read"];
@@ -118,7 +118,37 @@
 	
 	[markup release];
  */
+
 	
+/*	NSString *googleSID = @"DQAAALAAAABjHpRCmy8KsbTPyiUrmf9sSqZOI30nHTuCG5qmARqTjzplTvuSotKFJa-ghpl0IdwRiKk7uLvWE2Fu7K6pQmWP7tGkZTGKd8sufhftFpU_jUYTFFfLW2-J6RdT5nN5MUGTDHlI1vR2auZJ2nAoSrtS7XvqG5hHip9EzYJO4A8ISprdEIKr_w8r4zJVWxaLkrV2slZZJ4esIU2X5sH_Q4rGtpkCechuYevOru-76hqa4Q";
+	NSDictionary *properties = [[NSDictionary alloc] initWithObjectsAndKeys:@"SID",NSHTTPCookieName, googleSID,NSHTTPCookieValue,@".google.com",NSHTTPCookieDomain, @"/",NSHTTPCookiePath, nil];
+	
+	NSHTTPCookie *cookie = [[NSHTTPCookie alloc] initWithProperties:properties];
+//	if (cookie != nil ) {
+//		NSLog(@"Created Cookies");
+//	} else {
+//		NSLog(@"Failed Creating cookies");
+//	}
+	ASIHTTPRequest *request;
+	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:kURLgetUnreadItemIDsFormat, 1275045129]]] autorelease];
+	
+	[GoogleReaderHelper getTokenID:googleSID];
+	//NSString *cookie = [[NSString alloc] initWithFormat:@"SID=%@;Domain=.google.com;path=/;expires=1600000000",googleSID];
+	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
+//	[request addRequestHeader:@"Cookie" value:cookie];
+	[request startSynchronous];
+	NSError *error = [request error];
+	if (!error) {
+		NSString *response = [request responseString];
+		NSLog(@"Respond: %@", response);
+	}else {
+		NSLog(@"Error: %@", [error description]);
+	}
+
+*/	
+
+
+
 	
 }
 

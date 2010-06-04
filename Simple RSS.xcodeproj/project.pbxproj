@@ -16,13 +16,10 @@
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		F001839B119520CD003DD2E4 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = F001839A119520CD003DD2E4 /* Feed.m */; };
-		F00183CC11953891003DD2E4 /* SimpleRSS.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F00183CB11953891003DD2E4 /* SimpleRSS.sqlite */; };
 		F00183E4119539A6003DD2E4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F00183E3119539A6003DD2E4 /* libsqlite3.0.dylib */; };
-		F03FB6E611902AB100B97815 /* FeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F03FB6E511902AB100B97815 /* FeedParser.m */; };
 		F049CFA511998D6700101980 /* EGODB.m in Sources */ = {isa = PBXBuildFile; fileRef = F049CFA411998D6700101980 /* EGODB.m */; };
 		F049D161119B054200101980 /* MySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F049D160119B054200101980 /* MySingleton.m */; };
 		F049D1D5119BA3CB00101980 /* RSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F049D1D4119BA3CB00101980 /* RSSParser.m */; };
-		F049D1E8119BA5E100101980 /* ArticleParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F049D1E7119BA5E100101980 /* ArticleParser.m */; };
 		F049D25A119BBDAD00101980 /* DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F049D259119BBDAD00101980 /* DateHelper.m */; };
 		F049D2E0119BEA3600101980 /* UserDefinedConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F049D2DF119BEA3600101980 /* UserDefinedConst.m */; };
 		F049F44C117D70E100B94F8E /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F049F44A117D70E100B94F8E /* AuthViewController.m */; };
@@ -68,38 +65,17 @@
 		FC8D72DC11AFD5D0007F94AB /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8D72DB11AFD5D0007F94AB /* NewsCell.m */; };
 		FC8D72E411AFD8C0007F94AB /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC8D72E311AFD8C0007F94AB /* NewsCell.xib */; };
 		FC8D731D11AFDDEA007F94AB /* Feed.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8D731C11AFDDEA007F94AB /* Feed.png */; };
-		FC9EDD0C11B41F6600AC8822 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC9EDD0B11B41F6600AC8822 /* Three20.bundle */; };
 		FC9EDD3711B41FFF00AC8822 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9EDD3611B41FFF00AC8822 /* QuartzCore.framework */; };
-		FC9EDE6811B4273E00AC8822 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9EDE1011B4267800AC8822 /* libThree20.a */; };
+		FCA889F011B7978800980051 /* FolderCompositeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA889EF11B7978800980051 /* FolderCompositeCell.m */; };
+		FCA88AAF11B7A23F00980051 /* NewsCompositeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA88AAE11B7A23F00980051 /* NewsCompositeCell.m */; };
+		FCA88AF711B7BD9E00980051 /* GoogleReaderSync.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA88AF611B7BD9E00980051 /* GoogleReaderSync.m */; };
 		FCB33A5B11B4A369001D491B /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB33A5811B4A369001D491B /* NSDataAdditions.m */; };
 		FCB33A5C11B4A369001D491B /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB33A5A11B4A369001D491B /* TBXML.m */; };
 		FCB33B0E11B4B103001D491B /* MyHTMLStripper.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB33B0D11B4B103001D491B /* MyHTMLStripper.m */; };
+		FCBC75AD11B90BB000F60857 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBC75AC11B90BB000F60857 /* AppIcon.png */; };
+		FCBC772811B92E7200F60857 /* SimpleRSS.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FCBC772711B92E7200F60857 /* SimpleRSS.sqlite */; };
 		FCEFD6EC11A4E44C00FB001D /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFD6EB11A4E44C00FB001D /* NewsItem.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FC9EDE0F11B4267800AC8822 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FC9EDE0A11B4267800AC8822 /* Three20.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
-			remoteInfo = Three20;
-		};
-		FC9EDE1111B4267800AC8822 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FC9EDE0A11B4267800AC8822 /* Three20.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
-			remoteInfo = UnitTests;
-		};
-		FC9EDE6F11B4277200AC8822 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FC9EDE0A11B4267800AC8822 /* Three20.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
-			remoteInfo = Three20;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,25 +93,20 @@
 		8D1107310486CEB800E47090 /* Simple_RSS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Simple_RSS-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		F0018399119520CD003DD2E4 /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
 		F001839A119520CD003DD2E4 /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
-		F00183CB11953891003DD2E4 /* SimpleRSS.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleRSS.sqlite; sourceTree = "<group>"; };
 		F00183E3119539A6003DD2E4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		F03FB6E411902AB100B97815 /* FeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedParser.h; path = Classes/FeedParser.h; sourceTree = "<group>"; };
-		F03FB6E511902AB100B97815 /* FeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedParser.m; path = Classes/FeedParser.m; sourceTree = "<group>"; wrapsLines = 1; };
 		F049CFA311998D6700101980 /* EGODB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODB.h; sourceTree = "<group>"; };
 		F049CFA411998D6700101980 /* EGODB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODB.m; sourceTree = "<group>"; wrapsLines = 1; };
 		F049D15F119B054200101980 /* MySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MySingleton.h; path = ../MySingleton.h; sourceTree = "<group>"; };
 		F049D160119B054200101980 /* MySingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MySingleton.m; path = ../MySingleton.m; sourceTree = "<group>"; };
 		F049D1D3119BA3CB00101980 /* RSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSParser.h; sourceTree = "<group>"; };
 		F049D1D4119BA3CB00101980 /* RSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSParser.m; sourceTree = "<group>"; wrapsLines = 1; };
-		F049D1E6119BA5E100101980 /* ArticleParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArticleParser.h; path = Classes/ArticleParser.h; sourceTree = "<group>"; };
-		F049D1E7119BA5E100101980 /* ArticleParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticleParser.m; path = Classes/ArticleParser.m; sourceTree = "<group>"; wrapsLines = 1; };
 		F049D258119BBDAD00101980 /* DateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateHelper.h; sourceTree = "<group>"; };
 		F049D259119BBDAD00101980 /* DateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHelper.m; sourceTree = "<group>"; };
 		F049D2DE119BEA3600101980 /* UserDefinedConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDefinedConst.h; path = ../UserDefinedConst.h; sourceTree = "<group>"; };
 		F049D2DF119BEA3600101980 /* UserDefinedConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDefinedConst.m; path = ../UserDefinedConst.m; sourceTree = "<group>"; wrapsLines = 1; };
 		F049F449117D70E100B94F8E /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthViewController.h; path = ../AuthViewController.h; sourceTree = "<group>"; };
 		F049F44A117D70E100B94F8E /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthViewController.m; path = ../AuthViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
-		F049F44B117D70E100B94F8E /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AuthViewController.xib; path = ../AuthViewController.xib; sourceTree = "<group>"; };
+		F049F44B117D70E100B94F8E /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
 		F04FAE5E1186A0BC001E7A1B /* GoogleReaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleReaderHelper.h; sourceTree = "<group>"; };
 		F04FAE5F1186A0BC001E7A1B /* GoogleReaderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleReaderHelper.m; sourceTree = "<group>"; };
 		F04FAEC811876116001E7A1B /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
@@ -155,7 +126,7 @@
 		F05E3241119017550059DE7A /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		F05E326111901B400059DE7A /* FolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderViewController.h; sourceTree = "<group>"; };
 		F05E326211901B400059DE7A /* FolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderViewController.m; sourceTree = "<group>"; };
-		F05E326311901B400059DE7A /* FolderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolderViewController.xib; sourceTree = "<group>"; };
+		F05E326311901B400059DE7A /* FolderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FolderViewController.xib; path = Classes/FolderViewController.xib; sourceTree = "<group>"; };
 		F0A7557C119D15E70081498E /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
 		F0A7557D119D15E70081498E /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
 		F0A7557E119D15E70081498E /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
@@ -190,7 +161,7 @@
 		F0D15AEC119909A500D396DF /* Experiment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Experiment.m; sourceTree = "<group>"; };
 		FC3015FB11A780260051A7B6 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		FC3015FC11A780260051A7B6 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
-		FC3015FD11A780260051A7B6 /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		FC3015FD11A780260051A7B6 /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NewsViewController.xib; path = Classes/NewsViewController.xib; sourceTree = "<group>"; };
 		FC795ED811AB72BA004F50F9 /* SimpleRSS.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = SimpleRSS.css; sourceTree = "<group>"; };
 		FC795ED911AB72BB004F50F9 /* SimpleRSSTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SimpleRSSTest.html; sourceTree = "<group>"; };
 		FC8D6DDD11AD2390007F94AB /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
@@ -198,22 +169,28 @@
 		FC8D709011AE7215007F94AB /* Football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Football.png; sourceTree = "<group>"; };
 		FC8D711A11AE9BB6007F94AB /* FolderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FolderCell.h; path = ../FolderCell.h; sourceTree = "<group>"; };
 		FC8D711B11AE9BB6007F94AB /* FolderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FolderCell.m; path = ../FolderCell.m; sourceTree = "<group>"; };
-		FC8D712011AE9C4C007F94AB /* FolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolderCell.xib; sourceTree = "<group>"; };
+		FC8D712011AE9C4C007F94AB /* FolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FolderCell.xib; path = Classes/FolderCell.xib; sourceTree = "<group>"; };
 		FC8D72B011AFD0F4007F94AB /* Folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Folder.png; sourceTree = "<group>"; };
 		FC8D72C211AFD1AC007F94AB /* Folder1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Folder1.png; sourceTree = "<group>"; };
 		FC8D72DA11AFD5D0007F94AB /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
 		FC8D72DB11AFD5D0007F94AB /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
-		FC8D72E311AFD8C0007F94AB /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		FC8D72E311AFD8C0007F94AB /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NewsCell.xib; path = Classes/NewsCell.xib; sourceTree = "<group>"; };
 		FC8D731C11AFDDEA007F94AB /* Feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feed.png; sourceTree = "<group>"; };
-		FC9EDD0B11B41F6600AC8822 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
 		FC9EDD3611B41FFF00AC8822 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		FC9EDE0A11B4267800AC8822 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
+		FCA889EE11B7978800980051 /* FolderCompositeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderCompositeCell.h; sourceTree = "<group>"; };
+		FCA889EF11B7978800980051 /* FolderCompositeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderCompositeCell.m; sourceTree = "<group>"; };
+		FCA88AAD11B7A23F00980051 /* NewsCompositeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCompositeCell.h; sourceTree = "<group>"; };
+		FCA88AAE11B7A23F00980051 /* NewsCompositeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCompositeCell.m; sourceTree = "<group>"; };
+		FCA88AF511B7BD9E00980051 /* GoogleReaderSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleReaderSync.h; sourceTree = "<group>"; };
+		FCA88AF611B7BD9E00980051 /* GoogleReaderSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleReaderSync.m; sourceTree = "<group>"; };
 		FCB33A5711B4A369001D491B /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
 		FCB33A5811B4A369001D491B /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
 		FCB33A5911B4A369001D491B /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
 		FCB33A5A11B4A369001D491B /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
 		FCB33B0C11B4B103001D491B /* MyHTMLStripper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHTMLStripper.h; sourceTree = "<group>"; };
 		FCB33B0D11B4B103001D491B /* MyHTMLStripper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHTMLStripper.m; sourceTree = "<group>"; };
+		FCBC75AC11B90BB000F60857 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		FCBC772711B92E7200F60857 /* SimpleRSS.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleRSS.sqlite; sourceTree = "<group>"; };
 		FCEFD6EA11A4E44C00FB001D /* NewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsItem.h; sourceTree = "<group>"; };
 		FCEFD6EB11A4E44C00FB001D /* NewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -232,7 +209,6 @@
 				F0A7559C119D162D0081498E /* MobileCoreServices.framework in Frameworks */,
 				F0A7559F119D164F0081498E /* libz.1.1.3.dylib in Frameworks */,
 				FC9EDD3711B41FFF00AC8822 /* QuartzCore.framework in Frameworks */,
-				FC9EDE6811B4273E00AC8822 /* libThree20.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,8 +221,6 @@
 				F05E3234119017550059DE7A /* JSON */,
 				F0A75575119D15BF0081498E /* ASI HTTP Request */,
 				F0D15B4E11991A1C00D396DF /* EGODatabase */,
-				1D3623240D0F684500981E51 /* Simple_RSSAppDelegate.h */,
-				1D3623250D0F684500981E51 /* Simple_RSSAppDelegate.m */,
 			);
 			name = Library;
 			path = Classes;
@@ -263,9 +237,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				FCB33C5611B60C07001D491B /* Interface Build */,
 				FCB33A5611B4A369001D491B /* TBXML */,
-				FC9EDD0B11B41F6600AC8822 /* Three20.bundle */,
-				FC8D718911AED5F5007F94AB /* Trash */,
 				FC3015DF11A6CFDB0051A7B6 /* Models */,
 				FC3015E011A6D01E0051A7B6 /* View Controller */,
 				F03FB6E311902A9500B97815 /* Parser Classes */,
@@ -276,11 +249,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources-iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				F0A75597119D16160081498E /* CFNetwork.framework */,
-				F0A75599119D16210081498E /* SystemConfiguration.framework */,
-				F0A7559B119D162D0081498E /* MobileCoreServices.framework */,
-				F0A7559D119D16490081498E /* libz.1.1.3.dylib */,
-				FC9EDD3611B41FFF00AC8822 /* QuartzCore.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -290,6 +258,7 @@
 			children = (
 				28A0AAE50D9B0CCF005BE974 /* Simple_RSS_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				FCBC772711B92E7200F60857 /* SimpleRSS.sqlite */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -297,12 +266,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources-iPad */ = {
 			isa = PBXGroup;
 			children = (
-				F00183CB11953891003DD2E4 /* SimpleRSS.sqlite */,
+				FCBC75AC11B90BB000F60857 /* AppIcon.png */,
 				FC795ED811AB72BA004F50F9 /* SimpleRSS.css */,
 				FC795ED911AB72BB004F50F9 /* SimpleRSSTest.html */,
 				F04FAED11187611E001E7A1B /* Images */,
-				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
-				2804203B108E9BAB000629CD /* DetailView.xib */,
 				8D1107310486CEB800E47090 /* Simple_RSS-Info.plist */,
 			);
 			name = "Resources-iPad";
@@ -311,7 +278,11 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FC9EDE0A11B4267800AC8822 /* Three20.xcodeproj */,
+				F0A75597119D16160081498E /* CFNetwork.framework */,
+				F0A75599119D16210081498E /* SystemConfiguration.framework */,
+				F0A7559B119D162D0081498E /* MobileCoreServices.framework */,
+				F0A7559D119D16490081498E /* libz.1.1.3.dylib */,
+				FC9EDD3611B41FFF00AC8822 /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
@@ -327,6 +298,8 @@
 				F049D1D4119BA3CB00101980 /* RSSParser.m */,
 				F049D2DE119BEA3600101980 /* UserDefinedConst.h */,
 				F049D2DF119BEA3600101980 /* UserDefinedConst.m */,
+				FCA88AF511B7BD9E00980051 /* GoogleReaderSync.h */,
+				FCA88AF611B7BD9E00980051 /* GoogleReaderSync.m */,
 			);
 			name = "Parser Classes";
 			path = Classes;
@@ -455,17 +428,16 @@
 			isa = PBXGroup;
 			children = (
 				FC8D705111AE6348007F94AB /* TableView Cell */,
+				1D3623240D0F684500981E51 /* Simple_RSSAppDelegate.h */,
+				1D3623250D0F684500981E51 /* Simple_RSSAppDelegate.m */,
 				28042009108E984D000629CD /* DetailViewController.h */,
 				2804200A108E984D000629CD /* DetailViewController.m */,
 				F049F449117D70E100B94F8E /* AuthViewController.h */,
 				F049F44A117D70E100B94F8E /* AuthViewController.m */,
-				F049F44B117D70E100B94F8E /* AuthViewController.xib */,
 				F05E326111901B400059DE7A /* FolderViewController.h */,
 				F05E326211901B400059DE7A /* FolderViewController.m */,
-				F05E326311901B400059DE7A /* FolderViewController.xib */,
 				FC3015FB11A780260051A7B6 /* NewsViewController.h */,
 				FC3015FC11A780260051A7B6 /* NewsViewController.m */,
-				FC3015FD11A780260051A7B6 /* NewsViewController.xib */,
 			);
 			name = "View Controller";
 			path = Classes;
@@ -476,45 +448,41 @@
 			children = (
 				FC8D711A11AE9BB6007F94AB /* FolderCell.h */,
 				FC8D711B11AE9BB6007F94AB /* FolderCell.m */,
-				FC8D712011AE9C4C007F94AB /* FolderCell.xib */,
 				FC8D72DA11AFD5D0007F94AB /* NewsCell.h */,
 				FC8D72DB11AFD5D0007F94AB /* NewsCell.m */,
-				FC8D72E311AFD8C0007F94AB /* NewsCell.xib */,
+				FCA889EE11B7978800980051 /* FolderCompositeCell.h */,
+				FCA889EF11B7978800980051 /* FolderCompositeCell.m */,
+				FCA88AAD11B7A23F00980051 /* NewsCompositeCell.h */,
+				FCA88AAE11B7A23F00980051 /* NewsCompositeCell.m */,
 			);
 			name = "TableView Cell";
-			sourceTree = "<group>";
-		};
-		FC8D718911AED5F5007F94AB /* Trash */ = {
-			isa = PBXGroup;
-			children = (
-				F049D1E6119BA5E100101980 /* ArticleParser.h */,
-				F049D1E7119BA5E100101980 /* ArticleParser.m */,
-				F03FB6E411902AB100B97815 /* FeedParser.h */,
-				F03FB6E511902AB100B97815 /* FeedParser.m */,
-			);
-			name = Trash;
-			sourceTree = "<group>";
-		};
-		FC9EDE0B11B4267800AC8822 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FC9EDE1011B4267800AC8822 /* libThree20.a */,
-				FC9EDE1211B4267800AC8822 /* UnitTests.octest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FCB33A5611B4A369001D491B /* TBXML */ = {
 			isa = PBXGroup;
 			children = (
-				FCB33A5711B4A369001D491B /* NSDataAdditions.h */,
 				FCB33B0C11B4B103001D491B /* MyHTMLStripper.h */,
 				FCB33B0D11B4B103001D491B /* MyHTMLStripper.m */,
+				FCB33A5711B4A369001D491B /* NSDataAdditions.h */,
 				FCB33A5811B4A369001D491B /* NSDataAdditions.m */,
 				FCB33A5911B4A369001D491B /* TBXML.h */,
 				FCB33A5A11B4A369001D491B /* TBXML.m */,
 			);
 			name = TBXML;
+			sourceTree = "<group>";
+		};
+		FCB33C5611B60C07001D491B /* Interface Build */ = {
+			isa = PBXGroup;
+			children = (
+				F049F44B117D70E100B94F8E /* AuthViewController.xib */,
+				2804203B108E9BAB000629CD /* DetailView.xib */,
+				FC8D712011AE9C4C007F94AB /* FolderCell.xib */,
+				F05E326311901B400059DE7A /* FolderViewController.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				FC8D72E311AFD8C0007F94AB /* NewsCell.xib */,
+				FC3015FD11A780260051A7B6 /* NewsViewController.xib */,
+			);
+			name = "Interface Build";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,7 +499,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				FC9EDE7011B4277200AC8822 /* PBXTargetDependency */,
 			);
 			name = "Simple RSS";
 			productName = "Simple RSS";
@@ -555,35 +522,12 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FC9EDE0B11B4267800AC8822 /* Products */;
-					ProjectRef = FC9EDE0A11B4267800AC8822 /* Three20.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Simple RSS */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FC9EDE1011B4267800AC8822 /* libThree20.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libThree20.a;
-			remoteRef = FC9EDE0F11B4267800AC8822 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FC9EDE1211B4267800AC8822 /* UnitTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = UnitTests.octest;
-			remoteRef = FC9EDE1111B4267800AC8822 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -596,7 +540,6 @@
 				F04FAEC911876116001E7A1B /* Login.png in Resources */,
 				F04FAED7118762A6001E7A1B /* Button.png in Resources */,
 				F05E326511901B400059DE7A /* FolderViewController.xib in Resources */,
-				F00183CC11953891003DD2E4 /* SimpleRSS.sqlite in Resources */,
 				F0D15AC0119906C200D396DF /* README.markdown in Resources */,
 				FC3015FF11A780260051A7B6 /* NewsViewController.xib in Resources */,
 				FC795EDA11AB72BB004F50F9 /* SimpleRSS.css in Resources */,
@@ -607,7 +550,8 @@
 				FC8D72C311AFD1AC007F94AB /* Folder1.png in Resources */,
 				FC8D72E411AFD8C0007F94AB /* NewsCell.xib in Resources */,
 				FC8D731D11AFDDEA007F94AB /* Feed.png in Resources */,
-				FC9EDD0C11B41F6600AC8822 /* Three20.bundle in Resources */,
+				FCBC75AD11B90BB000F60857 /* AppIcon.png in Resources */,
+				FCBC772811B92E7200F60857 /* SimpleRSS.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,7 +574,6 @@
 				F05E3246119017550059DE7A /* SBJsonParser.m in Sources */,
 				F05E3247119017550059DE7A /* SBJsonWriter.m in Sources */,
 				F05E326411901B400059DE7A /* FolderViewController.m in Sources */,
-				F03FB6E611902AB100B97815 /* FeedParser.m in Sources */,
 				F001839B119520CD003DD2E4 /* Feed.m in Sources */,
 				F0D15ABC119906C200D396DF /* EGODatabase.m in Sources */,
 				F0D15ABD119906C200D396DF /* EGODatabaseRequest.m in Sources */,
@@ -640,7 +583,6 @@
 				F049CFA511998D6700101980 /* EGODB.m in Sources */,
 				F049D161119B054200101980 /* MySingleton.m in Sources */,
 				F049D1D5119BA3CB00101980 /* RSSParser.m in Sources */,
-				F049D1E8119BA5E100101980 /* ArticleParser.m in Sources */,
 				F049D25A119BBDAD00101980 /* DateHelper.m in Sources */,
 				F049D2E0119BEA3600101980 /* UserDefinedConst.m in Sources */,
 				F0A7558B119D15E70081498E /* ASIAuthenticationDialog.m in Sources */,
@@ -658,18 +600,13 @@
 				FCB33A5B11B4A369001D491B /* NSDataAdditions.m in Sources */,
 				FCB33A5C11B4A369001D491B /* TBXML.m in Sources */,
 				FCB33B0E11B4B103001D491B /* MyHTMLStripper.m in Sources */,
+				FCA889F011B7978800980051 /* FolderCompositeCell.m in Sources */,
+				FCA88AAF11B7A23F00980051 /* NewsCompositeCell.m in Sources */,
+				FCA88AF711B7BD9E00980051 /* GoogleReaderSync.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FC9EDE7011B4277200AC8822 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Three20;
-			targetProxy = FC9EDE6F11B4277200AC8822 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -704,10 +641,10 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Manh Tuan Cao (3GVQ7QE7W5)";
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../three20/Build/Products/three20;
@@ -716,7 +653,9 @@
 					"-ObjC",
 				);
 				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E5765451-C068-426B-A1FB-8FAE16E4D27C";
 				SDKROOT = iphoneos3.2;
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -726,7 +665,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../three20/Build/Products/three20;

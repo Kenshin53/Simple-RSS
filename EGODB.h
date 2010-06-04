@@ -34,4 +34,6 @@
 - (NSMutableArray *) getGroups;
 - (NSArray *) getNewsItemsWithGroupID: (NSString *)groupID;
 + (NSNumber *) hexString2Number: (NSString *)hex;
+- (BOOL) setNewsAsRead:(NSString *) newsID;
+
 @end

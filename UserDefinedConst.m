@@ -23,6 +23,7 @@ NSString * const kURLGetTagList = @"http://www.google.com/reader/api/0/tag/list?
 
 NSString * const kURLGetArticleContent =@"http://www.google.com/reader/api/0/stream/items/contents";
 
+NSString * const kURLGetTokenID =@"http://www.google.com/reader/api/0/token";
 
 
 

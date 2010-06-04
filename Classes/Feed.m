@@ -20,7 +20,7 @@
 	[unreadCount release];
 	[lastUpdate release];
 	[newsItems release];
-	
+	[super dealloc];
 }
 
 - (id) initWithDictionary: (NSDictionary *) aFeed {
