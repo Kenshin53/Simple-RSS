@@ -1,0 +1,2947 @@
+TSimple RSS
+v7
+r0
+t297193234.154223
+cCheck dependencies
+cCpResource "build/Release-iphoneos/Simple RSS.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+cProcessInfoPlistFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Info.plist" Simple_RSS-Info.plist
+cCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib"
+cCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DetailView.xib"
+cCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/AuthViewController.xib"
+cCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Login.png" Login.png
+cCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Button.png" Button.png
+cCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.xib"
+cCpResource "build/Release-iphoneos/Simple RSS.app/SimpleRSS.sqlite" SimpleRSS.sqlite
+cCpResource "build/Release-iphoneos/Simple RSS.app/README.markdown" Classes/README.markdown
+cCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.xib"
+cCpResource "build/Release-iphoneos/Simple RSS.app/SimpleRSS.css" SimpleRSS.css
+cCpResource "build/Release-iphoneos/Simple RSS.app/SimpleRSSTest.html" SimpleRSSTest.html
+cCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Football.png" Football.png
+cCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderCell.xib"
+cCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Folder.png" Folder.png
+cCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Folder1.png" Folder1.png
+cCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCell.xib"
+cCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Feed.png" Feed.png
+cProcessPCH /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-hfdqvwlapyrsfvcwllldeqvehzfn/Simple_RSS_Prefix.pch.pth Simple_RSS_Prefix.pch normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessProductPackaging "/Users/caomanhtuanbsb/Library/MobileDevice/Provisioning Profiles/E5765451-C068-426B-A1FB-8FAE16E4D27C.mobileprovision" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/embedded.mobileprovision"
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS.xcent"
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk
+c000000004BA82B910000000000000110
+t1269312401
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist
+c000000004B9F103D00000000000000DD
+t1268715581
+s221
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+c000000004B9F103D00000000000001E5
+t1268715581
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000004B9F269700000000001EC0F0
+t1268721303
+s2015472
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BA03AC100000000003B4B70
+t1268792001
+s3885936
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B9F26D2000000000036A650
+t1268721362
+s3581520
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000004B9F27CC00000000000A1670
+t1268721612
+s661104
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004B9F2A1500000000002215A0
+t1268722197
+s2233760
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000004B9F25FD000000000008B5F0
+t1268721149
+s570864
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B9F32090000000002703230
+t1268724233
+s40907312
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/usr/lib/libsqlite3.0.dylib
+c000000004B9F1C7800000000000B4CF0
+t1268718712
+s740592
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/usr/lib/libz.1.1.3.dylib
+c000000004B9F17270000000000020FF0
+t1268717351
+s135152
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/AuthViewController.h
+c000000004BD7FDE900000000000002E5
+t1272446441
+s741
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/AuthViewController.xib
+c000000004BD7F0E10000000000006368
+t1272443105
+s25448
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Button.png
+c000000004BD72B1A0000000000001209
+t1272392474
+s4617
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.m
+c000000004BEAD9F50000000000000C8A
+t1273682421
+s3210
+i"AuthViewController.h"
+i"GoogleReaderHelper.h"
+i"MySingleton.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../FolderCell.m
+c000000004BFFA12800000000000002FE
+t1275044136
+s766
+i"FolderCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../MySingleton.m
+c000000004C03244000000000000004CA
+t1275274304
+s1226
+i"MySingleton.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.m
+c000000004BFF2A10000000000000040F
+t1275013648
+s1039
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIAuthenticationDialog.h
+c000000004BECD04C0000000000000388
+t1273811020
+s904
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIAuthenticationDialog.m
+c000000004BECD04C0000000000002124
+t1273811020
+s8484
+i"ASIAuthenticationDialog.h"
+i"ASIHTTPRequest.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIFormDataRequest.h
+c000000004BECD04C0000000000000A6D
+t1273811020
+s2669
+i<Foundation/Foundation.h>
+i"ASIHTTPRequest.h"
+i"ASIHTTPRequestConfig.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIFormDataRequest.m
+c000000004BECD04C0000000000002B8E
+t1273811020
+s11150
+i"ASIFormDataRequest.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequest.h
+c000000004BECD04C0000000000008755
+t1273811020
+s34645
+i<Foundation/Foundation.h>
+i<CFNetwork/CFNetwork.h>
+i<stdio.h>
+i"ASIHTTPRequestConfig.h"
+i"ASIHTTPRequestDelegate.h"
+i"ASIProgressDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequest.m
+c000000004BECD10A000000000002269E
+t1273811210
+s140958
+i"ASIHTTPRequest.h"
+i<zlib.h>
+i"Reachability.h"
+i"ASIAuthenticationDialog.h"
+i<MobileCoreServices/MobileCoreServices.h>
+i<SystemConfiguration/SystemConfiguration.h>
+i"ASIInputStream.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequestConfig.h
+c000000004BECDF390000000000000833
+t1273814841
+s2099
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequestDelegate.h
+c000000004BECD04C0000000000000599
+t1273811020
+s1433
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIInputStream.h
+c000000004BECD04C00000000000003C9
+t1273811020
+s969
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIInputStream.m
+c000000004BECD04C0000000000000BF0
+t1273811020
+s3056
+i"ASIInputStream.h"
+i"ASIHTTPRequest.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINSStringAdditions.h
+c000000004BECD04C0000000000000173
+t1273811020
+s371
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINSStringAdditions.m
+c000000004BECD04C000000000000030B
+t1273811020
+s779
+i"ASINSStringAdditions.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINetworkQueue.h
+c000000004BECD04C0000000000001182
+t1273811020
+s4482
+i<Foundation/Foundation.h>
+i"ASIHTTPRequestDelegate.h"
+i"ASIProgressDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINetworkQueue.m
+c000000004BECD04C0000000000002993
+t1273811020
+s10643
+i"ASINetworkQueue.h"
+i"ASIHTTPRequest.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIProgressDelegate.h
+c000000004BECD04C0000000000000678
+t1273811020
+s1656
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ArticleParser.h
+c000000004BEC21E60000000000000476
+t1273766374
+s1142
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ArticleParser.m
+c000000004BF58CE90000000000001ACC
+t1274383593
+s6860
+i"ArticleParser.h"
+i"EGODB.h"
+i"JSON.h"
+i"DateHelper.h"
+i"UserDefinedConst.h"
+i"EGODB.h"
+i"MySingleton.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.h
+c000000004BF7A6DD00000000000002BF
+t1274521309
+s703
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m
+c000000004C03E6EE0000000000000CF6
+t1275324142
+s3318
+i"DetailViewController.h"
+i"MasterViewController.h"
+i"AuthViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabase.h
+c000000004BE8CF1B0000000000000AD1
+t1273548571
+s2769
+i<Foundation/Foundation.h>
+i"EGODatabaseRequest.h"
+i"EGODatabaseResult.h"
+i"EGODatabaseRow.h"
+i<sqlite3.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabase.m
+c000000004BF5F5E80000000000002B4F
+t1274410472
+s11087
+i"EGODatabase.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRequest.h
+c000000004BE8CF1B000000000000096B
+t1273548571
+s2411
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRequest.m
+c000000004BE8CF1B0000000000000E01
+t1273548571
+s3585
+i"EGODatabaseRequest.h"
+i"EGODatabase.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseResult.h
+c000000004BE8CF1B0000000000000715
+t1273548571
+s1813
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseResult.m
+c000000004BE8CF1B000000000000082F
+t1273548571
+s2095
+i"EGODatabaseResult.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRow.h
+c000000004BE8CF1B0000000000000801
+t1273548571
+s2049
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRow.m
+c000000004BE8CF1B0000000000000E6D
+t1273548571
+s3693
+i"EGODatabaseRow.h"
+i"EGODatabaseResult.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Feed.h
+c000000004C03D17800000000000002C6
+t1275318648
+s710
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Feed.m
+c000000004C03D19B000000000000024D
+t1275318683
+s589
+i"Feed.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FeedParser.h
+c000000004BEA363C00000000000003C0
+t1273640508
+s960
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FeedParser.m
+c000000004BECDF39000000000000136C
+t1273814841
+s4972
+i"FeedParser.h"
+i"JSON.h"
+i"GoogleReaderHelper.h"
+i"EGODatabase.h"
+i"Feed.h"
+i"EGODB.h"
+i"MySingleton.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderCell.xib
+c000000004BFF9EE40000000000006BB5
+t1275043556
+s27573
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.h
+c000000004C0296560000000000000477
+t1275237974
+s1143
+i<UIKit/UIKit.h>
+i"FeedParser.h"
+i"ArticleParser.h"
+i"ASIHTTPRequest.h"
+i"FolderCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m
+c000000004C03DCB90000000000002C47
+t1275321529
+s11335
+i"FolderViewController.h"
+i"MySingleton.h"
+i"ArticleParser.h"
+i"UserDefinedConst.h"
+i"EGODB.h"
+i"ASIHTTPRequest.h"
+i"ASINetworkQueue.h"
+i"DetailViewController.h"
+i"DateHelper.h"
+i"GoogleReaderHelper.h"
+i"JSON.h"
+i"RSSParser.h"
+i"NewsViewController.h"
+i"Group.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.xib
+c000000004BDFE3C00000000000001725
+t1272964032
+s5925
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Group.h
+c000000004C03D1EE00000000000002B9
+t1275318766
+s697
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Group.m
+c000000004C03D1F70000000000000153
+t1275318775
+s339
+i"Group.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/JSON.h
+c000000004B93BE5E00000000000008F9
+t1267973726
+s2297
+i"SBJSON.h"
+i"NSObject+SBJSON.h"
+i"NSString+SBJSON.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSObject+SBJSON.h
+c000000004B93BE5E0000000000000A01
+t1267973726
+s2561
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSObject+SBJSON.m
+c000000004B93BE5E000000000000089E
+t1267973726
+s2206
+i"NSObject+SBJSON.h"
+i"SBJsonWriter.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSString+SBJSON.h
+c000000004B93BE5E0000000000000916
+t1267973726
+s2326
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSString+SBJSON.m
+c000000004B93BE5E000000000000087D
+t1267973726
+s2173
+i"NSString+SBJSON.h"
+i"SBJsonParser.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJSON.h
+c000000004B93BE5E0000000000000AED
+t1267973726
+s2797
+i<Foundation/Foundation.h>
+i"SBJsonParser.h"
+i"SBJsonWriter.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJSON.m
+c000000004B93BE5E0000000000001ABC
+t1267973726
+s6844
+i"SBJSON.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonBase.h
+c000000004B93BE5E0000000000000B82
+t1267973726
+s2946
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonBase.m
+c000000004B93BE5E0000000000000AC1
+t1267973726
+s2753
+i"SBJsonBase.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonParser.h
+c000000004B93BE5E0000000000000C0B
+t1267973726
+s3083
+i<Foundation/Foundation.h>
+i"SBJsonBase.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonParser.m
+c000000004B93C6A300000000000036D0
+t1267975843
+s14032
+i"SBJsonParser.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonWriter.h
+c000000004B93BE5E0000000000001140
+t1267973726
+s4416
+i<Foundation/Foundation.h>
+i"SBJsonBase.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonWriter.m
+c000000004B93BE5E0000000000001F26
+t1267973726
+s7974
+i"SBJsonWriter.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/MasterViewController.h
+c000000004BCD321F000000000000019F
+t1271738911
+s415
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCell.h
+c000000004C029658000000000000029F
+t1275237976
+s671
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCell.m
+c000000004BFFA73900000000000002B7
+t1275045689
+s695
+i"NewsCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCell.xib
+c000000004C04C26100000000000077B4
+t1275380321
+s30644
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.h
+c000000004C00ED360000000000000350
+t1275129142
+s848
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.m
+c000000004C00ED330000000000000716
+t1275129139
+s1814
+i"NewsItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.h
+c000000004C0128C400000000000002E5
+t1275144388
+s741
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m
+c000000004C04C87E0000000000001A14
+t1275381886
+s6676
+i"NewsViewController.h"
+i"EGODB.h"
+i"NewsItem.h"
+i"DetailViewController.h"
+i"Group.h"
+i"UserDefinedConst.h"
+i"NewsCell.h"
+i"MySingleton.h"
+i"MyHTMLStripper.h"
+i"DateHelper.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.xib
+c000000004BF748A6000000000000171F
+t1274497190
+s5919
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/README.markdown
+c000000004BE8CF1B0000000000000C1F
+t1273548571
+s3103
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.h
+c000000004C0362C400000000000002B5
+t1275290308
+s693
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m
+c000000004C03869B0000000000002677
+t1275299483
+s9847
+i"RSSParser.h"
+i"EGODB.h"
+i"UserDefinedConst.h"
+i"JSON.h"
+i"ASIFormDataRequest.h"
+i"ASINetworkQueue.h"
+i"MySingleton.h"
+i"NewsItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Reachability.h
+c000000004BE7DCB80000000000000F19
+t1273486520
+s3865
+i<Foundation/Foundation.h>
+i<SystemConfiguration/SystemConfiguration.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Reachability.m
+c000000004BE7DCB800000000000023A7
+t1273486520
+s9127
+i<sys/socket.h>
+i<netinet/in.h>
+i<netinet6/in6.h>
+i<arpa/inet.h>
+i<ifaddrs.h>
+i<netdb.h>
+i<CoreFoundation/CoreFoundation.h>
+i"Reachability.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Simple_RSSAppDelegate.h
+c000000004BF411DA00000000000003AF
+t1274286554
+s943
+i<UIKit/UIKit.h>
+i"AuthViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Simple_RSSAppDelegate.m
+c000000004BF4100E00000000000011CB
+t1274286094
+s4555
+i"Simple_RSSAppDelegate.h"
+i"MasterViewController.h"
+i"DetailViewController.h"
+i"AuthViewController.h"
+i"FolderViewController.h"
+i"Experiment.h"
+i"MySingleton.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DB.h
+c000000004BECC7B2000000000000016D
+t1273808818
+s365
+i<Foundation/Foundation.h>
+i"Feed.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DateHelper.h
+c000000004C04BD71000000000000014D
+t1275379057
+s333
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DateHelper.m
+c000000004C04BE80000000000000059C
+t1275379328
+s1436
+i"DateHelper.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DetailView.xib
+c000000004C03F3A20000000000005A9F
+t1275327394
+s23199
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/EGODB.h
+c000000004C03D97F00000000000004A1
+t1275320703
+s1185
+i<Foundation/Foundation.h>
+i"EGODatabase.h"
+i"Feed.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/EGODB.m
+c000000004C03E1970000000000003247
+t1275322775
+s12871
+i"EGODB.h"
+i"Feed.h"
+i"DateHelper.h"
+i"NewsItem.h"
+i"Group.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.h
+c000000004BE8D42F0000000000000100
+t1273549871
+s256
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m
+c000000004C04BF830000000000000FB3
+t1275379587
+s4019
+i"Experiment.h"
+i"EGODatabase.h"
+i"DB.h"
+i"EGODB.h"
+i"DateHelper.h"
+i"Group.h"
+i"RSSParser.h"
+i"MySingleton.h"
+i"Three20/Three20.h"
+i"TBXML.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Feed.png
+c000000004BFF98D80000000000002754
+t1275042008
+s10068
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Folder.png
+c000000004BFF95D30000000000006094
+t1275041235
+s24724
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Folder1.png
+c000000004BFF95790000000000000513
+t1275041145
+s1299
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/FolderCell.h
+c000000004BFE713F00000000000001DE
+t1274966335
+s478
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Football.png
+c000000004A36DAE40000000000000C55
+t1245108964
+s3157
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.h
+c000000004BE0F8A700000000000003F1
+t1273034919
+s1009
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m
+c000000004BE0FBC8000000000000127E
+t1273035720
+s4734
+i"GoogleReaderHelper.h"
+i"JSON.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Login.png
+c000000004BD729570000000000033B26
+t1272392023
+s211750
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib
+c000000004BCD321F0000000000004AC7
+t1271738911
+s19143
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MyHTMLStripper.h
+c000000004C0487050000000000000173
+t1275365125
+s371
+i<Foundation/Foundation.h>
+i"TBXML.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MyHTMLStripper.m
+c000000004C04867A00000000000003E9
+t1275364986
+s1001
+i"MyHTMLStripper.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MySingleton.h
+c000000004C0324FD0000000000000242
+t1275274493
+s578
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/NSDataAdditions.h
+c000000004BF3E1060000000000000A67
+t1274274054
+s2663
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/NSDataAdditions.m
+c000000004BF3E10600000000000025EE
+t1274274054
+s9710
+i"NSDataAdditions.h"
+i<zlib.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSS.css
+c000000004BFAC887000000000000069A
+t1274726535
+s1690
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSS.sqlite
+c000000004BFD58DF0000000000003400
+t1274894559
+s13312
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSSTest.html
+c000000004BFB54EA00000000000006FC
+t1274762474
+s1788
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Simple_RSS_Prefix.pch
+c000000004C0697760000000000000147
+t1275500406
+s327
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/TBXML.h
+c000000004BF3E10600000000000012D1
+t1274274054
+s4817
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/TBXML.m
+c000000004BF3E10600000000000046DA
+t1274274054
+s18138
+i"TBXML.h"
+i"NSDataAdditions.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h
+c000000004C038F000000000000000264
+t1275301632
+s612
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app.dSYM
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/AuthViewController.nib
+t1275500428
+s2406
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Button.png
+t1275500429
+s4857
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/DetailView.nib
+t1275500428
+s1231
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Feed.png
+t1275500430
+s9569
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Folder.png
+t1275500430
+s22855
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Folder1.png
+t1275500430
+s1804
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/FolderCell.nib
+t1275500430
+s2018
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/FolderViewController.nib
+t1275500429
+s984
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Football.png
+t1275500429
+s3760
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Info.plist
+t1275500427
+s695
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Login.png
+t1275500433
+s202360
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/MainWindow.nib
+t1275500428
+s957
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/NewsCell.nib
+t1275500430
+s2548
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/NewsViewController.nib
+t1275500429
+s984
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/PkgInfo
+t1275500427
+s8
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/README.markdown
+t1275500429
+s3103
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/ResourceRules.plist
+t1275500427
+s485
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Simple RSS
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/SimpleRSS.css
+t1275500429
+s1690
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/SimpleRSS.sqlite
+t1275500429
+s13312
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/SimpleRSSTest.html
+t1275500429
+s1788
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/embedded.mobileprovision
+t1275500433
+s7173
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/ASIAuthenticationDialog.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/ASIFormDataRequest.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/ASIHTTPRequest.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/ASIInputStream.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/ASINSStringAdditions.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/ASINetworkQueue.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/ArticleParser.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/AuthViewController.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/DateHelper.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/DetailViewController.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/EGODB.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/EGODatabase.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/EGODatabaseRequest.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/EGODatabaseResult.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/EGODatabaseRow.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/Experiment.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/Feed.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/FeedParser.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/FolderCell.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/FolderViewController.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/GoogleReaderHelper.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/Group.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/MyHTMLStripper.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/MySingleton.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NSDataAdditions.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NSObject+SBJSON.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NSString+SBJSON.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NewsCell.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NewsItem.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NewsViewController.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/RSSParser.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/Reachability.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/SBJSON.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/SBJsonBase.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/SBJsonParser.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/SBJsonWriter.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/Simple RSS.LinkFileList
+c000000004C06978B00000000000016CE
+t1275500427
+s5838
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/Simple_RSSAppDelegate.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/TBXML.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/UserDefinedConst.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/main.o
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS.xcent
+t1275500434
+s323
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/com.apple.build-tools.platform.validate
+t2
+s0
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/main.m
+c000000004BE5011D0000000000000177
+t1273299229
+s375
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20/Three20.h
+c000000004C03F01F00000000000008D7
+t1275326495
+s2263
+i"Three20Core/Three20Core.h"
+i"Three20Network/Three20Network.h"
+i"Three20Style/Three20Style.h"
+i"Three20UICommon/Three20UICommon.h"
+i"Three20UINavigator/Three20UINavigator.h"
+i"Three20UI/Three20UI.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Core/TTCorePreprocessorMacros.h
+c000000004C03E99A0000000000000857
+t1275324826
+s2135
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Core/TTDebug.h
+c000000004C03E99A0000000000000EBD
+t1275324826
+s3773
+i<TargetConditionals.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Core/TTEntityTables.h
+c000000004C03E99A00000000000004E0
+t1275324826
+s1248
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Core/TTGlobalCore.h
+c000000004C03E99A00000000000005E6
+t1275324826
+s1510
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Core/TTGlobalCoreLocale.h
+c000000004C03E99A000000000000056D
+t1275324826
+s1389
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Core/TTGlobalCorePaths.h
+c000000004C03E99A0000000000000457
+t1275324826
+s1111
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Core/TTGlobalCoreRects.h
+c000000004C03E99A0000000000000520
+t1275324826
+s1312
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Core/TTMarkupStripper.h
+c000000004C03E9990000000000000467
+t1275324825
+s1127
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Core/Three20Core.h
+c000000004C03E99A00000000000003DD
+t1275324826
+s989
+i"Three20Core/TTCorePreprocessorMacros.h"
+i"Three20Core/TTGlobalCore.h"
+i"Three20Core/TTGlobalCoreLocale.h"
+i"Three20Core/TTGlobalCorePaths.h"
+i"Three20Core/TTGlobalCoreRects.h"
+i"Three20Core/TTDebug.h"
+i"Three20Core/TTEntityTables.h"
+i"Three20Core/TTMarkupStripper.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Network/TTGlobalNetwork.h
+c000000004C03E99C000000000000057D
+t1275324828
+s1405
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Network/TTModel.h
+c000000004C03E99C0000000000000CEB
+t1275324828
+s3307
+i<Foundation/Foundation.h>
+i"Three20Network/TTURLRequestCachePolicy.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Network/TTModelDelegate.h
+c000000004C03E99C00000000000008A8
+t1275324828
+s2216
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Network/TTURLCache.h
+c000000004C03E99C00000000000018EA
+t1275324828
+s6378
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Network/TTURLDataResponse.h
+c000000004C03E99C0000000000000363
+t1275324828
+s867
+i"Three20Network/TTURLResponse.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Network/TTURLImageResponse.h
+c000000004C03E99C0000000000000434
+t1275324828
+s1076
+i"Three20Network/TTURLResponse.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Network/TTURLRequest.h
+c000000004C03E99C0000000000001A70
+t1275324828
+s6768
+i<Foundation/Foundation.h>
+i"Three20Network/TTURLRequestCachePolicy.h"
+i"Three20Core/TTCorePreprocessorMacros.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Network/TTURLRequestCachePolicy.h
+c000000004C03E99C00000000000004CF
+t1275324828
+s1231
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Network/TTURLRequestDelegate.h
+c000000004C03E99C00000000000006C3
+t1275324828
+s1731
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Network/TTURLRequestModel.h
+c000000004C03E99C00000000000006A1
+t1275324828
+s1697
+i"Three20Network/TTModel.h"
+i"Three20Network/TTURLRequestDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Network/TTURLRequestQueue.h
+c000000004C03E99C0000000000000DAC
+t1275324828
+s3500
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Network/TTURLResponse.h
+c000000004C03E99C000000000000064F
+t1275324828
+s1615
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Network/TTUserInfo.h
+c000000004C03E99C0000000000000673
+t1275324828
+s1651
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Network/Three20Network.h
+c000000004C03E99C000000000000053E
+t1275324828
+s1342
+i"Three20Network/TTGlobalNetwork.h"
+i"Three20Network/TTURLRequestCachePolicy.h"
+i"Three20Network/TTModel.h"
+i"Three20Network/TTModelDelegate.h"
+i"Three20Network/TTURLRequestModel.h"
+i"Three20Network/TTURLRequest.h"
+i"Three20Network/TTURLRequestDelegate.h"
+i"Three20Network/TTURLResponse.h"
+i"Three20Network/TTURLDataResponse.h"
+i"Three20Network/TTURLImageResponse.h"
+i"Three20Network/TTUserInfo.h"
+i"Three20Network/TTURLRequestQueue.h"
+i"Three20Network/TTURLCache.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTBevelBorderStyle.h
+c000000004C03E99E00000000000004FD
+t1275324830
+s1277
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTBlendStyle.h
+c000000004C03E99E0000000000000340
+t1275324830
+s832
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTBoxStyle.h
+c000000004C03E99E00000000000005FD
+t1275324830
+s1533
+i"Three20Style/TTStyle.h"
+i"Three20Style/TTPosition.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTContentStyle.h
+c000000004C03E99E00000000000002DB
+t1275324830
+s731
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTDefaultStyleSheet+DragRefreshHeader.h
+c000000004C03E99E00000000000004C3
+t1275324830
+s1219
+i"Three20Style/TTDefaultStyleSheet.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTDefaultStyleSheet.h
+c000000004C03E99E0000000000000F2A
+t1275324830
+s3882
+i"Three20Style/TTStyleSheet.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTFlowLayout.h
+c000000004C03E99E0000000000000324
+t1275324830
+s804
+i"Three20Style/TTLayout.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTFourBorderStyle.h
+c000000004C03E99E0000000000000630
+t1275324830
+s1584
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTGlobalStyle.h
+c000000004C03E99E0000000000000774
+t1275324830
+s1908
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTGridLayout.h
+c000000004C03E99E0000000000000373
+t1275324830
+s883
+i"Three20Style/TTLayout.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTHighlightBorderStyle.h
+c000000004C03E99E0000000000000442
+t1275324830
+s1090
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTImageStyle.h
+c000000004C03E99E00000000000007A7
+t1275324830
+s1959
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTInnerShadowStyle.h
+c000000004C03E99E00000000000002B8
+t1275324830
+s696
+i"Three20Style/TTShadowStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTInsetStyle.h
+c000000004C03E99E0000000000000337
+t1275324830
+s823
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTLayout.h
+c000000004C03E99E00000000000002F8
+t1275324830
+s760
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTLinearGradientBorderStyle.h
+c000000004C03E99E00000000000005DC
+t1275324830
+s1500
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTLinearGradientFillStyle.h
+c000000004C03E99E00000000000003D5
+t1275324830
+s981
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTMaskStyle.h
+c000000004C03E99E000000000000032D
+t1275324830
+s813
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTPartStyle.h
+c000000004C03E99E00000000000003CD
+t1275324830
+s973
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTPosition.h
+c000000004C03E99E00000000000002CA
+t1275324830
+s714
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTRectangleShape.h
+c000000004C03E99E00000000000002C8
+t1275324830
+s712
+i"Three20Style/TTShape.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTReflectiveFillStyle.h
+c000000004C03E99E0000000000000435
+t1275324830
+s1077
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTRoundedLeftArrowShape.h
+c000000004C03E99E000000000000032E
+t1275324830
+s814
+i"Three20Style/TTShape.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTRoundedRectangleShape.h
+c000000004C03E99E00000000000004DD
+t1275324830
+s1245
+i"Three20Style/TTShape.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTRoundedRightArrowShape.h
+c000000004C03E99E0000000000000330
+t1275324830
+s816
+i"Three20Style/TTShape.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTShadowStyle.h
+c000000004C03E99E0000000000000402
+t1275324830
+s1026
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTShape.h
+c000000004C03E99E00000000000004D8
+t1275324830
+s1240
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTShapeStyle.h
+c000000004C03E99E000000000000038A
+t1275324830
+s906
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTSolidBorderStyle.h
+c000000004C03E99E0000000000000399
+t1275324830
+s921
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTSolidFillStyle.h
+c000000004C03E99E000000000000033B
+t1275324830
+s827
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTSpeechBubbleShape.h
+c000000004C03E99E000000000000046A
+t1275324830
+s1130
+i"Three20Style/TTShape.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyle.h
+c000000004C03E99E0000000000000474
+t1275324830
+s1140
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyleContext.h
+c000000004C03E99E00000000000004BA
+t1275324830
+s1210
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyleDelegate.h
+c000000004C03E99E000000000000039D
+t1275324830
+s925
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyleSheet.h
+c000000004C03E99E00000000000003E3
+t1275324830
+s995
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledBlock.h
+c000000004C03E99E00000000000002B7
+t1275324830
+s695
+i"Three20Style/TTStyledElement.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledBoldNode.h
+c000000004C03E99E00000000000002B8
+t1275324830
+s696
+i"Three20Style/TTStyledInline.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledBoxFrame.h
+c000000004C03E99E0000000000000437
+t1275324830
+s1079
+i"Three20Style/TTStyledFrame.h"
+i"Three20Style/TTStyleDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledButtonNode.h
+c000000004C03E99E000000000000042F
+t1275324830
+s1071
+i"Three20Style/TTStyledInlineBlock.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledElement.h
+c000000004C03E99E0000000000000515
+t1275324830
+s1301
+i"Three20Style/TTStyledNode.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledFrame.h
+c000000004C03E99E00000000000005E0
+t1275324830
+s1504
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledImageFrame.h
+c000000004C03E99E000000000000046E
+t1275324830
+s1134
+i"Three20Style/TTStyledFrame.h"
+i"Three20Style/TTStyleDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledImageNode.h
+c000000004C03E99E000000000000043F
+t1275324830
+s1087
+i"Three20Style/TTStyledElement.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledInline.h
+c000000004C03E99E00000000000002B8
+t1275324830
+s696
+i"Three20Style/TTStyledElement.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledInlineBlock.h
+c000000004C03E99E00000000000002BD
+t1275324830
+s701
+i"Three20Style/TTStyledElement.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledInlineFrame.h
+c000000004C03E99E00000000000003F3
+t1275324830
+s1011
+i"Three20Style/TTStyledBoxFrame.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledItalicNode.h
+c000000004C03E99E00000000000002BA
+t1275324830
+s698
+i"Three20Style/TTStyledInline.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledLineBreakNode.h
+c000000004C03E99E00000000000002BB
+t1275324830
+s699
+i"Three20Style/TTStyledBlock.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledLinkNode.h
+c000000004C03E99E0000000000000423
+t1275324830
+s1059
+i"Three20Style/TTStyledInline.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledNode.h
+c000000004C03E99E000000000000047B
+t1275324830
+s1147
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledText.h
+c000000004C03E99E0000000000000EFB
+t1275324830
+s3835
+i<UIKit/UIKit.h>
+i"Three20Network/TTURLRequestDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledTextDelegate.h
+c000000004C03E99E0000000000000314
+t1275324830
+s788
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledTextFrame.h
+c000000004C03E99E00000000000004D5
+t1275324830
+s1237
+i"Three20Style/TTStyledFrame.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledTextNode.h
+c000000004C03E99E000000000000037F
+t1275324830
+s895
+i"Three20Style/TTStyledNode.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTStyledTextParser.h
+c000000004C03E99E00000000000004CD
+t1275324830
+s1229
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/TTTextStyle.h
+c000000004C03E99E0000000000000B13
+t1275324830
+s2835
+i"Three20Style/TTStyle.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20Style/Three20Style.h
+c000000004C03E99E0000000000000C09
+t1275324830
+s3081
+i"Three20Core/Three20Core.h"
+i"Three20Network/Three20Network.h"
+i"Three20Style/TTGlobalStyle.h"
+i"Three20Style/TTPosition.h"
+i"Three20Style/TTDefaultStyleSheet.h"
+i"Three20Style/TTDefaultStyleSheet+DragRefreshHeader.h"
+i"Three20Style/TTLayout.h"
+i"Three20Style/TTFlowLayout.h"
+i"Three20Style/TTGridLayout.h"
+i"Three20Style/TTShape.h"
+i"Three20Style/TTRectangleShape.h"
+i"Three20Style/TTRoundedRectangleShape.h"
+i"Three20Style/TTRoundedRightArrowShape.h"
+i"Three20Style/TTRoundedLeftArrowShape.h"
+i"Three20Style/TTSpeechBubbleShape.h"
+i"Three20Style/TTStyle.h"
+i"Three20Style/TTStyleDelegate.h"
+i"Three20Style/TTStyleContext.h"
+i"Three20Style/TTContentStyle.h"
+i"Three20Style/TTPartStyle.h"
+i"Three20Style/TTShapeStyle.h"
+i"Three20Style/TTInsetStyle.h"
+i"Three20Style/TTBoxStyle.h"
+i"Three20Style/TTTextStyle.h"
+i"Three20Style/TTImageStyle.h"
+i"Three20Style/TTMaskStyle.h"
+i"Three20Style/TTBlendStyle.h"
+i"Three20Style/TTSolidFillStyle.h"
+i"Three20Style/TTLinearGradientFillStyle.h"
+i"Three20Style/TTReflectiveFillStyle.h"
+i"Three20Style/TTShadowStyle.h"
+i"Three20Style/TTInnerShadowStyle.h"
+i"Three20Style/TTSolidBorderStyle.h"
+i"Three20Style/TTHighlightBorderStyle.h"
+i"Three20Style/TTFourBorderStyle.h"
+i"Three20Style/TTBevelBorderStyle.h"
+i"Three20Style/TTLinearGradientBorderStyle.h"
+i"Three20Style/TTStyledText.h"
+i"Three20Style/TTStyledTextDelegate.h"
+i"Three20Style/TTStyledNode.h"
+i"Three20Style/TTStyledTextNode.h"
+i"Three20Style/TTStyledElement.h"
+i"Three20Style/TTStyledBlock.h"
+i"Three20Style/TTStyledInline.h"
+i"Three20Style/TTStyledInlineBlock.h"
+i"Three20Style/TTStyledBoldNode.h"
+i"Three20Style/TTStyledItalicNode.h"
+i"Three20Style/TTStyledLinkNode.h"
+i"Three20Style/TTStyledButtonNode.h"
+i"Three20Style/TTStyledImageNode.h"
+i"Three20Style/TTStyledLineBreakNode.h"
+i"Three20Style/TTStyledFrame.h"
+i"Three20Style/TTStyledBoxFrame.h"
+i"Three20Style/TTStyledInlineFrame.h"
+i"Three20Style/TTStyledTextFrame.h"
+i"Three20Style/TTStyledImageFrame.h"
+i"Three20Style/TTStyledTextParser.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTActionSheetController.h
+c000000004C03E9A60000000000000C84
+t1275324838
+s3204
+i"Three20UI/TTPopupViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTActionSheetControllerDelegate.h
+c000000004C03E9A60000000000000704
+t1275324838
+s1796
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTActivityLabel.h
+c000000004C03E9A60000000000000749
+t1275324838
+s1865
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTAlertViewController.h
+c000000004C03E9A60000000000000663
+t1275324838
+s1635
+i"Three20UI/TTPopupViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTAlertViewControllerDelegate.h
+c000000004C03E9A60000000000000394
+t1275324838
+s916
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTButton.h
+c000000004C03E9A600000000000006D7
+t1275324838
+s1751
+i"Three20Style/TTStyleDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTButtonBar.h
+c000000004C03E9A600000000000003E5
+t1275324838
+s997
+i"Three20UI/TTView.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTErrorView.h
+c000000004C03E9A600000000000003FB
+t1275324838
+s1019
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTImageView.h
+c000000004C03E9A60000000000000B5C
+t1275324838
+s2908
+i"Three20UI/TTView.h"
+i"Three20Network/TTURLRequestDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTImageViewDelegate.h
+c000000004C03E9A600000000000004A4
+t1275324838
+s1188
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTLabel.h
+c000000004C03E9A60000000000000346
+t1275324838
+s838
+i"Three20UI/TTView.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTLauncherItem.h
+c000000004C03E9A700000000000005E5
+t1275324839
+s1509
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTLauncherView.h
+c000000004C03E9A70000000000000808
+t1275324839
+s2056
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTLauncherViewDelegate.h
+c000000004C03E9A700000000000004B1
+t1275324839
+s1201
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTLink.h
+c000000004C03E9A70000000000000460
+t1275324839
+s1120
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTListDataSource.h
+c000000004C03E9A700000000000003F3
+t1275324839
+s1011
+i"Three20UI/TTTableViewDataSource.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTMessageController.h
+c000000004C03E9A70000000000001A98
+t1275324839
+s6808
+i"Three20UI/TTViewController.h"
+i"Three20UI/TTTextEditorDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTMessageControllerDelegate.h
+c000000004C03E9A7000000000000081A
+t1275324839
+s2074
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTMessageField.h
+c000000004C03E9A7000000000000058E
+t1275324839
+s1422
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTMessageRecipientField.h
+c000000004C03E9A700000000000003CA
+t1275324839
+s970
+i"Three20UI/TTMessageField.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTMessageSubjectField.h
+c000000004C03E9A7000000000000037B
+t1275324839
+s891
+i"Three20UI/TTMessageTextField.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTMessageTextField.h
+c000000004C03E9A70000000000000331
+t1275324839
+s817
+i"Three20UI/TTMessageField.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTModelViewController.h
+c000000004C03E9A70000000000001712
+t1275324839
+s5906
+i"Three20UI/TTViewController.h"
+i"Three20Network/TTModelDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTNavigationController.h
+c000000004C03E9A7000000000000047D
+t1275324839
+s1149
+i"Three20UINavigator/TTBaseNavigationController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTNavigator.h
+c000000004C03E9A70000000000000435
+t1275324839
+s1077
+i"Three20UINavigator/TTBaseNavigator.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTPageControl.h
+c000000004C03E9A700000000000004A9
+t1275324839
+s1193
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTPhoto.h
+c000000004C03E9A70000000000000515
+t1275324839
+s1301
+i"Three20UI/TTPhotoVersion.h"
+i"Three20UINavigator/TTURLObject.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTPhotoSource.h
+c000000004C03E9A700000000000004F7
+t1275324839
+s1271
+i"Three20Network/TTModel.h"
+i"Three20UINavigator/TTURLObject.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTPhotoVersion.h
+c000000004C03E9A700000000000002EB
+t1275324839
+s747
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTPhotoView.h
+c000000004C03E9A70000000000000581
+t1275324839
+s1409
+i"Three20UI/TTImageView.h"
+i"Three20UI/TTPhotoVersion.h"
+i"Three20UI/TTImageViewDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTPhotoViewController.h
+c000000004C03E9A70000000000000C70
+t1275324839
+s3184
+i"Three20UI/TTModelViewController.h"
+i"Three20UI/TTScrollViewDelegate.h"
+i"Three20UI/TTScrollViewDataSource.h"
+i"Three20UI/TTThumbsViewControllerDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTPickerTextField.h
+c000000004C03E9A70000000000000533
+t1275324839
+s1331
+i"Three20UI/TTSearchTextField.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTPopupViewController.h
+c000000004C03E9A70000000000000513
+t1275324839
+s1299
+i"Three20UI/TTModelViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTPostController.h
+c000000004C03E9A70000000000000955
+t1275324839
+s2389
+i"Three20UI/TTPopupViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTPostControllerDelegate.h
+c000000004C03E9A700000000000005F1
+t1275324839
+s1521
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTRecursiveProgress.h
+c000000004C03E9A70000000000000E79
+t1275324839
+s3705
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTScrollView.h
+c000000004C03E9A70000000000000E27
+t1275324839
+s3623
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTScrollViewDataSource.h
+c000000004C03E9A7000000000000058A
+t1275324839
+s1418
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTScrollViewDelegate.h
+c000000004C03E9A70000000000000763
+t1275324839
+s1891
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTSearchBar.h
+c000000004C03E9A7000000000000085C
+t1275324839
+s2140
+i"Three20UI/TTView.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTSearchDisplayController.h
+c000000004C03E9A70000000000000637
+t1275324839
+s1591
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTSearchTextField.h
+c000000004C03E9A70000000000000703
+t1275324839
+s1795
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTSearchTextFieldDelegate.h
+c000000004C03E9A70000000000000341
+t1275324839
+s833
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTSearchlightLabel.h
+c000000004C03E9A70000000000000520
+t1275324839
+s1312
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTSectionedDataSource.h
+c000000004C03E9A70000000000000841
+t1275324839
+s2113
+i"Three20UI/TTTableViewDataSource.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTStyledTextLabel.h
+c000000004C03E9A700000000000008E4
+t1275324839
+s2276
+i"Three20Style/TTStyledTextDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTStyledTextTableCell.h
+c000000004C03E9A70000000000000331
+t1275324839
+s817
+i"Three20UI/TTTableViewCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTStyledTextTableItemCell.h
+c000000004C03E9A70000000000000341
+t1275324839
+s833
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTab.h
+c000000004C03E9A70000000000000374
+t1275324839
+s884
+i"Three20UI/TTButton.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTabBar.h
+c000000004C03E9A700000000000005B2
+t1275324839
+s1458
+i"Three20UI/TTView.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTabDelegate.h
+c000000004C03E9A700000000000002FA
+t1275324839
+s762
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTabGrid.h
+c000000004C03E9A700000000000002EC
+t1275324839
+s748
+i"Three20UI/TTTabBar.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTabItem.h
+c000000004C03E9A70000000000000409
+t1275324839
+s1033
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTabStrip.h
+c000000004C03E9A70000000000000301
+t1275324839
+s769
+i"Three20UI/TTTabBar.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableActivityItem.h
+c000000004C03E9A70000000000000319
+t1275324839
+s793
+i"Three20UI/TTTableItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableActivityItemCell.h
+c000000004C03E9A70000000000000385
+t1275324839
+s901
+i"Three20UI/TTTableViewCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableButton.h
+c000000004C03E9A700000000000002B1
+t1275324839
+s689
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableCaptionItem.h
+c000000004C03E9A70000000000000410
+t1275324839
+s1040
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableCaptionItemCell.h
+c000000004C03E9A700000000000002FF
+t1275324839
+s767
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableControlCell.h
+c000000004C03E9A7000000000000039C
+t1275324839
+s924
+i"Three20UI/TTTableViewCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableControlItem.h
+c000000004C03E9A70000000000000392
+t1275324839
+s914
+i"Three20UI/TTTableItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableFlushViewCell.h
+c000000004C03E9A7000000000000038D
+t1275324839
+s909
+i"Three20UI/TTTableViewCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableGrayTextItem.h
+c000000004C03E9A700000000000002B7
+t1275324839
+s695
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableHeaderView.h
+c000000004C03E9A700000000000002E2
+t1275324839
+s738
+i"Three20UI/TTView.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableImageItem.h
+c000000004C03E9A70000000000000564
+t1275324839
+s1380
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableImageItemCell.h
+c000000004C03E9A70000000000000338
+t1275324839
+s824
+i"Three20UI/TTTableTextItemCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableItem.h
+c000000004C03E9A70000000000000302
+t1275324839
+s770
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableLink.h
+c000000004C03E9A700000000000002AF
+t1275324839
+s687
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableLinkedItem.h
+c000000004C03E9A7000000000000033F
+t1275324839
+s831
+i"Three20UI/TTTableItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableLinkedItemCell.h
+c000000004C03E9A700000000000002F5
+t1275324839
+s757
+i"Three20UI/TTTableViewCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableLongTextItem.h
+c000000004C03E9A700000000000002B7
+t1275324839
+s695
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableMessageItem.h
+c000000004C03E9A70000000000000518
+t1275324839
+s1304
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableMessageItemCell.h
+c000000004C03E9A7000000000000044A
+t1275324839
+s1098
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableMoreButton.h
+c000000004C03E9A7000000000000036D
+t1275324839
+s877
+i"Three20UI/TTTableSubtitleItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableMoreButtonCell.h
+c000000004C03E9A700000000000003D1
+t1275324839
+s977
+i"Three20UI/TTTableSubtitleItemCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableRightCaptionItem.h
+c000000004C03E9A700000000000002C1
+t1275324839
+s705
+i"Three20UI/TTTableCaptionItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableRightCaptionItemCell.h
+c000000004C03E9A70000000000000304
+t1275324839
+s772
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableRightImageItem.h
+c000000004C03E9A700000000000002BB
+t1275324839
+s699
+i"Three20UI/TTTableImageItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableStyledTextItem.h
+c000000004C03E9A70000000000000482
+t1275324839
+s1154
+i"Three20UI/TTTableLinkedItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableSubtextItem.h
+c000000004C03E9A700000000000002BC
+t1275324839
+s700
+i"Three20UI/TTTableCaptionItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableSubtextItemCell.h
+c000000004C03E9A700000000000002FF
+t1275324839
+s767
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableSubtitleItem.h
+c000000004C03E9A700000000000005F5
+t1275324839
+s1525
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableSubtitleItemCell.h
+c000000004C03E9A70000000000000385
+t1275324839
+s901
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableSummaryItem.h
+c000000004C03E9A700000000000002B6
+t1275324839
+s694
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableTextItem.h
+c000000004C03E9A700000000000003B4
+t1275324839
+s948
+i"Three20UI/TTTableLinkedItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableTextItemCell.h
+c000000004C03E9A700000000000002C3
+t1275324839
+s707
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableView.h
+c000000004C03E9A700000000000006A2
+t1275324839
+s1698
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableViewCell.h
+c000000004C03E9A7000000000000076F
+t1275324839
+s1903
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableViewController.h
+c000000004C03E9A70000000000001044
+t1275324839
+s4164
+i"Three20UI/TTModelViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableViewDataSource.h
+c000000004C03E9A70000000000000B6C
+t1275324839
+s2924
+i<UIKit/UIKit.h>
+i"Three20Network/TTModel.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableViewDelegate.h
+c000000004C03E9A70000000000000710
+t1275324839
+s1808
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableViewDragRefreshDelegate.h
+c000000004C03E9A700000000000003F9
+t1275324839
+s1017
+i"Three20UI/TTTableViewVarHeightDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableViewGroupedVarHeightDelegate.h
+c000000004C03E9A7000000000000033F
+t1275324839
+s831
+i"Three20UI/TTTableViewVarHeightDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableViewItem.h
+c000000004C03E9A70000000000000371
+t1275324839
+s881
+i"Three20UI/TTTableItem.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableViewPlainDelegate.h
+c000000004C03E9A7000000000000030D
+t1275324839
+s781
+i"Three20UI/TTTableViewDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableViewPlainVarHeightDelegate.h
+c000000004C03E9A700000000000002E5
+t1275324839
+s741
+i"Three20UI/TTTableViewVarHeightDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTableViewVarHeightDelegate.h
+c000000004C03E9A7000000000000031D
+t1275324839
+s797
+i"Three20UI/TTTableViewDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTextBarController.h
+c000000004C03E9A700000000000008AC
+t1275324839
+s2220
+i"Three20UI/TTPopupViewController.h"
+i"Three20UI/TTTextEditorDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTextBarDelegate.h
+c000000004C03E9A7000000000000056B
+t1275324839
+s1387
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTextEditor.h
+c000000004C03E9A70000000000000691
+t1275324839
+s1681
+i"Three20UI/TTView.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTTextEditorDelegate.h
+c000000004C03E9A70000000000000534
+t1275324839
+s1332
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTThumbView.h
+c000000004C03E9A700000000000002D3
+t1275324839
+s723
+i"Three20UI/TTButton.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTThumbsDataSource.h
+c000000004C03E9A70000000000000486
+t1275324839
+s1158
+i"Three20UI/TTTableViewDataSource.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTThumbsTableViewCell.h
+c000000004C03E9A70000000000000521
+t1275324839
+s1313
+i"Three20UI/TTTableViewCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTThumbsTableViewCellDelegate.h
+c000000004C03E9A7000000000000031B
+t1275324839
+s795
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTThumbsViewController.h
+c000000004C03E9A70000000000000578
+t1275324839
+s1400
+i"Three20UI/TTTableViewController.h"
+i"Three20UI/TTThumbsTableViewCellDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTThumbsViewControllerDelegate.h
+c000000004C03E9A70000000000000505
+t1275324839
+s1285
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTView.h
+c000000004C03E9A7000000000000041F
+t1275324839
+s1055
+i"Three20Style/TTStyleDelegate.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTViewController.h
+c000000004C03E9A700000000000006C8
+t1275324839
+s1736
+i"Three20UINavigator/TTNavigatorViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTWebController.h
+c000000004C03E9A700000000000008D4
+t1275324839
+s2260
+i"Three20UI/TTModelViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/TTYouTubeView.h
+c000000004C03E9A700000000000003CF
+t1275324839
+s975
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UI/Three20UI.h
+c000000004C03E9A60000000000001411
+t1275324838
+s5137
+i"Three20UI/TTNavigator.h"
+i"Three20UI/TTViewController.h"
+i"Three20UI/TTNavigationController.h"
+i"Three20UI/TTWebController.h"
+i"Three20UI/TTMessageController.h"
+i"Three20UI/TTMessageControllerDelegate.h"
+i"Three20UI/TTMessageField.h"
+i"Three20UI/TTMessageRecipientField.h"
+i"Three20UI/TTMessageTextField.h"
+i"Three20UI/TTMessageSubjectField.h"
+i"Three20UI/TTAlertViewController.h"
+i"Three20UI/TTAlertViewControllerDelegate.h"
+i"Three20UI/TTActionSheetController.h"
+i"Three20UI/TTActionSheetControllerDelegate.h"
+i"Three20UI/TTPostController.h"
+i"Three20UI/TTPostControllerDelegate.h"
+i"Three20UI/TTTextBarController.h"
+i"Three20UI/TTTextBarDelegate.h"
+i"Three20Network/TTURLCache.h"
+i"Three20UI/TTView.h"
+i"Three20UI/TTImageView.h"
+i"Three20UI/TTImageViewDelegate.h"
+i"Three20UI/TTYouTubeView.h"
+i"Three20UI/TTScrollView.h"
+i"Three20UI/TTScrollViewDelegate.h"
+i"Three20UI/TTScrollViewDataSource.h"
+i"Three20UI/TTLauncherView.h"
+i"Three20UI/TTLauncherViewDelegate.h"
+i"Three20UI/TTLauncherItem.h"
+i"Three20UI/TTLabel.h"
+i"Three20UI/TTStyledTextLabel.h"
+i"Three20UI/TTActivityLabel.h"
+i"Three20UI/TTSearchlightLabel.h"
+i"Three20UI/TTButton.h"
+i"Three20UI/TTLink.h"
+i"Three20UI/TTTabBar.h"
+i"Three20UI/TTTabDelegate.h"
+i"Three20UI/TTTabStrip.h"
+i"Three20UI/TTTabGrid.h"
+i"Three20UI/TTTab.h"
+i"Three20UI/TTTabItem.h"
+i"Three20UI/TTButtonBar.h"
+i"Three20UI/TTPageControl.h"
+i"Three20UI/TTTextEditor.h"
+i"Three20UI/TTTextEditorDelegate.h"
+i"Three20UI/TTSearchTextField.h"
+i"Three20UI/TTSearchTextFieldDelegate.h"
+i"Three20UI/TTPickerTextField.h"
+i"Three20UI/TTSearchBar.h"
+i"Three20UI/TTTableViewController.h"
+i"Three20UI/TTSearchDisplayController.h"
+i"Three20UI/TTTableView.h"
+i"Three20UI/TTTableViewDelegate.h"
+i"Three20UI/TTTableViewVarHeightDelegate.h"
+i"Three20UI/TTTableViewGroupedVarHeightDelegate.h"
+i"Three20UI/TTTableViewPlainDelegate.h"
+i"Three20UI/TTTableViewPlainVarHeightDelegate.h"
+i"Three20UI/TTTableViewDragRefreshDelegate.h"
+i"Three20UI/TTListDataSource.h"
+i"Three20UI/TTSectionedDataSource.h"
+i"Three20UI/TTTableHeaderView.h"
+i"Three20UI/TTTableViewCell.h"
+i"Three20UI/TTTableItem.h"
+i"Three20UI/TTTableLinkedItem.h"
+i"Three20UI/TTTableTextItem.h"
+i"Three20UI/TTTableCaptionItem.h"
+i"Three20UI/TTTableRightCaptionItem.h"
+i"Three20UI/TTTableSubtextItem.h"
+i"Three20UI/TTTableSubtitleItem.h"
+i"Three20UI/TTTableMessageItem.h"
+i"Three20UI/TTTableLongTextItem.h"
+i"Three20UI/TTTableGrayTextItem.h"
+i"Three20UI/TTTableSummaryItem.h"
+i"Three20UI/TTTableLink.h"
+i"Three20UI/TTTableButton.h"
+i"Three20UI/TTTableMoreButton.h"
+i"Three20UI/TTTableImageItem.h"
+i"Three20UI/TTTableRightImageItem.h"
+i"Three20UI/TTTableActivityItem.h"
+i"Three20UI/TTTableStyledTextItem.h"
+i"Three20UI/TTTableControlItem.h"
+i"Three20UI/TTTableViewItem.h"
+i"Three20UI/TTTableLinkedItemCell.h"
+i"Three20UI/TTTableTextItemCell.h"
+i"Three20UI/TTTableCaptionItemCell.h"
+i"Three20UI/TTTableSubtextItemCell.h"
+i"Three20UI/TTTableRightCaptionItemCell.h"
+i"Three20UI/TTTableSubtitleItemCell.h"
+i"Three20UI/TTTableMessageItemCell.h"
+i"Three20UI/TTTableMoreButtonCell.h"
+i"Three20UI/TTTableImageItemCell.h"
+i"Three20UI/TTStyledTextTableItemCell.h"
+i"Three20UI/TTStyledTextTableCell.h"
+i"Three20UI/TTTableActivityItemCell.h"
+i"Three20UI/TTTableControlCell.h"
+i"Three20UI/TTTableFlushViewCell.h"
+i"Three20UI/TTErrorView.h"
+i"Three20UI/TTPhotoVersion.h"
+i"Three20UI/TTPhotoSource.h"
+i"Three20UI/TTPhoto.h"
+i"Three20UI/TTPhotoViewController.h"
+i"Three20UI/TTPhotoView.h"
+i"Three20UI/TTThumbsViewController.h"
+i"Three20UI/TTThumbsViewControllerDelegate.h"
+i"Three20UI/TTThumbsDataSource.h"
+i"Three20UI/TTThumbsTableViewCell.h"
+i"Three20UI/TTThumbsTableViewCellDelegate.h"
+i"Three20UI/TTThumbView.h"
+i"Three20UI/TTRecursiveProgress.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UICommon/TTBaseViewController.h
+c000000004C03E9A40000000000000A15
+t1275324836
+s2581
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UICommon/TTGlobalUICommon.h
+c000000004C03E9A4000000000000142A
+t1275324836
+s5162
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UICommon/Three20UICommon.h
+c000000004C03E9A400000000000002CE
+t1275324836
+s718
+i"Three20UICommon/TTGlobalUICommon.h"
+i"Three20UICommon/TTBaseViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UINavigator/TTBaseNavigationController.h
+c000000004C03E9A5000000000000050F
+t1275324837
+s1295
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UINavigator/TTBaseNavigator.h
+c000000004C03E9A50000000000001B38
+t1275324837
+s6968
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i"Three20UINavigator/TTNavigatorPersistenceMode.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UINavigator/TTGlobalNavigatorMetrics.h
+c000000004C03E9A500000000000006A1
+t1275324837
+s1697
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UINavigator/TTNavigationMode.h
+c000000004C03E9A500000000000003E5
+t1275324837
+s997
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UINavigator/TTNavigatorDelegate.h
+c000000004C03E9A50000000000000657
+t1275324837
+s1623
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UINavigator/TTNavigatorPersistenceMode.h
+c000000004C03E9A50000000000000348
+t1275324837
+s840
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UINavigator/TTNavigatorViewController.h
+c000000004C03E9A5000000000000036A
+t1275324837
+s874
+i"Three20UICommon/TTBaseViewController.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UINavigator/TTURLAction.h
+c000000004C03E9A50000000000000A90
+t1275324837
+s2704
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h
+c000000004C03E9A50000000000000371
+t1275324837
+s881
+i"Three20UINavigator/TTURLPattern.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UINavigator/TTURLMap.h
+c000000004C03E9A5000000000000161C
+t1275324837
+s5660
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i"Three20UINavigator/TTNavigationMode.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h
+c000000004C03E9A500000000000006E0
+t1275324837
+s1760
+i"Three20UINavigator/TTURLPattern.h"
+i"Three20UINavigator/TTNavigationMode.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UINavigator/TTURLObject.h
+c000000004C03E9A50000000000000497
+t1275324837
+s1175
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UINavigator/TTURLPattern.h
+c000000004C03E9A50000000000000511
+t1275324837
+s1297
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h
+c000000004C03E9A5000000000000054C
+t1275324837
+s1356
+i"Three20UINavigator/TTGlobalNavigatorMetrics.h"
+i"Three20UINavigator/TTURLObject.h"
+i"Three20UINavigator/TTNavigatorViewController.h"
+i"Three20UINavigator/TTBaseNavigationController.h"
+i"Three20UINavigator/TTNavigatorPersistenceMode.h"
+i"Three20UINavigator/TTBaseNavigator.h"
+i"Three20UINavigator/TTNavigatorDelegate.h"
+i"Three20UINavigator/TTURLAction.h"
+i"Three20UINavigator/TTURLMap.h"
+i"Three20UINavigator/TTNavigationMode.h"
+i"Three20UINavigator/TTURLPattern.h"
+i"Three20UINavigator/TTURLGeneratorPattern.h"
+i"Three20UINavigator/TTURLNavigatorPattern.h"
+
+N/Users/caomanhtuanbsb/Library/MobileDevice/Provisioning Profiles/E5765451-C068-426B-A1FB-8FAE16E4D27C.mobileprovision
+c000000004C068F140000000000001C05
+t1275498260
+s7173
+
+N/var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-hfdqvwlapyrsfvcwllldeqvehzfn/Simple_RSS_Prefix.pch.pth
+t2
+s0
+
+NSimple_RSS-Info.plist
+c000000004BCD321F000000000000038D
+t1271738911
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies297193227#297193227#0(179"[BWARN]warning: building for SDK 'Device - iPhone OS 3.2' requires an armv7 architecture.[BWARN]warning: building for deployment target '3.2' should omit the armv6 architecture.2(22@82"warning: building for SDK 'Device - iPhone OS 3.2' requires an armv7 architecture.297193227#18446744073709551615#0#0(1@0"0(22@81"warning: building for deployment target '3.2' should omit the armv6 architecture.297193227#18446744073709551615#0#0(1@0"0(0#1#0"4300911832#0"0#
+
+CCodeSign "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app"
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/ASIAuthenticationDialog.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIAuthenticationDialog.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/ASIFormDataRequest.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIFormDataRequest.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/ASIHTTPRequest.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIHTTPRequest.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/ASIInputStream.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIInputStream.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/ASINSStringAdditions.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINSStringAdditions.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/ASINetworkQueue.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASINetworkQueue.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/ArticleParser.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ArticleParser.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/AuthViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../AuthViewController.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/DateHelper.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DateHelper.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/DetailViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/EGODB.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/EGODB.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/EGODatabase.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabase.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/EGODatabaseRequest.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRequest.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/EGODatabaseResult.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseResult.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/EGODatabaseRow.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRow.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/Experiment.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/Feed.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Feed.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/FeedParser.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FeedParser.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/FolderCell.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../FolderCell.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/FolderViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/GoogleReaderHelper.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/Group.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Group.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/MyHTMLStripper.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MyHTMLStripper.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/MySingleton.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../MySingleton.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NSDataAdditions.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/NSDataAdditions.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NSObject+SBJSON.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSObject+SBJSON.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NSString+SBJSON.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/NSString+SBJSON.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NewsCell.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCell.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NewsItem.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NewsViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/RSSParser.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/Reachability.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Reachability.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/SBJSON.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJSON.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/SBJsonBase.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonBase.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/SBJsonParser.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonParser.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/SBJsonWriter.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonWriter.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/Simple_RSSAppDelegate.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Simple_RSSAppDelegate.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/TBXML.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/TBXML.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/UserDefinedConst.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/main.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/main.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/AuthViewController.xib"
+s297193228.152576
+e297193228.961148
+r1
+xCompileXIB
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/AuthViewController.xib
+lSLF07#2@33"CompileXIB AuthViewController.xib297193228#297193228#0(0"0(0#0#74"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/AuthViewController.xib4300911832#532"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/AuthViewController.nib" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/AuthViewController.xib"0#
+
+CCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderCell.xib"
+s297193229.664329
+e297193230.096038
+r1
+xCompileXIB
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderCell.xib
+lSLF07#2@33"CompileXIB Classes/FolderCell.xib297193229#297193230#0(0"0(0#0#74"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderCell.xib4300911832#524"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/FolderCell.nib" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderCell.xib"0#
+
+CCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.xib"
+s297193229.025442
+e297193229.317137
+r1
+xCompileXIB
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.xib
+lSLF07#2@43"CompileXIB Classes/FolderViewController.xib297193229#297193229#0(0"0(0#0#84"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.xib4300911832#544"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/FolderViewController.nib" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.xib"0#
+
+CCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCell.xib"
+s297193230.186825
+e297193230.533762
+r1
+xCompileXIB
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCell.xib
+lSLF07#2@31"CompileXIB Classes/NewsCell.xib297193230#297193230#0(0"0(0#0#72"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCell.xib4300911832#520"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/NewsCell.nib" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCell.xib"0#
+
+CCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.xib"
+s297193229.320293
+e297193229.621980
+r1
+xCompileXIB
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.xib
+lSLF07#2@41"CompileXIB Classes/NewsViewController.xib297193229#297193229#0(0"0(0#0#82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.xib4300911832#540"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/NewsViewController.nib" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.xib"0#
+
+CCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DetailView.xib"
+s297193227.733374
+e297193228.239275
+r1
+xCompileXIB
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DetailView.xib
+lSLF07#2@25"CompileXIB DetailView.xib297193227#297193228#0(0"0(0#0#66"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DetailView.xib4300911832#516"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/DetailView.nib" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DetailView.xib"0#
+
+CCompileXIB "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib"
+s297193227.732698
+e297193228.152472
+r1
+xCompileXIB
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib297193227#297193228#0(0"0(0#0#66"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib4300911832#516"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/MainWindow.nib" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib"0#
+
+CCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Button.png" Button.png
+s297193228.961254
+e297193229.025342
+r1
+xCopyPNGFile
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Button.png
+xButton.png
+lSLF07#2@73"CopyPNGFile "build/Release-iphoneos/Simple RSS.app/Button.png" Button.png297193228#297193229#0(0"0(0#0#62"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Button.png4300911832#610"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Button.png" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Button.png"0#
+
+CCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Feed.png" Feed.png
+s297193230.533863
+e297193230.592140
+r1
+xCopyPNGFile
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Feed.png
+xFeed.png
+lSLF07#2@69"CopyPNGFile "build/Release-iphoneos/Simple RSS.app/Feed.png" Feed.png297193230#297193230#0(0"0(0#0#60"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Feed.png4300911832#606"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Feed.png" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Feed.png"0#
+
+CCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Folder.png" Folder.png
+s297193230.096140
+e297193230.158691
+r1
+xCopyPNGFile
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Folder.png
+xFolder.png
+lSLF07#2@73"CopyPNGFile "build/Release-iphoneos/Simple RSS.app/Folder.png" Folder.png297193230#297193230#0(0"0(0#0#62"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Folder.png4300911832#610"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Folder.png" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Folder.png"0#
+
+CCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Folder1.png" Folder1.png
+s297193230.158796
+e297193230.186729
+r1
+xCopyPNGFile
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Folder1.png
+xFolder1.png
+lSLF07#2@75"CopyPNGFile "build/Release-iphoneos/Simple RSS.app/Folder1.png" Folder1.png297193230#297193230#0(0"0(0#0#63"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Folder1.png4300911832#612"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Folder1.png" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Folder1.png"0#
+
+CCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Football.png" Football.png
+s297193229.625058
+e297193229.664227
+r1
+xCopyPNGFile
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Football.png
+xFootball.png
+lSLF07#2@77"CopyPNGFile "build/Release-iphoneos/Simple RSS.app/Football.png" Football.png297193229#297193229#0(0"0(0#0#64"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Football.png4300911832#614"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Football.png" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Football.png"0#
+
+CCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Login.png" Login.png
+s297193228.239375
+e297193233.874805
+r1
+xCopyPNGFile
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Login.png
+xLogin.png
+lSLF07#2@71"CopyPNGFile "build/Release-iphoneos/Simple RSS.app/Login.png" Login.png297193228#297193233#0(0"0(0#0#61"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Login.png4300911832#608"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Login.png" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Login.png"0#
+
+CCpResource "build/Release-iphoneos/Simple RSS.app/README.markdown" Classes/README.markdown
+s297193229.319185
+e297193229.325143
+r1
+xCpResource
+xbuild/Release-iphoneos/Simple RSS.app/README.markdown
+xClasses/README.markdown
+lSLF07#2@28"Copy Classes/README.markdown297193229#297193229#0(0"0(0#0#75"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/README.markdown4300911832#524"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/README.markdown" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app"0#
+
+CCpResource "build/Release-iphoneos/Simple RSS.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+s297193227.725541
+e297193227.732611
+r1
+xCpResource
+xbuild/Release-iphoneos/Simple RSS.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist297193227#297193227#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist4300911832#536"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app"0#
+
+CCpResource "build/Release-iphoneos/Simple RSS.app/SimpleRSS.css" SimpleRSS.css
+s297193229.622076
+e297193229.633474
+r1
+xCpResource
+xbuild/Release-iphoneos/Simple RSS.app/SimpleRSS.css
+xSimpleRSS.css
+lSLF07#2@18"Copy SimpleRSS.css297193229#297193229#0(0"0(0#0#65"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSS.css4300911832#514"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSS.css" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app"0#
+
+CCpResource "build/Release-iphoneos/Simple RSS.app/SimpleRSS.sqlite" SimpleRSS.sqlite
+s297193229.317349
+e297193229.324288
+r1
+xCpResource
+xbuild/Release-iphoneos/Simple RSS.app/SimpleRSS.sqlite
+xSimpleRSS.sqlite
+lSLF07#2@21"Copy SimpleRSS.sqlite297193229#297193229#0(0"0(0#0#68"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSS.sqlite4300911832#517"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSS.sqlite" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app"0#
+
+CCpResource "build/Release-iphoneos/Simple RSS.app/SimpleRSSTest.html" SimpleRSSTest.html
+s297193229.623869
+e297193229.630333
+r1
+xCpResource
+xbuild/Release-iphoneos/Simple RSS.app/SimpleRSSTest.html
+xSimpleRSSTest.html
+lSLF07#2@23"Copy SimpleRSSTest.html297193229#297193229#0(0"0(0#0#70"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSSTest.html4300911832#519"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSSTest.html" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app"0#
+
+CGenerateDSYMFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app.dSYM" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Simple RSS"
+r0
+
+CLd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Simple RSS" normal armv6
+r0
+
+CProcessInfoPlistFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Info.plist" Simple_RSS-Info.plist
+s297193227.726457
+e297193227.730054
+r1
+xProcessInfoPlistFile
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Info.plist
+xSimple_RSS-Info.plist
+lSLF07#2@29"Process Simple_RSS-Info.plist297193227#297193227#0(0"0(0#0#73"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Simple_RSS-Info.plist4300911832#640"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Simple_RSS-Info.plist -genpkginfo "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/ResourceRules.plist" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Info.plist"0#
+
+CProcessPCH /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-hfdqvwlapyrsfvcwllldeqvehzfn/Simple_RSS_Prefix.pch.pth Simple_RSS_Prefix.pch normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s297193233.875051
+e297193233.877181
+r0
+xProcessPCH
+x/var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-hfdqvwlapyrsfvcwllldeqvehzfn/Simple_RSS_Prefix.pch.pth
+xSimple_RSS_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oerror: can't exec '/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang' (No such file or directory)
+lSLF07#2@32"Precompile Simple_RSS_Prefix.pch297193233#297193233#0(111"error: can't exec '/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang' (No such file or directory)1(4@103"Can't exec '/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang' (No such file or directory)297193233#0#111#0(1@0"0(0#0#73"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Simple_RSS_Prefix.pch4300911832#1939"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/clang -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fasm-blocks -gdwarf-2 -fvisibility=hidden -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/DerivedSources/armv6" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/DerivedSources" -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Simple_RSS_Prefix.pch" -o /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-hfdqvwlapyrsfvcwllldeqvehzfn/Simple_RSS_Prefix.pch.pth71#
+
+CProcessProductPackaging "/Users/caomanhtuanbsb/Library/MobileDevice/Provisioning Profiles/E5765451-C068-426B-A1FB-8FAE16E4D27C.mobileprovision" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/embedded.mobileprovision"
+s297193233.877304
+e297193233.878768
+r1
+xProcessProductPackaging
+x/Users/caomanhtuanbsb/Library/MobileDevice/Provisioning Profiles/E5765451-C068-426B-A1FB-8FAE16E4D27C.mobileprovision
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/embedded.mobileprovision
+lSLF07#2@208"ProcessProductPackaging "/Users/caomanhtuanbsb/Library/MobileDevice/Provisioning Profiles/E5765451-C068-426B-A1FB-8FAE16E4D27C.mobileprovision" "build/Release-iphoneos/Simple RSS.app/embedded.mobileprovision"297193233#297193233#0(0"0(0#0#114"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/embedded.mobileprovision4300911832#467"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/caomanhtuanbsb/Library/MobileDevice/Provisioning Profiles/E5765451-C068-426B-A1FB-8FAE16E4D27C.mobileprovision" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/embedded.mobileprovision"0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS.xcent"
+s297193233.878890
+e297193234.154072
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist
+x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS.xcent
+lSLF07#2@188"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS.xcent"297193233#297193234#0(0"0(0#0#125"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS.xcent4300911832#473"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist -entitlements -format xml -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS.xcent"0#
+
+CTouch "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app"
+r0
+
+CValidate "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app"
+r0
+
