@@ -148,11 +148,6 @@
 	NSInteger timestamp = [DateHelper getTimeStampFromNDaysAgo:keepUnreadPeriod ];
 	[[MySingleton sharedInstance] setTimeStamp:timestamp];
 	
-	NSString *urlStr = [[NSString alloc] initWithFormat:kURLSubscriptionFetchingFormat, [DateHelper getTimeStampFromNDaysAgo:0] ];
-
-	NSURL *url = [[NSURL alloc] initWithString:urlStr];
-	
-	[urlStr release];
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	NSString *SID = [defaults objectForKey:@"googleSID"];
 	
@@ -171,18 +166,44 @@
 	}
 	
 
+
 	
 	
-	
+// NSString *authString = [[NSString alloc] initWithFormat:@"GoogleLogin auth=%@",SID];
+	NSString *authString = [[NSString alloc] initWithFormat:@"GoogleLogin auth= %@", SID];
 //	NSString *cookie = [[NSString alloc] initWithFormat:@"SID=%@;Domain=.google.com;path=/;expires=1600000000",SID];
-//Request for getting list of subscription
+
 	
-	ASIHTTPRequest *request = [[[ASIHTTPRequest alloc] initWithURL:url] autorelease];
-//	[request addRequestHeader:@"Cookie" value:cookie];
+	// request for tokenID
+	ASIHTTPRequest *request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLGetTokenID]] autorelease];
+	//[request addRequestHeader:@"Cookie" value:cookie];
+	[request addRequestHeader:@"Authorization" value:authString];
+	//	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
+	NSDictionary *info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"TokenID", @"RequestType",nil] autorelease];
+	[request setUserInfo:info];
+	[networkQueue addOperation:request];
+	//Request for getting list of subscription
+	
+	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLGetUserInfo]] autorelease];
+	[request addRequestHeader:@"Authorization" value:authString];	
+	//[request addRequestHeader:@"Cookie" value:cookie];
+	
+	//[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
+	
+	info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"User Info", @"RequestType",nil] autorelease];
+	[request setUserInfo:info];
+	[networkQueue addOperation:request];
+	
+	
+	
+	
+	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLSubscriptionFetchingFormat]] autorelease];
+	[request addRequestHeader:@"Authorization" value:authString];	
+	//[request addRequestHeader:@"Cookie" value:cookie];
 
 	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
 	
-	NSDictionary *info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"Subscription", @"RequestType",nil] autorelease];
+	info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"Subscription", @"RequestType",nil] autorelease];
 	[request setUserInfo:info];
 	[networkQueue addOperation:request];
 
@@ -191,27 +212,25 @@
 
 //Request for getting Tag List	
 	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLGetTagList]] autorelease];
-	//[request addRequestHeader:@"Cookie" value:cookie];
-		[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
+//	[request addRequestHeader:@"Cookie" value:cookie];
+		[request addRequestHeader:@"Authorization" value:authString];
+//	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
 	info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"TagList", @"RequestType",nil] autorelease];
 	[request setUserInfo:info];
 	[networkQueue addOperation:request];
 	
 //Request for getting Unread Items Id 
 	
-	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLGetTokenID]] autorelease];
-	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
-	info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"TokenID", @"RequestType",nil] autorelease];
-	[request setUserInfo:info];
-	[networkQueue addOperation:request];	
 	
-	
-	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:
-													[NSString stringWithFormat:kURLgetUnreadItemIDsFormat, timestamp]]] autorelease];
+	// !!!: Figure out why need this line to trigger the UnreadID download ???
+	[GoogleReaderHelper getTokenID:SID];
+
+	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:kURLgetUnreadItemIDsFormat, timestamp]]] autorelease];
+	[request addRequestHeader:@"Authorization" value:authString];													
+													
 	NSLog(@"Get Unread URL: %@",[NSString stringWithFormat:kURLgetUnreadItemIDsFormat, timestamp]);
 	//[request addRequestHeader:@"Cookie" value:cookie];
-	
-	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
+	//[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
 	info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"UnreadItemsID", @"RequestType",nil] autorelease];
 	[request setUserInfo:info];
 	[networkQueue addOperation:request];	
@@ -219,9 +238,9 @@
 	
 	[networkQueue go];
 	
-	[url release];
+
 	[cookie release];
-	
+	[authString release];
 	
 }
 
@@ -269,6 +288,8 @@
 	NSLog(@"Queue did finished");
 	[RSSParser addFaviconRequests:queue];
 	[queue setQueueDidFinishSelector:@selector(faviconQueueDidFinish:)];
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;	
+	
 }
 
 - (void)faviconQueueDidFinish: (ASINetworkQueue *)queue {
@@ -277,7 +298,7 @@
 	NSString *filePath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"FaviconsPath.plist"];
 	
 	[[[MySingleton sharedInstance] faviconPaths] writeToFile:filePath atomically:YES];
-	
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 	//Reset queueDidFinishSelector
 	[queue setQueueDidFinishSelector:@selector(queueDidFinish:)];
 	

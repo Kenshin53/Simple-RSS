@@ -88,7 +88,7 @@
 	
 	
 	
-	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+
 	[db release];
 	
 }
@@ -221,10 +221,10 @@
 				
 			} else {
 				[[[MySingleton sharedInstance] faviconPaths] setObject:@"None" forKey:aFeedID];
-				NSLog(@"Number of mysingleton count %d", [[[MySingleton sharedInstance] faviconPaths] count]);
+			//	NSLog(@"Number of mysingleton count %d", [[[MySingleton sharedInstance] faviconPaths] count]);
 			}
 		}else {
-			NSLog(@"Skip this FeedID: %@ ", aFeedID);
+			//NSLog(@"Skip this FeedID: %@ ", aFeedID);
 		}
 	}
 	
@@ -242,10 +242,10 @@
 
 
 + (void) processDownloadedFavicon:(ASIHTTPRequest *)request {
-	NSLog(@"Get Respond from POST request : %d byte", [[request responseString] length]);
-	NSLog(@"FileName : %@", [[request userInfo] objectForKey:@"FileName"]);
-	NSLog(@"The respond Code: %d", [request responseStatusCode]);
-	NSLog(@"URL: %@", [[request url] absoluteURL] );
+	//NSLog(@"Get Respond from POST request : %d byte", [[request responseString] length]);
+//	NSLog(@"FileName : %@", [[request userInfo] objectForKey:@"FileName"]);
+//	NSLog(@"The respond Code: %d", [request responseStatusCode]);
+//	NSLog(@"URL: %@", [[request url] absoluteURL] );
 	if ([request responseStatusCode] == 200) {
 		[[[MySingleton sharedInstance] faviconPaths] setObject:[[request userInfo] objectForKey:@"FileName"] forKey:[[request userInfo] objectForKey:@"FeedID"]];
 	}else if ([request responseStatusCode] == 404) {
@@ -257,7 +257,7 @@
 		 
 	
 
-	NSLog(@"FeedID: %@", [[request userInfo] objectForKey:@"FeedID"]);
+//	NSLog(@"FeedID: %@", [[request userInfo] objectForKey:@"FeedID"]);
 	//[[[MySingleton sharedInstance] faviconPaths] writeToFile: atomically:<#(BOOL)useAuxiliaryFile#>]
 }	
 
@@ -324,7 +324,7 @@
 	NSURL *tmpURL = [NSURL URLWithString:urlStr];
 	NSString *domain = [tmpURL host];
 	NSString *faviconURL = [NSString stringWithFormat:@"http://%@/favicon.ico",domain];
-	NSLog(@"Favicon URL: %@", faviconURL);
+	//NSLog(@"Favicon URL: %@", faviconURL);
 	if ([faviconURL rangeOfString:@"feedburner"].location != NSNotFound) {
 		return nil;
 	}

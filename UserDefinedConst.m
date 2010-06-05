@@ -17,7 +17,7 @@ NSString * const kNotificationNewsItemAdded = @"NewsItemAdded";
 //URL constant
 NSString * const kURLgetUnreadItemIDsFormat = @"http://google.com/reader/api/0/stream/items/ids?n=5000&s=user/-/state/com.google/reading-list&ot=%d&xt=user/-/state/com.google/read&output=json";
 
-NSString * const  kURLSubscriptionFetchingFormat = @"http://www.google.com/reader/api/0/subscription/list?allcomments=true&output=json&ck=%d&client=scroll";
+NSString * const  kURLSubscriptionFetchingFormat = @"http://www.google.com/reader/api/0/subscription/list?output=json";
 
 NSString * const kURLGetTagList = @"http://www.google.com/reader/api/0/tag/list?output=json";
 
@@ -25,5 +25,5 @@ NSString * const kURLGetArticleContent =@"http://www.google.com/reader/api/0/str
 
 NSString * const kURLGetTokenID =@"http://www.google.com/reader/api/0/token";
 
-
+NSString * const kURLGetUserInfo = @"http://www.google.com/reader/api/0/user-info";
 
