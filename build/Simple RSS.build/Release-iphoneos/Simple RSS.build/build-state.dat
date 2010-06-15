@@ -207,6 +207,11 @@ c000000004B9F17270000000000020FF0
 t1268717351
 s135152
 
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/AppIcon.png
+c000000004C08D41A00000000000016EC
+t1275647002
+s5868
+
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/AuthViewController.h
 c000000004BD7FDE900000000000002E5
 t1272446441
@@ -244,9 +249,9 @@ s1226
 i"MySingleton.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.m
-c000000004BFF2A10000000000000040F
-t1275013648
-s1039
+c000000004C0C89FC0000000000000524
+t1275890172
+s1316
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIAuthenticationDialog.h
 c000000004BECD04C0000000000000388
@@ -372,18 +377,20 @@ i"EGODB.h"
 i"MySingleton.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.h
-c000000004BF7A6DD00000000000002BF
-t1274521309
-s703
+c000000004C0C801000000000000002DB
+t1275887632
+s731
 i<UIKit/UIKit.h>
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m
-c000000004C03E6EE0000000000000CF6
-t1275324142
-s3318
+c000000004C0C907B0000000000001055
+t1275891835
+s4181
 i"DetailViewController.h"
 i"MasterViewController.h"
 i"AuthViewController.h"
+i"UserDefinedConst.h"
+i"NewsItem.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabase.h
 c000000004BE8CF1B0000000000000AD1
@@ -446,9 +453,9 @@ s710
 i<Foundation/Foundation.h>
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Feed.m
-c000000004C03D19B000000000000024D
-t1275318683
-s589
+c000000004C06FA62000000000000025D
+t1275525730
+s605
 i"Feed.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FeedParser.h
@@ -474,23 +481,32 @@ c000000004BFF9EE40000000000006BB5
 t1275043556
 s27573
 
-N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.h
-c000000004C0296560000000000000477
-t1275237974
-s1143
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderCompositeCell.h
+c000000004C07629F00000000000001EA
+t1275552415
+s490
 i<UIKit/UIKit.h>
-i"FeedParser.h"
-i"ArticleParser.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderCompositeCell.m
+c000000004C076A9600000000000009D3
+t1275554454
+s2515
+i"FolderCompositeCell.h"
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.h
+c000000004C07654D000000000000041C
+t1275553101
+s1052
+i<UIKit/UIKit.h>
 i"ASIHTTPRequest.h"
 i"FolderCell.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m
-c000000004C03DCB90000000000002C47
-t1275321529
-s11335
+c000000004C0C6A3B00000000000035A9
+t1275882043
+s13737
 i"FolderViewController.h"
 i"MySingleton.h"
-i"ArticleParser.h"
 i"UserDefinedConst.h"
 i"EGODB.h"
 i"ASIHTTPRequest.h"
@@ -502,11 +518,25 @@ i"JSON.h"
 i"RSSParser.h"
 i"NewsViewController.h"
 i"Group.h"
+i"FolderCompositeCell.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.xib
 c000000004BDFE3C00000000000001725
 t1272964032
 s5925
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/GoogleReaderSync.h
+c000000004C07880B000000000000011C
+t1275561995
+s284
+i<Foundation/Foundation.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/GoogleReaderSync.m
+c000000004C078CA700000000000001ED
+t1275563175
+s493
+i"GoogleReaderSync.h"
+i"EGODB.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Group.h
 c000000004C03D1EE00000000000002B9
@@ -629,6 +659,18 @@ c000000004C04C26100000000000077B4
 t1275380321
 s30644
 
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCompositeCell.h
+c000000004C07824F00000000000002DC
+t1275560527
+s732
+i<UIKit/UIKit.h>
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCompositeCell.m
+c000000004C08CE3E00000000000010C0
+t1275645502
+s4288
+i"NewsCompositeCell.h"
+
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.h
 c000000004C00ED360000000000000350
 t1275129142
@@ -642,15 +684,15 @@ s1814
 i"NewsItem.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.h
-c000000004C0128C400000000000002E5
-t1275144388
-s741
+c000000004C0CAC2500000000000003DC
+t1275898917
+s988
 i<UIKit/UIKit.h>
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m
-c000000004C04C87E0000000000001A14
-t1275381886
-s6676
+c000000004C0CBB350000000000002013
+t1275902773
+s8211
 i"NewsViewController.h"
 i"EGODB.h"
 i"NewsItem.h"
@@ -661,6 +703,8 @@ i"NewsCell.h"
 i"MySingleton.h"
 i"MyHTMLStripper.h"
 i"DateHelper.h"
+i"NewsCompositeCell.h"
+i"GoogleReaderSync.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.xib
 c000000004BF748A6000000000000171F
@@ -679,9 +723,9 @@ s693
 i<Foundation/Foundation.h>
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m
-c000000004C03869B0000000000002677
-t1275299483
-s9847
+c000000004C09BE0F00000000000027E6
+t1275706895
+s10214
 i"RSSParser.h"
 i"EGODB.h"
 i"UserDefinedConst.h"
@@ -719,8 +763,8 @@ i<UIKit/UIKit.h>
 i"AuthViewController.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Simple_RSSAppDelegate.m
-c000000004BF4100E00000000000011CB
-t1274286094
+c000000004C0766B800000000000011CB
+t1275553464
 s4555
 i"Simple_RSSAppDelegate.h"
 i"MasterViewController.h"
@@ -750,22 +794,22 @@ s1436
 i"DateHelper.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DetailView.xib
-c000000004C03F3A20000000000005A9F
-t1275327394
-s23199
+c000000004C0CB4AB0000000000006645
+t1275901099
+s26181
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/EGODB.h
-c000000004C03D97F00000000000004A1
-t1275320703
-s1185
+c000000004C07876F00000000000004CE
+t1275561839
+s1230
 i<Foundation/Foundation.h>
 i"EGODatabase.h"
 i"Feed.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/EGODB.m
-c000000004C03E1970000000000003247
-t1275322775
-s12871
+c000000004C08EE7500000000000033C7
+t1275653749
+s13255
 i"EGODB.h"
 i"Feed.h"
 i"DateHelper.h"
@@ -779,9 +823,9 @@ s256
 i<Foundation/Foundation.h>
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m
-c000000004C04BF830000000000000FB3
-t1275379587
-s4019
+c000000004C0C8EDD0000000000001A64
+t1275891421
+s6756
 i"Experiment.h"
 i"EGODatabase.h"
 i"DB.h"
@@ -790,8 +834,11 @@ i"DateHelper.h"
 i"Group.h"
 i"RSSParser.h"
 i"MySingleton.h"
+i"ASIHTTPRequest.h"
 i"Three20/Three20.h"
 i"TBXML.h"
+i"GoogleReaderHelper.h"
+i"UserDefinedConst.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Feed.png
 c000000004BFF98D80000000000002754
@@ -826,11 +873,13 @@ s1009
 i<Foundation/Foundation.h>
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m
-c000000004BE0FBC8000000000000127E
-t1273035720
-s4734
+c000000004C0A2D120000000000001331
+t1275735314
+s4913
 i"GoogleReaderHelper.h"
 i"JSON.h"
+i"ASIHTTPRequest.h"
+i"UserDefinedConst.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Login.png
 c000000004BD729570000000000033B26
@@ -880,9 +929,9 @@ t1274726535
 s1690
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSS.sqlite
-c000000004BFD58DF0000000000003400
-t1274894559
-s13312
+c000000004C08F95F0000000000166000
+t1275656543
+s1466368
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSSTest.html
 c000000004BFB54EA00000000000006FC
@@ -910,9 +959,9 @@ i"TBXML.h"
 i"NSDataAdditions.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h
-c000000004C038F000000000000000264
-t1275301632
-s612
+c000000004C0C88C30000000000000323
+t1275889859
+s803
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app
 t1275500577
@@ -921,6 +970,10 @@ s884
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app.dSYM
 t1275500570
 s102
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/AppIcon.png
+t2
+s0
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/AuthViewController.nib
 t1275500428
@@ -1086,6 +1139,10 @@ N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Rele
 t1275500561
 s20364
 
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/FolderCompositeCell.o
+t2
+s0
+
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/FolderViewController.o
 t1275525557
 s77592
@@ -1093,6 +1150,10 @@ s77592
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/GoogleReaderHelper.o
 t1275525555
 s17356
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/GoogleReaderSync.o
+t2
+s0
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/Group.o
 t1275500560
@@ -1121,6 +1182,10 @@ s8128
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NewsCell.o
 t1275500561
 s21652
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NewsCompositeCell.o
+t2
+s0
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NewsItem.o
 t2
@@ -2740,9 +2805,9 @@ t2
 s0
 
 NSimple_RSS-Info.plist
-c000000004BCD321F000000000000038D
-t1271738911
-s909
+c000000004C08D0130000000000000398
+t1275645971
+s920
 
 CCheck dependencies
 r0
@@ -3065,6 +3130,9 @@ lSLF07#2@83"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/
 CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/FolderCell.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../FolderCell.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 r0
 
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/FolderCompositeCell.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderCompositeCell.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/FolderViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
 s297218356.306868
 e297218357.605205
@@ -3098,6 +3166,9 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@80"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m297218355#297218355#0(0"0(0#0#72"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m4300911832#2048"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/DerivedSources/armv6" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-acrqqqblczokczerryqsszdmdotd/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/GoogleReaderHelper.o"0#
 
 CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/GoogleReaderHelper.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/GoogleReaderSync.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/GoogleReaderSync.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/Group.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Group.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
@@ -3210,6 +3281,9 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@78"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCell.m297193361#297193361#0(0"0(0#0#70"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCell.m4300911832#2036"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/DerivedSources/armv6" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dncuovodufjnymbwpfflciangfyk/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCell.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NewsCell.o"0#
 
 CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NewsCell.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCell.m" normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NewsCompositeCell.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsCompositeCell.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC "build/Simple RSS.build/Release-iphoneos/Simple RSS.build/Objects-normal/armv6/NewsItem.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
@@ -3465,6 +3539,9 @@ r1
 xCompileXIB
 x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib
 lSLF07#2@25"CompileXIB MainWindow.xib297193227#297193228#0(0"0(0#0#66"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib4300911832#516"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/MainWindow.nib" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/MainWindow.xib"0#
+
+CCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/AppIcon.png" AppIcon.png
+r0
 
 CCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Release-iphoneos/Simple RSS.app/Button.png" Button.png
 s297193228.961254

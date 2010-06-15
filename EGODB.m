@@ -58,6 +58,17 @@
 	
 }
 
+//Get the list of FeedID with it equivalent Name
+- (NSDictionary *) getFeedNamesWithGroupID:(NSString *)groupID{
+	NSString *query = [[[NSString alloc] initWithFormat:@"SELECT Feed.FeedID as FeedID, Feed.Title as Title FROM Feed, Category_Feed WHERE Feed.FeedID = Category_Feed.FeedID AND Category_Feed.GroupID = '%@'",groupID] autorelease];
+	EGODatabaseResult *rs = [db executeQuery:query];
+	NSMutableDictionary *resultDict = [[[NSMutableDictionary alloc] init] autorelease];
+	for (EGODatabaseRow *row in rs) {
+		[resultDict setObject:[row stringForColumn:@"Title"] forKey:[row stringForColumn:@"FeedID"]];
+	}
+	return [NSDictionary dictionaryWithDictionary:resultDict];
+}
+
 - (NSArray *) getFeedsWithGroupID:(NSString *)groupID {
 	
 	NSString *query = [[NSString alloc] initWithFormat:@"SELECT FeedID, Title, UnreadCount FROM Feed, Category_Feed WHERE Feed.FeedID = Category_Feed.FeedID AND GroupID= '%'",groupID];
@@ -340,9 +351,9 @@
 		NewsItem *aNewsItem = [[NewsItem alloc] init];
 		[aNewsItem setNewsID:[aRow stringForColumn:@"NewsID"]];
 		[aNewsItem setTitle:[aRow stringForColumn:@"title"]];
-	//	[aNewsItem setUnread:[aRow boolForColumn:@"unread"]];
-	//	[aNewsItem setPublished:[aRow dateForColumn:@"published"]];
-	//	[aNewsItem setStarred:[aRow boolForColumn:@"starred"]];
+		[aNewsItem setUnread:[aRow boolForColumn:@"unread"]];
+		[aNewsItem setPublished:[aRow dateForColumn:@"published"]];
+		[aNewsItem setStarred:[aRow boolForColumn:@"starred"]];
 		[aNewsItem setFeedID:[aRow stringForColumn:@"FeedID"]];
 		[aNewsItem setLink:[aRow stringForColumn:@"link"]];
 		[aNewsItem setSummary:[aRow stringForColumn:@"summary"]];

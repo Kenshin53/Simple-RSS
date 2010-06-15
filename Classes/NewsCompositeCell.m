@@ -36,24 +36,17 @@
 	[_cell.favIconView drawInRect:CGRectMake(7.0, 23.0, 16.0, 16.0)];
 	if (_cell.unreadState) {
 		_highlighted ? [[UIColor whiteColor] set] : [[UIColor blackColor] set];
-		//    [_cell.titleLabel drawAtPoint:CGPointMake(65.0, 12.0) withFont:[UIFont boldSystemFontOfSize:16.0]];
-		
-//		[_cell.feedTitleLabel drawAtPoint:CGPointMake(8.0, 0.0) withFont:[UIFont boldSystemFontOfSize:13.0]];
-
+		[_cell.feedTitleLabel drawInRect:CGRectMake(8.0, 0.0,220.0,21.0) withFont:[UIFont systemFontOfSize:13.0]];
 		[_cell.timeLabel drawAtPoint:CGPointMake(220.0, 0.0) withFont:[UIFont boldSystemFontOfSize:13.0]];
-//		[_cell.newsTitleLabel drawAtPoint:CGPointMake(36.0, 20.0) withFont:[UIFont boldSystemFontOfSize:14.0]];
-
-			[_cell.newsTitleLabel drawInRect:CGRectMake(36.0, 20.0, 280.0, 21.0) withFont:[UIFont boldSystemFontOfSize:14.0]];	
-		//    _highlighted ? [[UIColor whiteColor] set] : [[UIColor colorWithWhite:0.23 alpha:1.0] set];
-		//    [_cell.briefContentLabel drawAtPoint:CGPointMake(36.0, 43.0) withFont:[UIFont systemFontOfSize:13.0]];    
-		//[_cell.briefContentLabel drawAtPoint:CGPointMake(36.0, 43.0) forWidth:28.0 withFont:[UIFont systemFontOfSize:13.0] lineBreakMode:UILineBreakModeWordWrap];
+		[_cell.newsTitleLabel drawInRect:CGRectMake(36.0, 20.0, 280.0, 21.0) withFont:[UIFont boldSystemFontOfSize:14.0]];	
 		[_cell.briefContentLabel drawInRect:CGRectMake(36.0, 43.0, 280.0, 50.0) withFont:[UIFont systemFontOfSize:13.0] lineBreakMode:UILineBreakModeWordWrap];
 		
 	}else {
 		_highlighted ? [[UIColor whiteColor] set] : [[UIColor lightGrayColor] set];
 		
-		[_cell.feedTitleLabel drawAtPoint:CGPointMake(8.0, 0.0) withFont:[UIFont systemFontOfSize:13.0]];
-		[_cell.feedTitleLabel drawInRect:CGRectMake(8.0, 0.0, 204.0, 21.0) withFont:[UIFont systemFontOfSize:13.0]];
+		[_cell.feedTitleLabel drawInRect:CGRectMake(8.0, 0.0,220.0,21.0) withFont:[UIFont systemFontOfSize:13.0]];
+
+//		[_cell.feedTitleLabel drawInRect:CGRectMake(8.0, 0.0, 204.0, 21.0) withFont:[UIFont systemFontOfSize:13.0]];
 		[_cell.timeLabel drawAtPoint:CGPointMake(220.0, 0.0) withFont:[UIFont systemFontOfSize:13.0]];
 
 		//[_cell.newsTitleLabel drawAtPoint:CGPointMake(36.0, 20.0) withFont:[UIFont systemFontOfSize:14.0]];

@@ -18,9 +18,10 @@
 #import "DateHelper.h"
 #import "NewsCompositeCell.h"
 #import "GoogleReaderSync.h"
+#import "CustomHeaderView.h"
 
 @implementation NewsViewController
-@synthesize newsList, detailVC, parentFolder, tmpCell,sectionsList;
+@synthesize newsList, detailVC, parentFolder, tmpCell,sectionsList, currentIndex;
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -30,7 +31,9 @@
 	[newsList release];
 	[detailVC release];
 	[parentFolder release];
-	[sectionsList release]; 
+	[sectionsList release];
+	[currentIndex release];
+	self.currentIndex = nil;
 	[super dealloc];
 }
 
@@ -43,45 +46,31 @@
 
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = NO;
-/*	EGODB *db = [[EGODB alloc] init];
-
-	if (parentFolder != nil) {
-		newsList = [[NSMutableArray alloc] initWithArray:[db getNewsItemsWithGroupID:[parentFolder groupID]]];
-	}
-	[db release];
+	//setting header view height
+	self.tableView.sectionHeaderHeight = 24.0;
 	
-*/	
-
+//	self.currentIndex = [[NSIndexPath alloc] init];
+	_currentRow =0;
+	_currentSection =0;
 	
 	self.tableView.rowHeight = 100;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(newsItemAdded:) name:kNotificationNewsItemAdded object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendNextUnreadNews:) name:kNotificationRequestingNextUnreadNews object:nil];
+
 }
 
 
+- (void) sendNextUnreadNews: (NSNotification *)notification {
+	NSLog(@"Send Unread News");
 
+	NewsItem *aNews = [self getNextUnreadNewsItem];
+	if (aNews != nil) {
+		[[NSNotificationCenter defaultCenter] postNotificationName:kNotificationDidGetNextUnreadNews object:aNews];
+	}
 
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
 }
-*/
-/*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-*/
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-}
-*/
 
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -100,6 +89,7 @@
     return [[parentFolder feedsList] count];
 
 }
+
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
 	// The header for the section is the region name -- get this from the region at the section index.
@@ -120,41 +110,19 @@
 
 
 // Customize the appearance of table view cells.
+
+#pragma mark Header View
+
+
+
+//
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
 
 	
 	static NSString *CellIdentifier = @"NewsCell";
 	
-/*	NewsCell *cell = (NewsCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-	
-	if (cell == nil) {
-		[[NSBundle mainBundle] loadNibNamed:@"NewsCell" owner:self options:nil];
-		cell = tmpCell;
-		self.tmpCell = nil;
-	}
 
-	NewsItem *aNews = [[[[parentFolder feedsList] objectAtIndex:indexPath.section] newsItems] objectAtIndex:indexPath.row];
-	MyHTMLStripper *stripper = [[MyHTMLStripper alloc] init];
-	//NSString *summaryContent = [[NSString alloc] initWithFormat:@"<x> %@</x>",[aNews summary] ];
-	NSString *strippedContent = [stripper parse:[aNews summary]];
-	
-	[stripper release];
-
-	cell.newsTitleLabel.text = [aNews title];
-	cell.feedTitleLabel.text = [[[parentFolder feedsList] objectAtIndex:indexPath.section] title];
-	cell.briefContentLabel.text = strippedContent;
-	cell.timeLabel.text = [DateHelper dateDiff:[aNews published]];
-
-
-	NSString *faviconPath = [[[MySingleton sharedInstance] faviconPaths] objectForKey:[aNews feedID]];
-	if (faviconPath != nil && ![faviconPath isEqualToString:@"None"]) {
-		NSLog(@"File Path %@", faviconPath);
-		cell.favIconView.image = [UIImage imageWithContentsOfFile:faviconPath];
-	}else {
-		cell.favIconView.image = [UIImage imageNamed:@"Feed.png"];
-	}
-*/
 	NewsCompositeCell *cell = (NewsCompositeCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	
 	if (cell == nil) {
@@ -195,11 +163,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
-	
+
+	self.currentIndex = indexPath;
+	_currentSection = indexPath.section;
+	_currentRow = indexPath.row;
 	//Set NewsItem at index as Read
+	NewsItem *aNews = [[[[parentFolder feedsList] objectAtIndex:indexPath.section] newsItems] objectAtIndex:indexPath.row];
+	if ([ aNews unread]) {
+		[[NSNotificationCenter defaultCenter] postNotificationName:kNotificationDidMarkNewsAsRead object:[parentFolder groupID]];		
+	}
+	
 	[[[[[parentFolder feedsList] objectAtIndex:indexPath.section] newsItems] objectAtIndex:indexPath.row] setUnread:NO];
 	
-	NewsItem *aNews = [[[[parentFolder feedsList] objectAtIndex:indexPath.section] newsItems] objectAtIndex:indexPath.row];
+//	NewsItem *aNews = [[[[parentFolder feedsList] objectAtIndex:indexPath.section] newsItems] objectAtIndex:indexPath.row];
+	
+	
 	[GoogleReaderSync setNewsAsRead:[aNews newsID]];
 	
 	[self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject: indexPath] withRowAnimation:UITableViewRowAnimationFade];
@@ -236,6 +214,13 @@
 - (void)viewDidUnload {
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
+	self.tmpCell = nil;
+	self.parentFolder = nil;
+	self.currentIndex = nil;
+	self.newsList = nil;
+	self.detailVC = nil;
+	self.sectionsList = nil;
+//	self.feedsList = nil;
 #warning may have to remove observer
 }
 
@@ -262,6 +247,43 @@
 	
 }
 
+
+
+-(NewsItem *) getNextUnreadNewsItem {
+	//return object at Index 0.0 if currentIndex is not initialized
+	int section, row;
+	int startRow;
+	BOOL reachLastUnreadNews = YES;
+	for (section = _currentSection; section < [[parentFolder feedsList] count]; section++) {
+		Feed *aFeed = [[parentFolder feedsList] objectAtIndex:section];
+		if (section == _currentSection) {
+			startRow = _currentRow;
+		}else {
+			startRow = 0;
+		}
+
+		for (row = startRow; row < [[aFeed newsItems] count]; row++ ) {
+			if ([[[aFeed newsItems] objectAtIndex:row] unread]){
+				reachLastUnreadNews = NO;
+				_currentRow = row;
+				_currentSection = section;
+				[GoogleReaderSync setNewsAsRead:[[[aFeed newsItems] objectAtIndex:row] newsID]];
+				[[[[[parentFolder feedsList] objectAtIndex:section] newsItems] objectAtIndex:row] setUnread:NO];
+				NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:section];
+				
+				[self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject: indexPath] withRowAnimation:UITableViewRowAnimationNone];
+				
+			//Send out a notification that contains groupID of the folder that contains the news	
+				[[NSNotificationCenter defaultCenter] postNotificationName:kNotificationDidMarkNewsAsRead object:[parentFolder groupID]];
+				return [[[[parentFolder feedsList] objectAtIndex:section] newsItems] objectAtIndex:row];
+			}
+		}
+	}
+	if (reachLastUnreadNews){
+		return [[[[parentFolder feedsList] objectAtIndex:_currentSection] newsItems] objectAtIndex:_currentRow];
+	}
+	return nil;
+}
 
 
 @end

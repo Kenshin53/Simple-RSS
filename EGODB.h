@@ -17,6 +17,8 @@
 - (BOOL) addFeed:(Feed *) aFeed;
 - (NSArray *) getFeeds ;
 - (NSArray *) getUnreadFeeds;
+- (NSDictionary *) getFeedNamesWithGroupID:(NSString *)groupID;
+
 - (NSArray *) getFeedsWithGroupID:(NSString *)groupID ;
 - (Group *) getFullGroupWithGroupID:(NSString *)groupID;
 

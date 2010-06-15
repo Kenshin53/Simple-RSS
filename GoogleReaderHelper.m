@@ -8,6 +8,8 @@
 
 #import "GoogleReaderHelper.h"
 #import "JSON.h"
+#import "ASIHTTPRequest.h"
+#import "UserDefinedConst.h"
 NSString * const kGoogleReaderAuthenticationFailed = @"Failed";
 NSString * const kGoogleReaderAtomURL = @"http://www.google.com/reader/atom/";
 NSString * const kGoogleReaderAPI = @"http://www.google.com/reader/api/0/";
@@ -21,7 +23,8 @@ NSString * const kGoogleReaderLoginURL = @"https://www.google.com/accounts/Clien
 
 + (NSString *)getGoogleSID:(NSString *)userName password:(NSString *)passwd{
 	
-	
+
+	[ASIHTTPRequest clearSession];
 	NSString *postMessage = [[NSString alloc] initWithFormat:@"Email=%@&Passwd=%@",userName,passwd];
 	NSData *myRequestData = [[NSData alloc]  initWithBytes: [ postMessage UTF8String ] length: [ postMessage length ] ];
 
@@ -60,21 +63,26 @@ NSString * const kGoogleReaderLoginURL = @"https://www.google.com/accounts/Clien
 
 +(NSString *)getTokenID:(NSString *) googleSID{
 	
-	NSURL *tokenURL = [[NSURL alloc] initWithString:@"http://www.google.com/reader/api/0/token"];
-	NSMutableURLRequest *getXMLRequest = [[NSMutableURLRequest alloc ] initWithURL: tokenURL ]; 
+	NSMutableDictionary *properties = [[NSMutableDictionary alloc] init];
+	[properties setValue:@"SID" forKey:NSHTTPCookieName];
+	[properties setValue:googleSID forKey:NSHTTPCookieValue];
+	[properties setValue:@".google.com" forKey:NSHTTPCookieDomain];
+	[properties setValue:@"/" forKey:NSHTTPCookiePath];
+	[properties setValue:@"1600000000" forKey:NSHTTPCookieExpires];
 	
-	NSString *cookie = [[NSString alloc] initWithFormat:@"SID=%@;Domain=.google.com;path=/;expires=1600000000",googleSID];
+	NSHTTPCookie *cookie = [[NSHTTPCookie alloc] initWithProperties:[NSDictionary dictionaryWithDictionary:properties]];
+	if (cookie != nil ) {
+		NSLog(@"Created Cookies");
+	} else {
+		NSLog(@"Failed Creating cookies");
+	}
+	ASIHTTPRequest *request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLGetTokenID]] autorelease];
 	
-	[getXMLRequest setValue:[NSString stringWithString:cookie] forHTTPHeaderField:@"Cookie"];
-	[getXMLRequest setHTTPMethod: @"GET" ];
-	NSData *returnData = [NSURLConnection sendSynchronousRequest: getXMLRequest returningResponse: nil error: nil];
-	NSString *token = [[[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding] autorelease];
-	
+	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
+
+	[request startSynchronous];
 	[cookie release];
-	[tokenURL release];
-	[getXMLRequest release];
-	
-	return token;
+	return [request responseString];
 }
 
 +(NSDictionary *) getUserInfo:(NSString *) googleSID {

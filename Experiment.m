@@ -121,6 +121,7 @@
 
 	
 /*	NSString *googleSID = @"DQAAALAAAABjHpRCmy8KsbTPyiUrmf9sSqZOI30nHTuCG5qmARqTjzplTvuSotKFJa-ghpl0IdwRiKk7uLvWE2Fu7K6pQmWP7tGkZTGKd8sufhftFpU_jUYTFFfLW2-J6RdT5nN5MUGTDHlI1vR2auZJ2nAoSrtS7XvqG5hHip9EzYJO4A8ISprdEIKr_w8r4zJVWxaLkrV2slZZJ4esIU2X5sH_Q4rGtpkCechuYevOru-76hqa4Q";
+
 	NSDictionary *properties = [[NSDictionary alloc] initWithObjectsAndKeys:@"SID",NSHTTPCookieName, googleSID,NSHTTPCookieValue,@".google.com",NSHTTPCookieDomain, @"/",NSHTTPCookiePath, nil];
 	
 	NSHTTPCookie *cookie = [[NSHTTPCookie alloc] initWithProperties:properties];
@@ -147,9 +148,38 @@
 
 */
 
-
-
+	NSString *googleSID = @"DQAAALAAAABjHpRCmy8KsbTPyiUrmf9sSqZOI30nHTuCG5qmARqTjzplTvuSotKFJa-ghpl0IdwRiKk7uLvWE2Fu7K6pQmWP7tGkZTGKd8sufhftFpU_jUYTFFfLW2-J6RdT5nN5MUGTDHlI1vR2auZJ2nAoSrtS7XvqG5hHip9EzYJO4A8ISprdEIKr_w8r4zJVWxaLkrV2slZZJ4esIU2X5sH_Q4rGtpkCechuYevOru-76hqa4Q";
+	//NSArray *cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
 	
+	NSMutableDictionary *properties = [[NSMutableDictionary alloc] init];
+	[properties setValue:@"SID" forKey:NSHTTPCookieName];
+	[properties setValue:googleSID forKey:NSHTTPCookieValue];
+	[properties setValue:@".google.com" forKey:NSHTTPCookieDomain];
+	[properties setValue:@"/" forKey:NSHTTPCookiePath];
+	[properties setValue:@"1600000000" forKey:NSHTTPCookieExpires];
+	
+	
+	//NSDictionary *properties = [[NSDictionary alloc] initWithObjectsAndKeys:@"SID",NSHTTPCookieName, SID,NSHTTPCookieValue,@".google.com",NSHTTPCookieDomain, @"/",NSHTTPCookiePath,@"1600000000",NSHTTPCookieExpires, nil];
+	
+/*	NSHTTPCookie *cookie = [[NSHTTPCookie alloc] initWithProperties:[NSDictionary dictionaryWithDictionary:properties]];
+	if (cookie != nil ) {
+		NSLog(@"Created Cookies");
+	} else {
+		NSLog(@"Failed Creating cookies");
+	}
+	
+	ASIHTTPRequest *request;
+	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLGetTokenID]] autorelease];//kURLgetUnreadItemIDsFormat, 1275045129]]] autorelease]; //
+				
+													//[	
+	
+	//[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
+	//	[request addRequestHeader:@"Cookie" value:cookie];
+	[request startSynchronous];
+	NSLog(@"Response: %@", [request responseString]);
+
+
+	*/
 }
 
 @end

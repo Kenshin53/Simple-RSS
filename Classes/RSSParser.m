@@ -124,7 +124,7 @@
 	ASIFormDataRequest *request;
 	int numberOfIDsInAPOST = 20;
 	int i = 0;
-	NSString *tokenID = [[MySingleton sharedInstance] tokenID];
+//	NSString *tokenID = [[MySingleton sharedInstance] tokenID];
 	//NSMutableString *postMessage;
 	NSDictionary *info;
 	
@@ -142,7 +142,7 @@
 	}
 	
 	
-	tokenID = [[MySingleton sharedInstance] tokenID];
+	NSString *tokenID = [[MySingleton sharedInstance] tokenID];
 	
 	
 

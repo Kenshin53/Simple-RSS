@@ -9,8 +9,8 @@
 #import "DetailViewController.h"
 #import "MasterViewController.h"
 #import "AuthViewController.h"
-
-
+#import "UserDefinedConst.h"
+#import "NewsItem.h"
 @implementation DetailViewController
 
 @synthesize navigationBar, popoverController, detailItem, webview;
@@ -75,6 +75,8 @@
 //	UIBarButtonItem *loginButton = [[ UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(dosomething)];
 	
 	[super viewDidLoad];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadWithNewsItem:) name:kNotificationDidGetNextUnreadNews object:nil];
+	
 }
 
 
@@ -117,6 +119,31 @@
     // Release any cached data, images, etc that aren't in use.
 }
 */
+
+-(IBAction) nextUnreadNews {
+	
+	[[NSNotificationCenter defaultCenter] postNotificationName:kNotificationRequestingNextUnreadNews object:nil];
+	
+}
+
+-(void) reloadWithNewsItem:(NSNotification *)notification {
+	NewsItem *aNews = [notification object];
+	
+	NSString *htmlWrapper = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"SimpleRSSTest" ofType:@"html"]];
+	
+
+	NSString *formattedContent = [[NSString alloc] initWithFormat:htmlWrapper, 
+								  [aNews link],
+								  [aNews title],
+								  [aNews summary]];
+	
+	[webview loadHTMLString:formattedContent baseURL:nil];
+
+
+
+	[htmlWrapper release];
+	[formattedContent release];
+}
 
 - (void)dealloc {
     [popoverController release];

@@ -21,7 +21,7 @@
 #import "NewsViewController.h"
 #import "Group.h"
 #import "FolderCompositeCell.h"
-
+#import "NewsListVC.h"
 
 @implementation FolderViewController
 
@@ -76,6 +76,16 @@
 
 	NSLog(@"Number of item: %d", [[[MySingleton sharedInstance] faviconPaths] count]);
 }
+
+- (void)viewWillAppear:(BOOL) animated {
+	NSLog(@"View Will appear");
+	if (folderDidChange) {
+		[self.tableView reloadData];			
+	}
+
+	folderDidChange = NO;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -121,6 +131,7 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(feedListDidChange:) name:kNotificationFeedListDidChanged object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(folderListDidChange:) name:kNotificationAddedNewFolder object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(newsItemAdded:) name:kNotificationNewsItemAdded object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(newsMarkedAsRead:) name:kNotificationDidMarkNewsAsRead object:nil];
 
 }
 
@@ -155,40 +166,39 @@
 	
 	// Testing of getting all the Unread Item in one request
 
-	
-	NSDictionary *properties = [[NSDictionary alloc] initWithObjectsAndKeys:@"SID",NSHTTPCookieName, SID,NSHTTPCookieValue,@".google.com",NSHTTPCookieDomain, @"/",NSHTTPCookiePath,@"1600000000",NSHTTPCookieExpires, nil];
-	
-	NSHTTPCookie *cookie = [[NSHTTPCookie alloc] initWithProperties:properties];
-	if (cookie != nil ) {
-		NSLog(@"Created Cookies");
-	} else {
-		NSLog(@"Failed Creating cookies");
-	}
-	
+	NSMutableDictionary *properties = [[NSMutableDictionary alloc] init];
+	[properties setValue:@"SID" forKey:NSHTTPCookieName];
+	[properties setValue:SID forKey:NSHTTPCookieValue];
+	[properties setValue:@".google.com" forKey:NSHTTPCookieDomain];
+	[properties setValue:@"/" forKey:NSHTTPCookiePath];
+	[properties setValue:[NSDate dateWithTimeIntervalSinceNow:84600*30]  forKey:NSHTTPCookieExpires];
 
+	NSHTTPCookie *cookie = [[NSHTTPCookie alloc] initWithProperties:[NSDictionary dictionaryWithDictionary:properties]];
+	[properties release];
+	// NSString *authString = [[NSString alloc] initWithFormat:@"GoogleLogin auth=%@",SID];
+	NSString *authString = [[NSString alloc] initWithFormat:@"GoogleLogin auth=%@", SID];
+	NSLog(@"authString = %@", authString);
 
-	
-	
-// NSString *authString = [[NSString alloc] initWithFormat:@"GoogleLogin auth=%@",SID];
-	NSString *authString = [[NSString alloc] initWithFormat:@"GoogleLogin auth= %@", SID];
-//	NSString *cookie = [[NSString alloc] initWithFormat:@"SID=%@;Domain=.google.com;path=/;expires=1600000000",SID];
+	NSString *cookieStr = [[NSString alloc] initWithFormat:@"SID=%@",SID];
 
 	
 	// request for tokenID
 	ASIHTTPRequest *request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLGetTokenID]] autorelease];
-	//[request addRequestHeader:@"Cookie" value:cookie];
-	[request addRequestHeader:@"Authorization" value:authString];
-	//	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
+	NSLog(@"Number of cookies for this URL: %d", [[[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:[request url] ] count]);
+	[request addRequestHeader:@"Cookie" value:cookieStr];
+
+	[request setUseCookiePersistence:YES];
+	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
 	NSDictionary *info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"TokenID", @"RequestType",nil] autorelease];
 	[request setUserInfo:info];
 	[networkQueue addOperation:request];
 	//Request for getting list of subscription
 	
 	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLGetUserInfo]] autorelease];
-	[request addRequestHeader:@"Authorization" value:authString];	
-	//[request addRequestHeader:@"Cookie" value:cookie];
+	//[request addRequestHeader:@"Authorization" value:authString];	
+	[request addRequestHeader:@"Cookie" value:cookieStr];
 	
-	//[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
+	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
 	
 	info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"User Info", @"RequestType",nil] autorelease];
 	[request setUserInfo:info];
@@ -197,9 +207,9 @@
 	
 	
 	
-	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLSubscriptionFetchingFormat]] autorelease];
-	[request addRequestHeader:@"Authorization" value:authString];	
-	//[request addRequestHeader:@"Cookie" value:cookie];
+	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLGetSubscription]] autorelease];
+	//[request addRequestHeader:@"Authorization" value:authString];	
+	[request addRequestHeader:@"Cookie" value:cookieStr];
 
 	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
 	
@@ -212,9 +222,9 @@
 
 //Request for getting Tag List	
 	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLGetTagList]] autorelease];
-//	[request addRequestHeader:@"Cookie" value:cookie];
-		[request addRequestHeader:@"Authorization" value:authString];
-//	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
+	[request addRequestHeader:@"Cookie" value:cookieStr];
+//	[request addRequestHeader:@"Authorization" value:authString];
+	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
 	info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"TagList", @"RequestType",nil] autorelease];
 	[request setUserInfo:info];
 	[networkQueue addOperation:request];
@@ -222,15 +232,15 @@
 //Request for getting Unread Items Id 
 	
 	
-	// !!!: Figure out why need this line to trigger the UnreadID download ???
-	[GoogleReaderHelper getTokenID:SID];
+	
+
 
 	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:kURLgetUnreadItemIDsFormat, timestamp]]] autorelease];
-	[request addRequestHeader:@"Authorization" value:authString];													
+//	[request addRequestHeader:@"Authorization" value:authString];													
 													
 	NSLog(@"Get Unread URL: %@",[NSString stringWithFormat:kURLgetUnreadItemIDsFormat, timestamp]);
-	//[request addRequestHeader:@"Cookie" value:cookie];
-	//[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
+	[request addRequestHeader:@"Cookie" value:cookieStr];
+	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
 	info = [[[NSDictionary alloc] initWithObjectsAndKeys:@"UnreadItemsID", @"RequestType",nil] autorelease];
 	[request setUserInfo:info];
 	[networkQueue addOperation:request];	
@@ -238,7 +248,7 @@
 	
 	[networkQueue go];
 	
-
+	[cookieStr release];
 	[cookie release];
 	[authString release];
 	
@@ -284,6 +294,12 @@
 	
 }
 
+- (void)authenticationNeededForRequest:(ASIHTTPRequest *)request {
+	[request setUsername:@"caomanhtuanbsb"];
+	[request setPassword:@"tu4ncm"];
+	[request retryUsingSuppliedCredentials];
+}
+
 - (void) queueDidFinish:(ASINetworkQueue *)queue {
 	NSLog(@"Queue did finished");
 	[RSSParser addFaviconRequests:queue];
@@ -326,18 +342,7 @@
     
     static NSString *CellIdentifier = @"FolderCell";
 
-/*	FolderCell *cell = (FolderCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-	
-	if (cell == nil) {
-		[[NSBundle mainBundle] loadNibNamed:@"FolderCell" owner:self options:nil];
-		cell = tmpCell;
-		self.tmpCell = nil;
-	}
-	cell.titleLabel.text = [[folders objectAtIndex:indexPath.row] title];
-	cell.countLabel.text = [NSString stringWithFormat:@"%d",[[folders objectAtIndex:indexPath.row] unreadCount]];
-	cell.iconView.image = [UIImage imageNamed:@"Folder1.png"];
- */
-		FolderCompositeCell *cell = (FolderCompositeCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	FolderCompositeCell *cell = (FolderCompositeCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil) {
 		cell = [[[FolderCompositeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 	}
@@ -355,13 +360,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
  	EGODB *db = [[EGODB alloc] init];
 	
-	NewsViewController *newsVC = [[NewsViewController alloc] initWithStyle:UITableViewStylePlain];
+	/*NewsViewController *newsVC = [[NewsViewController alloc] initWithStyle:UITableViewStylePlain];
 	//[newsVC setParentFeed:[feeds objectAtIndex:indexPath.row]];
 	
 	[newsVC setParentFolder:[db getFullGroupWithGroupID:[[folders objectAtIndex:indexPath.row] groupID]]];
 	
 	[self.navigationController pushViewController:newsVC 	 animated:YES];
+	newsVC.detailVC = detailViewController;*/
+	NewsListVC *newsVC = [[NewsListVC alloc] initWithStyle:UITableViewStylePlain];
+	[newsVC.newsList addObjectsFromArray:[db getNewsItemsWithGroupID:[[folders objectAtIndex:indexPath.row] groupID]]];
+	newsVC.feedsDict = [db getFeedNamesWithGroupID:[[folders objectAtIndex:indexPath.row] groupID]];
+	newsVC.groupID = [[folders objectAtIndex:indexPath.row] groupID];
 	newsVC.detailVC = detailViewController;
+	[self.navigationController pushViewController:newsVC animated:YES];
+
+	 
 	[newsVC release];
 	[db release];
 }
@@ -394,6 +407,19 @@
 	
 }
 
+-(void) newsMarkedAsRead:(NSNotification *)notification {
+	NSString *aGroupID = [notification object];
+	for (int i = 0; i < [folders count]; i++) {
+		if ([[[folders objectAtIndex:i] groupID] isEqualToString:aGroupID]) {
+			int count =[[folders objectAtIndex:i] unreadCount] ;
+			count--;
+			[[folders objectAtIndex:i] setUnreadCount:count];
+			folderDidChange = YES;
+			break;
+		}
+	}
+}
+
 - (void) newsItemAdded:(NSNotification *) notification {
 	NSString *feedID = [[notification object] feedID];
 	for (int i = 0; i < [folders count]; i++) {
@@ -410,6 +436,7 @@
 
 	
 }
+
 
 @end
 

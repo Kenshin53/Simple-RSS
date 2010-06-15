@@ -21,5 +21,6 @@
 @property (nonatomic, retain) IBOutlet UIWebView *webview;
 @property (nonatomic, retain) id detailItem;
 
+-(IBAction) nextUnreadNews;
 
 @end

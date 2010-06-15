@@ -21,6 +21,7 @@
 	FeedParser *feedParser;
 	DetailViewController *detailViewController;
 	UIProgressView *myProgressView;
+	BOOL folderDidChange;
 	
 }
 

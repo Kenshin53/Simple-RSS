@@ -32,12 +32,12 @@
         <key>end</key>
          <array>
           <dict>
-           <key>line</key><integer>164</integer>
+           <key>line</key><integer>158</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>164</integer>
+           <key>line</key><integer>158</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
@@ -53,12 +53,12 @@
         <key>start</key>
          <array>
           <dict>
-           <key>line</key><integer>164</integer>
+           <key>line</key><integer>158</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>164</integer>
+           <key>line</key><integer>158</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
@@ -66,13 +66,13 @@
         <key>end</key>
          <array>
           <dict>
-           <key>line</key><integer>164</integer>
-           <key>col</key><integer>29</integer>
+           <key>line</key><integer>158</integer>
+           <key>col</key><integer>36</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>164</integer>
-           <key>col</key><integer>214</integer>
+           <key>line</key><integer>158</integer>
+           <key>col</key><integer>69</integer>
            <key>file</key><integer>0</integer>
           </dict>
          </array>
@@ -83,21 +83,21 @@
      <key>kind</key><string>event</string>
      <key>location</key>
      <dict>
-      <key>line</key><integer>164</integer>
-      <key>col</key><integer>29</integer>
+      <key>line</key><integer>158</integer>
+      <key>col</key><integer>36</integer>
       <key>file</key><integer>0</integer>
      </dict>
      <key>ranges</key>
      <array>
        <array>
         <dict>
-         <key>line</key><integer>164</integer>
-         <key>col</key><integer>29</integer>
+         <key>line</key><integer>158</integer>
+         <key>col</key><integer>36</integer>
          <key>file</key><integer>0</integer>
         </dict>
         <dict>
-         <key>line</key><integer>164</integer>
-         <key>col</key><integer>214</integer>
+         <key>line</key><integer>158</integer>
+         <key>col</key><integer>69</integer>
          <key>file</key><integer>0</integer>
         </dict>
        </array>
@@ -115,25 +115,25 @@
         <key>start</key>
          <array>
           <dict>
-           <key>line</key><integer>164</integer>
-           <key>col</key><integer>29</integer>
+           <key>line</key><integer>158</integer>
+           <key>col</key><integer>36</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>164</integer>
-           <key>col</key><integer>214</integer>
+           <key>line</key><integer>158</integer>
+           <key>col</key><integer>69</integer>
            <key>file</key><integer>0</integer>
           </dict>
          </array>
         <key>end</key>
          <array>
           <dict>
-           <key>line</key><integer>166</integer>
+           <key>line</key><integer>165</integer>
            <key>col</key><integer>2</integer>
            <key>file</key><integer>0</integer>
           </dict>
           <dict>
-           <key>line</key><integer>166</integer>
+           <key>line</key><integer>165</integer>
            <key>col</key><integer>13</integer>
            <key>file</key><integer>0</integer>
           </dict>
@@ -145,7 +145,7 @@
      <key>kind</key><string>event</string>
      <key>location</key>
      <dict>
-      <key>line</key><integer>166</integer>
+      <key>line</key><integer>165</integer>
       <key>col</key><integer>2</integer>
       <key>file</key><integer>0</integer>
      </dict>
@@ -153,29 +153,201 @@
      <array>
        <array>
         <dict>
-         <key>line</key><integer>166</integer>
+         <key>line</key><integer>165</integer>
          <key>col</key><integer>2</integer>
          <key>file</key><integer>0</integer>
         </dict>
         <dict>
-         <key>line</key><integer>166</integer>
+         <key>line</key><integer>165</integer>
          <key>col</key><integer>13</integer>
          <key>file</key><integer>0</integer>
         </dict>
        </array>
      </array>
      <key>extended_message</key>
-     <string>Object allocated on line 164 and stored into &apos;properties&apos; is no longer referenced after this point and has a retain count of +1 (object leaked)</string>
+     <string>Object allocated on line 158 and stored into &apos;properties&apos; is no longer referenced after this point and has a retain count of +1 (object leaked)</string>
      <key>message</key>
-<string>Object allocated on line 164 and stored into &apos;properties&apos; is no longer referenced after this point and has a retain count of +1 (object leaked)</string>
+<string>Object allocated on line 158 and stored into &apos;properties&apos; is no longer referenced after this point and has a retain count of +1 (object leaked)</string>
     </dict>
    </array>
-   <key>description</key><string>Potential leak of an object allocated on line 164 and stored into &apos;properties&apos;</string>
+   <key>description</key><string>Potential leak of an object allocated on line 158 and stored into &apos;properties&apos;</string>
    <key>category</key><string>Memory (Core Foundation/Objective-C)</string>
    <key>type</key><string>Leak</string>
   <key>location</key>
   <dict>
-   <key>line</key><integer>166</integer>
+   <key>line</key><integer>165</integer>
+   <key>col</key><integer>2</integer>
+   <key>file</key><integer>0</integer>
+  </dict>
+  </dict>
+  <dict>
+   <key>path</key>
+   <array>
+    <dict>
+     <key>kind</key><string>control</string>
+     <key>edges</key>
+      <array>
+       <dict>
+        <key>start</key>
+         <array>
+          <dict>
+           <key>line</key><integer>148</integer>
+           <key>col</key><integer>2</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+          <dict>
+           <key>line</key><integer>148</integer>
+           <key>col</key><integer>2</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+         </array>
+        <key>end</key>
+         <array>
+          <dict>
+           <key>line</key><integer>170</integer>
+           <key>col</key><integer>2</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+          <dict>
+           <key>line</key><integer>170</integer>
+           <key>col</key><integer>2</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+         </array>
+       </dict>
+      </array>
+    </dict>
+    <dict>
+     <key>kind</key><string>control</string>
+     <key>edges</key>
+      <array>
+       <dict>
+        <key>start</key>
+         <array>
+          <dict>
+           <key>line</key><integer>170</integer>
+           <key>col</key><integer>2</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+          <dict>
+           <key>line</key><integer>170</integer>
+           <key>col</key><integer>2</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+         </array>
+        <key>end</key>
+         <array>
+          <dict>
+           <key>line</key><integer>170</integer>
+           <key>col</key><integer>24</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+          <dict>
+           <key>line</key><integer>170</integer>
+           <key>col</key><integer>70</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+         </array>
+       </dict>
+      </array>
+    </dict>
+    <dict>
+     <key>kind</key><string>event</string>
+     <key>location</key>
+     <dict>
+      <key>line</key><integer>170</integer>
+      <key>col</key><integer>24</integer>
+      <key>file</key><integer>0</integer>
+     </dict>
+     <key>ranges</key>
+     <array>
+       <array>
+        <dict>
+         <key>line</key><integer>170</integer>
+         <key>col</key><integer>24</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+        <dict>
+         <key>line</key><integer>170</integer>
+         <key>col</key><integer>70</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+       </array>
+     </array>
+     <key>extended_message</key>
+     <string>Method returns an Objective-C object with a +1 retain count (owning reference)</string>
+     <key>message</key>
+<string>Method returns an Objective-C object with a +1 retain count (owning reference)</string>
+    </dict>
+    <dict>
+     <key>kind</key><string>control</string>
+     <key>edges</key>
+      <array>
+       <dict>
+        <key>start</key>
+         <array>
+          <dict>
+           <key>line</key><integer>170</integer>
+           <key>col</key><integer>24</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+          <dict>
+           <key>line</key><integer>170</integer>
+           <key>col</key><integer>70</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+         </array>
+        <key>end</key>
+         <array>
+          <dict>
+           <key>line</key><integer>231</integer>
+           <key>col</key><integer>2</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+          <dict>
+           <key>line</key><integer>231</integer>
+           <key>col</key><integer>2</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+         </array>
+       </dict>
+      </array>
+    </dict>
+    <dict>
+     <key>kind</key><string>event</string>
+     <key>location</key>
+     <dict>
+      <key>line</key><integer>231</integer>
+      <key>col</key><integer>2</integer>
+      <key>file</key><integer>0</integer>
+     </dict>
+     <key>ranges</key>
+     <array>
+       <array>
+        <dict>
+         <key>line</key><integer>231</integer>
+         <key>col</key><integer>2</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+        <dict>
+         <key>line</key><integer>231</integer>
+         <key>col</key><integer>2</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+       </array>
+     </array>
+     <key>extended_message</key>
+     <string>Object allocated on line 170 and stored into &apos;cookieStr&apos; is no longer referenced after this point and has a retain count of +1 (object leaked)</string>
+     <key>message</key>
+<string>Object allocated on line 170 and stored into &apos;cookieStr&apos; is no longer referenced after this point and has a retain count of +1 (object leaked)</string>
+    </dict>
+   </array>
+   <key>description</key><string>Potential leak of an object allocated on line 170 and stored into &apos;cookieStr&apos;</string>
+   <key>category</key><string>Memory (Core Foundation/Objective-C)</string>
+   <key>type</key><string>Leak</string>
+  <key>location</key>
+  <dict>
+   <key>line</key><integer>231</integer>
    <key>col</key><integer>2</integer>
    <key>file</key><integer>0</integer>
   </dict>
