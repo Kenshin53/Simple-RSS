@@ -16,6 +16,7 @@ NSString * const kNotificationNewsItemAdded = @"NewsItemAdded";
 NSString * const kNotificationRequestingNextUnreadNews = @"RequestingNextUnread";
 NSString * const kNotificationDidGetNextUnreadNews = @"DidGetNextUnreadNews";
 NSString * const kNotificationDidMarkNewsAsRead = @"DidMarkNewsAsRead";
+NSString * const kNotificationDownloadQueueDidFinish = @"DownloadQueueDidFinish";
 //URL constant
 NSString * const kURLgetUnreadItemIDsFormat = @"http://www.google.com/reader/api/0/stream/items/ids?n=5000&s=user/-/state/com.google/reading-list&ot=%d&xt=user/-/state/com.google/read&output=json";
 

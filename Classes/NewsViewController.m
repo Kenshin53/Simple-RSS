@@ -182,8 +182,8 @@
 	
 	[self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject: indexPath] withRowAnimation:UITableViewRowAnimationFade];
 	
-	NSString *htmlWrapper = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"SimpleRSSTest" ofType:@"html"]];
-
+	//NSString *htmlWrapper = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"SimpleRSSTest" ofType:@"html"]];
+	NSString *htmlWrapper = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ReederWrapper" ofType:@"html"]];
 	NSLog(@"Content: %@", [aNews summary]);
 	NSString *formattedContent = [[NSString alloc] initWithFormat:htmlWrapper, 
 									[aNews link],

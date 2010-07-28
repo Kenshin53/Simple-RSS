@@ -129,9 +129,10 @@
 -(void) reloadWithNewsItem:(NSNotification *)notification {
 	NewsItem *aNews = [notification object];
 	
-	NSString *htmlWrapper = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"SimpleRSSTest" ofType:@"html"]];
+	//NSString *htmlWrapper = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"SimpleRSSTest" ofType:@"html"]];
 	
-
+	NSString *htmlWrapper = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ReederWrapper" ofType:@"html"]];
+	
 	NSString *formattedContent = [[NSString alloc] initWithFormat:htmlWrapper, 
 								  [aNews link],
 								  [aNews title],

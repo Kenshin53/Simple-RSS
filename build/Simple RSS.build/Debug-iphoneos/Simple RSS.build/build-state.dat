@@ -1,7 +1,7 @@
 TSimple RSS
 v7
 r0
-t298273079.992471
+t299738917.066901
 cCheck dependencies
 cCpResource "build/Debug-iphoneos/Simple RSS.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
 cProcessInfoPlistFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Info.plist" Simple_RSS-Info.plist
@@ -24,6 +24,7 @@ cCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-ip
 cCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/AppIcon.png" AppIcon.png
 cCpResource "build/Debug-iphoneos/Simple RSS.app/SimpleRSS.sqlite" SimpleRSS.sqlite
 cCopyPNGFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/SectionHeader_BG.png" Classes/SectionHeader_BG.png
+cCpResource "build/Debug-iphoneos/Simple RSS.app/ReederWrapper.html" ReederWrapper.html
 cProcessPCH /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch.gch Simple_RSS_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/main.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Simple_RSSAppDelegate.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Simple_RSSAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
@@ -278,9 +279,9 @@ s1226
 i"MySingleton.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.m
-c000000004C0CFCDF000000000000056B
-t1275919583
-s1387
+c000000004C17A76E00000000000005BD
+t1276618606
+s1469
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIAuthenticationDialog.h
 c000000004BECD04C0000000000000388
@@ -424,9 +425,9 @@ s731
 i<UIKit/UIKit.h>
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m
-c000000004C0C907B0000000000001055
-t1275891835
-s4181
+c000000004C17B5F200000000000010E4
+t1276622322
+s4324
 i"DetailViewController.h"
 i"MasterViewController.h"
 i"AuthViewController.h"
@@ -543,9 +544,9 @@ i"ASIHTTPRequest.h"
 i"FolderCell.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m
-c000000004C11A9910000000000003A7C
-t1276225937
-s14972
+c000000004C2D72F50000000000003B49
+t1278046965
+s15177
 i"FolderViewController.h"
 i"MySingleton.h"
 i"UserDefinedConst.h"
@@ -732,9 +733,9 @@ s844
 i<UIKit/UIKit.h>
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsListVC.m
-c000000004C1711B1000000000000340D
-t1276580273
-s13325
+c000000004C17B6B2000000000000348D
+t1276622514
+s13453
 i"NewsListVC.h"
 i"NewsCompositeCell.h"
 i"NewsItem.h"
@@ -753,9 +754,9 @@ s988
 i<UIKit/UIKit.h>
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m
-c000000004C11A9D20000000000002479
-t1276226002
-s9337
+c000000004C17B6830000000000002506
+t1276622467
+s9478
 i"NewsViewController.h"
 i"EGODB.h"
 i"NewsItem.h"
@@ -826,8 +827,8 @@ s452
 i<Foundation/Foundation.h>
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Section.m
-c000000004C126BC700000000000000F7
-t1276275655
+c000000004C171C3E00000000000000F7
+t1276582974
 s247
 i"Section.h"
 
@@ -1004,6 +1005,11 @@ s9710
 i"NSDataAdditions.h"
 i<zlib.h>
 
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/ReederWrapper.html
+c000000004C17B6230000000000002180
+t1276622371
+s8576
+
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSS.css
 c000000004BFAC887000000000000069A
 t1274726535
@@ -1040,16 +1046,21 @@ i"TBXML.h"
 i"NSDataAdditions.h"
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h
-c000000004C11B038000000000000035A
-t1276227640
-s858
+c000000004C17A77C0000000000000398
+t1276618620
+s920
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/article.html
+c000000004C17B483000000000000241E
+t1276621955
+s9246
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app
-t1276580279
-s952
+t1278046117
+s986
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app.dSYM
-t1276580279
+t1278046116
 s102
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/1275645813_news_subscribe.png
@@ -1128,6 +1139,10 @@ N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple
 t1275500283
 s3103
 
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/ReederWrapper.html
+t1276622575
+s8576
+
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/ResourceRules.plist
 t1275500281
 s485
@@ -1137,8 +1152,8 @@ t1276227797
 s4268
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS
-t1276580279
-s504136
+t1278046116
+s512656
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/SimpleRSS.css
 t1275500283
@@ -1151,6 +1166,10 @@ s1466368
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/SimpleRSSTest.html
 t1275500283
 s1788
+
+N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/article.html
+t2
+s0
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/embedded.mobileprovision
 t1275500288
@@ -1382,7 +1401,7 @@ t1276579612
 s9080
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/DetailViewController.o
-t1276579611
+t1276622575
 s48704
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/EGODB.o
@@ -1406,7 +1425,7 @@ t1276579612
 s16376
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Experiment.o
-t1276579612
+t1276618987
 s9032
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Feed.o
@@ -1422,11 +1441,11 @@ t1276579614
 s28180
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/FolderViewController.o
-t1276579612
-s93736
+t1278046116
+s94044
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/GoogleReaderHelper.o
-t1276579611
+t1276618987
 s25688
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/GoogleReaderSync.o
@@ -1470,15 +1489,15 @@ t1276579613
 s20068
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/NewsListVC.o
-t1276580279
-s64812
+t1276622575
+s64688
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/NewsViewController.o
-t1276579613
+t1276622575
 s64172
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/RSSParser.o
-t1276579613
+t1276618987
 s41184
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Reachability.o
@@ -1502,7 +1521,7 @@ t1276579612
 s24344
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Section.o
-t1276579614
+t1276618987
 s8872
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Simple RSS
@@ -1523,8 +1542,8 @@ t1276579614
 s34184
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/UserDefinedConst.o
-t1276579613
-s7576
+t1276618987
+s7788
 
 N/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/main.o
 t1276579611
@@ -3856,15 +3875,15 @@ lSLF07#2@66"Analyze /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/main.m29
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies298273079#298273079#0(0"0(0#1#0"8629513152#0"0#
+lSLF07#2@18"Check dependencies299738916#299738916#0(0"0(0#1#0"8604654944#0"0#
 
 CCodeSign "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app"
-s298273079.826004
-e298273079.992433
+s299738916.908313
+e299738917.066839
 r1
 xCodeSign
 x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app
-lSLF07#2@46"CodeSign "build/Debug-iphoneos/Simple RSS.app"298273079#298273079#0(0"0(0#0#87"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app8603517728#724"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Manh Tuan Cao (3GVQ7QE7W5)" "--resource-rules=/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/ResourceRules.plist" --entitlements "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS.xcent" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app"0#
+lSLF07#2@46"CodeSign "build/Debug-iphoneos/Simple RSS.app"299738916#299738917#0(0"0(0#0#87"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app8605447008#724"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Manh Tuan Cao (3GVQ7QE7W5)" "--resource-rules=/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/ResourceRules.plist" --entitlements "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS.xcent" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv6/ASIAuthenticationDialog.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/ASIAuthenticationDialog.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
 s297218519.852334
@@ -4704,8 +4723,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@72"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DateHelper.m298272412#298272412#0(0"0(0#0#64"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DateHelper.m8615554560#1997"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/DateHelper.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/DateHelper.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/DetailViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
-s298272411.632442
-e298272411.762293
+s298315375.047662
+e298315375.274848
 r1
 xCompileC
 xbuild/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/DetailViewController.o
@@ -4714,8 +4733,8 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:22: warning: 'keepUnreadPeriod' defined but not used
-lSLF07#2@90"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m298272411#298272411#0(135"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:22: warning: 'keepUnreadPeriod' defined but not used1(22@39"'keepUnreadPeriod' defined but not used298272411#0#135#0(6@81"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h297920440#22#0#22#0#24"'*' defined but not used0(0#0#82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m8615297760#2025"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/DetailViewController.o"0#
+o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:24: warning: 'keepUnreadPeriod' defined but not used
+lSLF07#2@90"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m298315375#298315375#0(135"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:24: warning: 'keepUnreadPeriod' defined but not used1(22@39"'keepUnreadPeriod' defined but not used298315375#0#135#0(6@81"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h298311420#24#0#24#0#24"'*' defined but not used0(0#0#82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m8623072928#2025"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/DetailViewController.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/DetailViewController.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/EGODB.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/EGODB.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 s298272412.718570
@@ -4783,8 +4802,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@84"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRow.m298272412#298272412#0(0"0(0#0#76"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRow.m8613688096#2013"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/EGODatabaseRow.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/EGODatabaseRow.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Experiment.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
-s298272412.641567
-e298272412.784225
+s298311787.051538
+e298311787.181182
 r1
 xCompileC
 xbuild/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Experiment.o
@@ -4793,8 +4812,8 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h:22: warning: 'keepUnreadPeriod' defined but not used
-lSLF07#2@72"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m298272412#298272412#0(124"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h:22: warning: 'keepUnreadPeriod' defined but not used1(22@39"'keepUnreadPeriod' defined but not used298272412#0#124#0(6@70"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h297920440#22#0#22#0#24"'*' defined but not used0(0#0#64"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m8612799712#1997"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Experiment.o"0#
+o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h:24: warning: 'keepUnreadPeriod' defined but not used
+lSLF07#2@72"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m298311787#298311787#0(124"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h:24: warning: 'keepUnreadPeriod' defined but not used1(22@39"'keepUnreadPeriod' defined but not used298311787#0#124#0(6@70"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h298311420#24#0#24#0#24"'*' defined but not used0(0#0#64"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m8615198304#1997"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Experiment.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Experiment.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Feed.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Feed.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 s298272412.299969
@@ -4836,8 +4855,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@89"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderCompositeCell.m298272414#298272414#0(0"0(0#0#81"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderCompositeCell.m8615400896#2023"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderCompositeCell.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/FolderCompositeCell.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/FolderViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
-s298272412.268160
-e298272412.564005
+s299738916.528128
+e299738916.748525
 r1
 xCompileC
 xbuild/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/FolderViewController.o
@@ -4847,16 +4866,16 @@ xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m: In function '-[FolderViewController newsMarkedAsRead:]':
-o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:414: warning: initialization makes integer from pointer without a cast
-o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:416: warning: passing argument 1 of 'setUnreadCount:' makes pointer from integer without a cast
+o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:416: warning: initialization makes integer from pointer without a cast
+o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:418: warning: passing argument 1 of 'setUnreadCount:' makes pointer from integer without a cast
 o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m: In function '-[FolderViewController newsItemAdded:]':
-o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:427: warning: initialization makes integer from pointer without a cast
-o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:428: warning: passing argument 1 of 'setUnreadCount:' makes pointer from integer without a cast
-lSLF07#2@90"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m298272412#298272412#0(945"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m: In function '-[FolderViewController newsMarkedAsRead:]':/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:414: warning: initialization makes integer from pointer without a cast/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:416: warning: passing argument 1 of 'setUnreadCount:' makes pointer from integer without a cast/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m: In function '-[FolderViewController newsItemAdded:]':/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:427: warning: initialization makes integer from pointer without a cast/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:428: warning: passing argument 1 of 'setUnreadCount:' makes pointer from integer without a cast4(22@56"Initialization makes integer from pointer without a cast298272412#141#154#0(6@82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m297918737#414#0#414#0#0"0(22@81"Passing argument 1 of 'setUnreadCount:' makes pointer from integer without a cast298272412#295#179#0(6@82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m297918737#416#0#416#0#0"0(22@56"Initialization makes integer from pointer without a cast298272412#612#154#0(6@82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m297918737#427#0#427#0#0"0(22@81"Passing argument 1 of 'setUnreadCount:' makes pointer from integer without a cast298272412#766#179#0(6@82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m297918737#428#0#428#0#0"0(0#0#82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m8613698880#2025"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/FolderViewController.o"0#
+o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:429: warning: initialization makes integer from pointer without a cast
+o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:430: warning: passing argument 1 of 'setUnreadCount:' makes pointer from integer without a cast
+lSLF07#2@90"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m299738916#299738916#0(945"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m: In function '-[FolderViewController newsMarkedAsRead:]':/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:416: warning: initialization makes integer from pointer without a cast/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:418: warning: passing argument 1 of 'setUnreadCount:' makes pointer from integer without a cast/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m: In function '-[FolderViewController newsItemAdded:]':/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:429: warning: initialization makes integer from pointer without a cast/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m:430: warning: passing argument 1 of 'setUnreadCount:' makes pointer from integer without a cast4(22@56"Initialization makes integer from pointer without a cast299738916#141#154#0(6@82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m299738905#416#0#416#0#0"0(22@81"Passing argument 1 of 'setUnreadCount:' makes pointer from integer without a cast299738916#295#179#0(6@82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m299738905#418#0#418#0#0"0(22@56"Initialization makes integer from pointer without a cast299738916#612#154#0(6@82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m299738905#429#0#429#0#0"0(22@81"Passing argument 1 of 'setUnreadCount:' makes pointer from integer without a cast299738916#766#179#0(6@82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m299738905#430#0#430#0#0"0(0#0#82"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m8611417440#2025"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/FolderViewController.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/FolderViewController.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/GoogleReaderHelper.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
-s298272411.736418
-e298272411.962292
+s298311786.404947
+e298311787.048258
 r1
 xCompileC
 xbuild/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/GoogleReaderHelper.o
@@ -4865,8 +4884,8 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h:22: warning: 'keepUnreadPeriod' defined but not used
-lSLF07#2@80"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m298272411#298272411#0(124"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h:22: warning: 'keepUnreadPeriod' defined but not used1(22@39"'keepUnreadPeriod' defined but not used298272411#0#124#0(6@70"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h297920440#22#0#22#0#24"'*' defined but not used0(0#0#72"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m8613748608#2013"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/GoogleReaderHelper.o"0#
+o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h:24: warning: 'keepUnreadPeriod' defined but not used
+lSLF07#2@80"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m298311786#298311787#0(124"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h:24: warning: 'keepUnreadPeriod' defined but not used1(22@39"'keepUnreadPeriod' defined but not used298311787#0#124#0(6@70"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/UserDefinedConst.h298311420#24#0#24#0#24"'*' defined but not used0(0#0#72"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m8627199616#2013"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/GoogleReaderHelper.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/GoogleReaderHelper.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/GoogleReaderSync.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/GoogleReaderSync.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 s298272414.437385
@@ -4999,8 +5018,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@78"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.m298272413#298272413#0(0"0(0#0#70"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.m8618777280#2001"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsItem.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/NewsItem.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/NewsListVC.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsListVC.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
-s298273079.474252
-e298273079.667384
+s298315375.275994
+e298315375.405736
 r1
 xCompileC
 xbuild/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/NewsListVC.o
@@ -5009,12 +5028,12 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:22: warning: 'keepUnreadPeriod' defined but not used
-lSLF07#2@80"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsListVC.m298273079#298273079#0(135"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:22: warning: 'keepUnreadPeriod' defined but not used1(22@39"'keepUnreadPeriod' defined but not used298273079#0#135#0(6@81"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h297920440#22#0#22#0#24"'*' defined but not used0(0#0#72"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsListVC.m8627497184#2005"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsListVC.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/NewsListVC.o"0#
+o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:24: warning: 'keepUnreadPeriod' defined but not used
+lSLF07#2@80"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsListVC.m298315375#298315375#0(135"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:24: warning: 'keepUnreadPeriod' defined but not used1(22@39"'keepUnreadPeriod' defined but not used298315375#0#135#0(6@81"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h298311420#24#0#24#0#24"'*' defined but not used0(0#0#72"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsListVC.m8627200416#2005"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsListVC.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/NewsListVC.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/NewsViewController.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
-s298272413.720109
-e298272413.872800
+s298315375.134476
+e298315375.365489
 r1
 xCompileC
 xbuild/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/NewsViewController.o
@@ -5024,12 +5043,12 @@ xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m:224:2: warning: #warning may have to remove observer
-o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:22: warning: 'keepUnreadPeriod' defined but not used
-lSLF07#2@88"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m298272413#298272413#0(269"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m:224:2: warning: #warning may have to remove observer/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:22: warning: 'keepUnreadPeriod' defined but not used2(22@36"#warning may have to remove observer298272413#0#134#0(6@80"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m297918802#224#0#224#0#10"#warning *0(22@39"'keepUnreadPeriod' defined but not used298272413#134#135#0(6@81"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h297920440#22#0#22#0#24"'*' defined but not used0(0#0#80"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m8616331456#2021"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/NewsViewController.o"0#
+o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:24: warning: 'keepUnreadPeriod' defined but not used
+lSLF07#2@88"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m298315375#298315375#0(269"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m:224:2: warning: #warning may have to remove observer/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:24: warning: 'keepUnreadPeriod' defined but not used2(22@36"#warning may have to remove observer298315375#0#134#0(6@80"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m298315267#224#0#224#0#10"#warning *0(22@39"'keepUnreadPeriod' defined but not used298315375#134#135#0(6@81"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h298311420#24#0#24#0#24"'*' defined but not used0(0#0#80"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m8629845216#2021"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/NewsViewController.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/NewsViewController.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/RSSParser.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
-s298272412.861949
-e298272413.054711
+s298311787.182765
+e298311787.388872
 r1
 xCompileC
 xbuild/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/RSSParser.o
@@ -5038,8 +5057,8 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:22: warning: 'keepUnreadPeriod' defined but not used
-lSLF07#2@79"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m298272412#298272413#0(135"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:22: warning: 'keepUnreadPeriod' defined but not used1(22@39"'keepUnreadPeriod' defined but not used298272413#0#135#0(6@81"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h297920440#22#0#22#0#24"'*' defined but not used0(0#0#71"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m8617311456#2003"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/RSSParser.o"0#
+o/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:24: warning: 'keepUnreadPeriod' defined but not used
+lSLF07#2@79"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m298311787#298311787#0(135"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h:24: warning: 'keepUnreadPeriod' defined but not used1(22@39"'keepUnreadPeriod' defined but not used298311787#0#135#0(6@81"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.h298311420#24#0#24#0#24"'*' defined but not used0(0#0#71"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m8624278304#2003"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/RSSParser.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/RSSParser.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Reachability.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Reachability.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 s298272413.541032
@@ -5107,8 +5126,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@87"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonWriter.m298272412#298272412#0(0"0(0#0#79"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonWriter.m8615680768#2014"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/JSON/SBJsonWriter.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/SBJsonWriter.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Section.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Section.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
-s298272414.584754
-e298272414.639531
+s298311787.489924
+e298311787.553961
 r1
 xCompileC
 xbuild/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Section.o
@@ -5117,7 +5136,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Section.m298272414#298272414#0(0"0(0#0#69"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Section.m8614591904#1999"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Section.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Section.o"0#
+lSLF07#2@77"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Section.m298311787#298311787#0(0"0(0#0#69"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Section.m8626900384#1999"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Section.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Section.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Simple_RSSAppDelegate.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/Simple_RSSAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 s298272411.515390
@@ -5146,8 +5165,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@67"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/TBXML.m298272414#298272414#0(0"0(0#0#59"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/TBXML.m8610564768#1987"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/TBXML.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/TBXML.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/UserDefinedConst.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
-s298272412.976721
-e298272413.053060
+s298311787.266570
+e298311787.326706
 r1
 xCompileC
 xbuild/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/UserDefinedConst.o
@@ -5156,7 +5175,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@89"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.m298272412#298272413#0(0"0(0#0#81"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.m8614929152#2020"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/UserDefinedConst.o"0#
+lSLF07#2@89"Compile /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.m298311787#298311787#0(0"0(0#0#81"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.m8626880800#2020"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-generated-files.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-own-target-headers.hmap" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-all-target-headers.hmap" -iquote "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS-project-headers.hmap" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/include" -I../three20/Build/Products/three20 "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources/armv7" "-I/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/DerivedSources" -include /var/folders/hn/hnlF9P2VG+0pUmzGsleeLE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Simple_RSS_Prefix-dttwohnhczinzjgywmtwadqgtyrb/Simple_RSS_Prefix.pch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/../UserDefinedConst.m" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/UserDefinedConst.o"0#
 
 CCompileC "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/main.o" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 s298272411.514369
@@ -5314,6 +5333,15 @@ xbuild/Debug-iphoneos/Simple RSS.app/README.markdown
 xClasses/README.markdown
 lSLF07#2@28"Copy Classes/README.markdown297193083#297193083#0(0"0(0#0#75"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/README.markdown4300911832#501"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/Classes/README.markdown" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app"0#
 
+CCpResource "build/Debug-iphoneos/Simple RSS.app/ReederWrapper.html" ReederWrapper.html
+s298315375.040962
+e298315375.047135
+r1
+xCpResource
+xbuild/Debug-iphoneos/Simple RSS.app/ReederWrapper.html
+xReederWrapper.html
+lSLF07#2@23"Copy ReederWrapper.html298315375#298315375#0(0"0(0#0#70"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/ReederWrapper.html8623351104#496"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/ReederWrapper.html" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app"0#
+
 CCpResource "build/Debug-iphoneos/Simple RSS.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
 s297193081.281689
 e297193081.369806
@@ -5350,6 +5378,9 @@ xbuild/Debug-iphoneos/Simple RSS.app/SimpleRSSTest.html
 xSimpleRSSTest.html
 lSLF07#2@23"Copy SimpleRSSTest.html297193083#297193083#0(0"0(0#0#70"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSSTest.html4300911832#496"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/SimpleRSSTest.html" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app"0#
 
+CCpResource "build/Debug-iphoneos/Simple RSS.app/article.html" article.html
+r0
+
 CCreateUniversalBinary "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS" normal "armv6 armv7"
 s297932710.362267
 e297932710.368514
@@ -5361,13 +5392,13 @@ xarmv6 armv7
 lSLF07#2@91"CreateUniversalBinary "build/Debug-iphoneos/Simple RSS.app/Simple RSS" normal "armv6 armv7"297932710#297932710#0(0"0(0#0#63"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/armv6 armv74300911832#602"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv6/Simple RSS" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Simple RSS" -output "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS"0#
 
 CGenerateDSYMFile "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app.dSYM" "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS"
-s298273079.766682
-e298273079.822310
+s299738916.846621
+e299738916.903163
 r1
 xGenerateDSYMFile
 x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app.dSYM
 x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS
-lSLF07#2@108"GenerateDSYMFile "build/Debug-iphoneos/Simple RSS.app.dSYM" "build/Debug-iphoneos/Simple RSS.app/Simple RSS"298273079#298273079#0(0"0(0#0#98"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS8617493952#416"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app.dSYM"0#
+lSLF07#2@108"GenerateDSYMFile "build/Debug-iphoneos/Simple RSS.app.dSYM" "build/Debug-iphoneos/Simple RSS.app/Simple RSS"299738916#299738916#0(0"0(0#0#98"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS8616130400#416"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS" -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app.dSYM"0#
 
 CLd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS" normal armv6
 s297245786.500221
@@ -5380,14 +5411,14 @@ xarmv6
 lSLF07#2@103"Link /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS297245786#297245786#0(0"0(0#0#0"4300911832#1054"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk "-L/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" -filelist "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv6/Simple RSS.LinkFileList" -dead_strip -all_load -ObjC -miphoneos-version-min=3.2 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -framework CFNetwork -framework SystemConfiguration -framework MobileCoreServices -lz.1.1.3 -framework QuartzCore -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS"0#
 
 CLd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS" normal armv7
-s298273079.667475
-e298273079.766577
+s299738916.748619
+e299738916.846517
 r1
 xLd
 x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS
 xnormal
 xarmv7
-lSLF07#2@103"Link /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS298273079#298273079#0(0"0(0#0#0"8629078400#1054"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk "-L/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" -filelist "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Simple RSS.LinkFileList" -dead_strip -all_load -ObjC -miphoneos-version-min=3.2 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -framework CFNetwork -framework SystemConfiguration -framework MobileCoreServices -lz.1.1.3 -framework QuartzCore -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS"0#
+lSLF07#2@103"Link /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS299738916#299738916#0(0"0(0#0#0"8607940096#1054"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk "-L/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" "-F/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos" -filelist "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv7/Simple RSS.LinkFileList" -dead_strip -all_load -ObjC -miphoneos-version-min=3.2 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -framework CFNetwork -framework SystemConfiguration -framework MobileCoreServices -lz.1.1.3 -framework QuartzCore -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app/Simple RSS"0#
 
 CLd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Objects-normal/armv6/Simple RSS" normal armv6
 s297932710.121372
@@ -5530,10 +5561,10 @@ x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debu
 lSLF07#2@186"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist "build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS.xcent"298272415#298272415#0(0"0(0#0#123"/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS.xcent8615270432#471"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist -entitlements -format xml -o "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Simple RSS.build/Debug-iphoneos/Simple RSS.build/Simple RSS.xcent"0#
 
 CTouch "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app"
-s298273079.822503
-e298273079.825827
+s299738916.903361
+e299738916.908128
 r1
 xTouch
 x/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app
-lSLF07#2@93"Touch /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app298273079#298273079#0(0"0(0#0#0"8618558240#297"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app"0#
+lSLF07#2@93"Touch /Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app299738916#299738916#0(0"0(0#0#0"8613446144#297"    cd "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/caomanhtuanbsb/Documents/Projects/Simple RSS/build/Debug-iphoneos/Simple RSS.app"0#
 

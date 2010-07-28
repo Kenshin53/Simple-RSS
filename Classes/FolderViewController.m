@@ -179,13 +179,13 @@
 	NSString *authString = [[NSString alloc] initWithFormat:@"GoogleLogin auth=%@", SID];
 	NSLog(@"authString = %@", authString);
 
-	NSString *cookieStr = [[NSString alloc] initWithFormat:@"SID=%@",SID];
+//	NSString *cookieStr = [[NSString alloc] initWithFormat:@"SID=%@",SID];
 
-	
+	NSString *cookieStr = [[NSString alloc] initWithFormat:@"GoogleLogin auth=%@",SID];
 	// request for tokenID
 	ASIHTTPRequest *request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:kURLGetTokenID]] autorelease];
-	NSLog(@"Number of cookies for this URL: %d", [[[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:[request url] ] count]);
-	[request addRequestHeader:@"Cookie" value:cookieStr];
+//	NSLog(@"Number of cookies for this URL: %d", [[[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:[request url] ] count]);
+	[request addRequestHeader:@"Authorization" value:cookieStr];
 
 	[request setUseCookiePersistence:YES];
 	[request setRequestCookies:[NSMutableArray arrayWithObject:cookie]];
@@ -305,6 +305,8 @@
 	[RSSParser addFaviconRequests:queue];
 	[queue setQueueDidFinishSelector:@selector(faviconQueueDidFinish:)];
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;	
+	
+	[[NSNotificationCenter defaultCenter] postNotificationName:kNotificationDownloadQueueDidFinish object:nil];
 	
 }
 

@@ -96,7 +96,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(newsItemAdded:) name:kNotificationNewsItemAdded object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendNextUnreadNews:) name:kNotificationRequestingNextUnreadNews object:nil];
-	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadQueueDidFinish:) name:kNotificationDownloadQueueDidFinish object:nil];
 }
 
 
@@ -230,8 +230,8 @@
 	
 	[self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject: indexPath] withRowAnimation:UITableViewRowAnimationFade];
 	
-	NSString *htmlWrapper = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"SimpleRSSTest" ofType:@"html"]];
-	
+//	NSString *htmlWrapper = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"SimpleRSSTest" ofType:@"html"]];
+	NSString *htmlWrapper = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ReederWrapper" ofType:@"html"]];
 	NSLog(@"Content: %@", [aNews summary]);
 	NSString *formattedContent = [[NSString alloc] initWithFormat:htmlWrapper, 
 								  [aNews link],
@@ -268,6 +268,11 @@
 
 #pragma mark -
 #pragma mark Notification Respond Methods
+
+-(void) downloadQueueDidFinish:(NSNotification *)notification {
+	[self.tableView reloadData];
+}
+
 - (void) newsItemAdded:(NSNotification *) notification {
 	NewsItem *aNewsItem = [notification object];
 	
@@ -309,7 +314,7 @@
 		[aSection release];
 		
 	//	[self.tableView beginUpdates];
-		[self.tableView insertSections:[NSIndexSet indexSetWithIndex:[sectionsList count]-1] withRowAnimation:UITableViewRowAnimationNone];
+		//[self.tableView insertSections:[NSIndexSet indexSetWithIndex:[sectionsList count]-1] withRowAnimation:UITableViewRowAnimationNone];
 	//	[self.tableView endUpdates];
 		foundFeed = YES;
 		[newsList addObject:aNewsItem];
@@ -320,7 +325,7 @@
 		NSIndexPath *path = [NSIndexPath indexPathForRow:0 inSection:section ];
 		[paths addObject:path];
 //		[self.tableView beginUpdates];
-		[self.tableView insertRowsAtIndexPaths:[NSArray arrayWithArray:paths] withRowAnimation:UITableViewRowAnimationNone];
+	//	[self.tableView insertRowsAtIndexPaths:[NSArray arrayWithArray:paths] withRowAnimation:UITableViewRowAnimationNone];
 //		[self.tableView endUpdates]; 
 	}
 	

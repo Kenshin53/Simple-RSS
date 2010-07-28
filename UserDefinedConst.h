@@ -13,6 +13,8 @@ extern NSString * const kNotificationNewsItemAdded;
 extern NSString * const kNotificationRequestingNextUnreadNews;
 extern NSString * const kNotificationDidGetNextUnreadNews;
 extern NSString * const kNotificationDidMarkNewsAsRead;
+extern NSString * const kNotificationDownloadQueueDidFinish;
+
 extern NSString * const kURLGetSubscription;
 extern NSString * const kURLgetUnreadItemIDsFormat;
 extern NSString * const kURLGetArticleContent;
